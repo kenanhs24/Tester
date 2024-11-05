@@ -1,0 +1,196 @@
+1|What is SDLC?|The Software Development Life Cycle (SDLC) is a systematic process for planning, creating, testing, and deploying information systems...
+2|What is static testing?|Static testing is a type of software testing technique where the code or documentation is examined without executing the program...
+3|What is dynamic testing?|Dynamic testing involves executing the software to verify its behavior under various conditions, identifying defects that may only appear during runtime...
+4|What are the different levels of testing?|Levels of testing include unit testing, integration testing, system testing, and user acceptance testing (UAT), each serving a unique purpose...
+5|What is a software environment?|A software environment is a setup that includes hardware, software, and configurations required for developing, testing, and deploying applications...
+6|What is stress testing?|Stress testing pushes the system beyond its normal operational capacity to determine its breaking point and see how it recovers from failure.
+7|What is performance testing?|Performance testing evaluates how a system performs under a specific workload, measuring responsiveness, stability, and scalability.
+8|What is user acceptance testing (UAT)?|User Acceptance Testing (UAT) is the final phase of testing where real users test the software to ensure it meets their requirements and is ready for production.
+9|What is exploratory testing?|Exploratory testing is an informal testing approach where the tester actively explores the application, learning about its functionality while identifying defects without predefined test cases.
+10|What is black-box testing?|Black-box testing is a method where the tester evaluates the software’s functionality without any knowledge of the internal code structure, focusing on input and output.
+11|What is white-box testing?|White-box testing involves testing the internal structures or logic of the code. The tester has full visibility of the code and can check specific paths and conditions.
+12|What is alpha testing?|Alpha testing is a type of acceptance testing performed by internal teams or employees of an organization to identify bugs before the software is released to external users.
+13|What is beta testing?|Beta testing is performed by a group of external users under real-world conditions to provide feedback on the software’s functionality, usability, and any remaining issues before the official release.
+14|What is test automation?|Test automation is the use of software tools to execute pre-scripted tests on an application automatically, reducing manual effort and increasing testing efficiency.
+15|What is a test case?|A test case is a set of conditions or inputs with expected results developed to verify that a particular feature of the software is working as intended.
+16|What is a defect or bug?|A defect or bug is an issue or error in the software that causes it to behave unexpectedly or produce incorrect results, differing from the expected outcome.
+17|What is boundary value testing?|Boundary value testing is a type of black-box testing that focuses on the values at the boundaries of input ranges to identify potential edge-case errors.
+18|What is equivalence partitioning?|Equivalence partitioning divides input data into equivalent partitions that can be tested with a single value, reducing the total number of test cases needed while maintaining coverage.
+19|What is an API test?|API testing validates the functionality, performance, and security of application programming interfaces (APIs) to ensure they meet expectations and work well with other parts of the software.
+20|What is compatibility testing?|Compatibility testing checks whether the software application works properly across different browsers, devices, operating systems, and network environments.
+21|What is penetration testing?|Penetration testing simulates an attack on the software to identify vulnerabilities and potential security threats, ensuring that the system is secure from unauthorized access.
+22|What is cross-browser testing?|Cross-browser testing ensures that the software performs as expected across different web browsers, such as Chrome, Firefox, Safari, and Edge.
+23|What is continuous integration?|Continuous integration (CI) is a development practice where code changes are automatically built and tested when they are committed, enabling teams to detect issues early.
+24|What is continuous deployment?|Continuous deployment is an automated process of deploying code changes to production as soon as they pass all tests, speeding up the release cycle and delivery of new features.
+25|What is test-driven development (TDD)?|Test-driven development (TDD) is a software development process where tests are written before the code itself. Developers write a test for a specific function and then write the minimum amount of code needed to pass that test.
+26|What is behavior-driven development (BDD)?|Behavior-driven development (BDD) is an extension of TDD that emphasizes collaboration between developers, testers, and non-technical stakeholders. It focuses on creating shared understanding using simple language and Gherkin syntax.
+27|What is code coverage?|Code coverage is a metric used to measure the percentage of code that is tested by automated tests. It helps identify untested parts of a codebase.
+28|What is the difference between verification and validation?|Verification ensures that the product is built correctly according to specifications, while validation ensures that the right product is built to meet user needs.
+29|What is a test plan?|A test plan is a detailed document outlining the strategy, scope, objectives, resources, and schedule for testing activities. It serves as a blueprint for conducting the testing process.
+30|What is a test strategy?|A test strategy is a high-level document describing the general approach to testing, including objectives, resources, methods, and timelines, which guides all test activities.
+31|What is a test suite?|A test suite is a collection of test cases designed to test a specific area of an application. It can include manual or automated tests.
+32|What is defect life cycle?|The defect life cycle, also known as the bug life cycle, refers to the different stages a defect goes through, from its identification to its resolution and closure.
+33|What is a bug report?|A bug report is a detailed record documenting a defect found during testing. It typically includes a summary, steps to reproduce, expected and actual results, severity, and screenshots if applicable.
+34|What is exploratory testing?|Exploratory testing is an approach where the tester simultaneously designs and executes tests, learning about the software and adapting the testing approach as they go.
+35|What is a testing framework?|A testing framework is a set of rules, libraries, and tools that help create and execute test scripts. Examples include JUnit, TestNG, and Selenium for automation.
+36|What is end-to-end testing?|End-to-end testing verifies the entire flow of an application from start to finish, ensuring that integrated components work together as expected.
+37|What is integration testing?|Integration testing involves testing the interfaces between units or components to ensure that they work together as intended.
+38|What is alpha testing?|Alpha testing is performed by internal teams in a controlled environment before the product is released to external users for beta testing.
+39|What is beta testing?|Beta testing is performed by external users in a real-world environment to gather feedback before the final product release.
+40|What is load testing?|Load testing evaluates how the software behaves under expected user load conditions to ensure performance and stability.
+41|What is stress testing?|Stress testing pushes the software beyond normal load conditions to see how it performs under extreme stress and whether it recovers gracefully from failures.
+42|What is scalability testing?|Scalability testing ensures that an application can handle increased loads and scale up to meet user demands.
+43|What is performance tuning?|Performance tuning involves optimizing the application and its environment to improve speed, efficiency, and resource usage.
+44|What is monkey testing?|Monkey testing is a type of testing where the tester inputs random data into the software to observe its behavior and find any unexpected crashes or failures.
+45|What is UI testing?|UI (User Interface) testing ensures that the graphical interface of an application meets the specified requirements and functions correctly for the end user.
+46|What is accessibility testing?|Accessibility testing ensures that the application is usable by people with disabilities, complying with accessibility standards like WCAG.
+47|What is mobile testing?|Mobile testing involves testing applications on different mobile devices, operating systems, and screen sizes to ensure compatibility and performance.
+48|What is internationalization testing?|Internationalization testing verifies that the application can adapt to different languages, regional settings, and cultural conventions.
+49|What is localization testing?|Localization testing checks that the application is properly adapted for a specific locale or region, with translated text, currency, date formats, etc.
+50|What is data-driven testing?|Data-driven testing is an automation framework where test data is separated from test scripts, allowing the same test to be run with different input data sets.
+51|What is keyword-driven testing?|Keyword-driven testing is an approach where test cases are created using keywords that represent user actions, making tests more readable and maintainable.
+52|What is boundary value analysis?|Boundary value analysis is a black-box testing technique where tests are created at the boundaries of input ranges to identify edge cases.
+53|What is equivalence partitioning?|Equivalence partitioning divides input data into equivalent classes to reduce the number of test cases needed while ensuring sufficient coverage.
+54|What is pair testing?|Pair testing is a collaborative approach where two testers work together on the same test, combining their skills to explore and test the application.
+55|What is defect clustering?|Defect clustering refers to the observation that a small number of modules usually contain most of the defects detected in an application.
+56|What is defect density?|Defect density measures the number of defects per unit of code, helping identify modules that need more attention.
+57|What is root cause analysis?|Root cause analysis is a method of identifying the underlying cause of defects to prevent them from recurring in future development cycles.
+58|What is a test oracle?|A test oracle is a mechanism or source used to determine whether the test case result is correct or not.
+59|What is A/B testing?|A/B testing is a user experience research method where two or more versions of an application are shown to users to determine which performs better.
+60|What is UI/UX testing?|UI/UX testing evaluates the overall user experience and interface, ensuring it is intuitive, functional, and aesthetically pleasing.
+61|What is compliance testing?|Compliance testing ensures that an application meets certain regulatory, legal, or industry standards.
+62|What is operational acceptance testing (OAT)?|OAT verifies the operational readiness of a system before it goes live, checking processes like backup, restore, and disaster recovery.
+63|What is recovery testing?|Recovery testing ensures that an application can recover from crashes, hardware failures, or other unexpected problems and resume normal operations.
+64|What is a mock object?|A mock object is a simulated object that mimics the behavior of real objects in a controlled way, used in testing to isolate components.
+65|What is automated regression testing?|Automated regression testing uses test automation tools to re-run previous test cases to ensure recent code changes haven't broken existing functionality.
+66|What is back-end testing?|Back-end testing focuses on testing the server side or database of an application. It involves testing data integrity, database queries, APIs, and server behavior to ensure proper data flow and storage.
+67|What is API testing?|API testing verifies that an application programming interface (API) works as expected. It involves checking the API's functionality, reliability, performance, and security.
+68|What is mutation testing?|Mutation testing is a type of testing where the code is modified slightly (mutated) to check whether the existing test cases can detect the changes, ensuring the test cases are robust.
+69|What is test data management?|Test data management involves creating, maintaining, and managing data used during testing to ensure accurate and efficient testing results.
+70|What is an automated test script?|An automated test script is a piece of code written to automate a specific test case or a set of test cases. It is executed by an automation tool to validate a software function.
+71|What is test scheduling?|Test scheduling is the process of planning and scheduling testing activities, ensuring they align with project timelines and milestones.
+72|What is a defect triage?|Defect triage is the process of prioritizing and categorizing defects based on their severity, impact, and importance. This helps teams decide which defects need immediate attention.
+73|What is test coverage?|Test coverage measures the extent to which the software is tested. It can refer to code coverage, requirements coverage, or functional coverage.
+74|What is build verification testing (BVT)?|Build verification testing, also known as a smoke test, is performed on a new build to ensure its stability and verify that major functionality works before further testing.
+75|What is system integration testing (SIT)?|System integration testing checks the interaction between different systems or modules to verify that they work together as expected and that data flows correctly between them.
+76|What is an environment in software testing?|A testing environment is a setup that includes hardware, software, network configurations, and other resources needed to execute test cases.
+77|What is continuous testing?|Continuous testing is the practice of executing automated tests as part of the software delivery pipeline to provide instant feedback on business risks.
+78|What is smoke testing?|Smoke testing is a preliminary check to ensure the basic functionalities of an application are working correctly after a new build is created.
+79|What is a use case?|A use case describes a specific scenario in which a user interacts with an application to achieve a particular goal. It helps testers create relevant test cases.
+80|What is the role of a test lead?|A test lead oversees the testing activities, manages the testing team, plans the test strategy, ensures timely execution, and communicates with other teams about testing progress and issues.
+81|What is a traceability matrix?|A traceability matrix is a document that maps test cases to their corresponding requirements, ensuring all requirements are tested and covered.
+82|What is a test harness?|A test harness is a collection of software and test data configured to test a program by running it under different conditions and monitoring its output.
+83|What is a stub in testing?|A stub is a piece of code used to simulate the behavior of a module or component that is called by the component being tested, often used in integration testing.
+84|What is a driver in testing?|A driver is a piece of code that simulates the behavior of a module or component that calls the component being tested, used primarily in integration testing.
+85|What is ad hoc testing?|Ad hoc testing is an informal testing approach where the tester explores the application randomly without following any structured test cases or plans.
+86|What is a negative test case?|A negative test case checks how the application handles invalid input or unexpected user behavior, ensuring it can gracefully handle errors.
+87|What is a positive test case?|A positive test case verifies that the application behaves as expected with valid input and correct user interactions.
+88|What is a pre-condition in a test case?|A pre-condition is a condition or requirement that must be met before executing a test case.
+89|What is a post-condition in a test case?|A post-condition is the expected state or outcome of the system after the execution of a test case.
+90|What is the purpose of a test log?|A test log records the details of the test execution, including the steps taken, the results of each step, and any issues encountered.
+91|What is a build?|A build is a version of software that is assembled and compiled from source code, ready for testing or deployment.
+92|What is release management?|Release management is the process of planning, scheduling, and controlling the build, testing, and deployment of releases to ensure smooth delivery.
+93|What is the difference between load testing and stress testing?|Load testing checks how a system performs under expected load conditions, while stress testing pushes the system beyond its limits to identify its breaking point.
+94|What is agile testing?|Agile testing is a testing approach that aligns with the principles of agile development. It involves continuous testing throughout the development lifecycle and close collaboration with the development team.
+95|What is a defect report?|A defect report is a document detailing a defect found during testing. It includes a description of the issue, steps to reproduce it, the expected result, and the actual result.
+96|What is the difference between severity and priority in testing?|Severity refers to the impact of a defect on the system, while priority indicates how quickly the defect should be fixed based on business needs.
+97|What is pair testing?|Pair testing involves two testers working together at one computer to test the software. They share ideas and explore the application collaboratively.
+98|What is configuration testing?|Configuration testing checks the behavior of the application under various configurations, such as different operating systems, browsers, or hardware setups.
+99|What is volume testing?|Volume testing assesses the system's ability to handle large volumes of data, ensuring that performance remains consistent as data size increases.
+100|What is soak testing?|Soak testing involves running a system at normal load for an extended period to identify potential memory leaks or performance degradation.
+101|What is defect masking?|Defect masking occurs when one defect hides the presence of another defect in the system, making it harder to identify underlying issues.
+102|What is test maintenance?|Test maintenance refers to the process of updating and maintaining test cases and scripts to ensure they remain relevant and effective as the software evolves.
+103|What is test orchestration?|Test orchestration is the practice of coordinating various testing activities and tools to streamline and automate complex testing workflows.
+104|What is usability testing?|Usability testing evaluates how easy and user-friendly an application is for end-users. It identifies any usability issues and ensures the application is intuitive and efficient.
+105|What is a test objective?|A test objective is a specific goal or purpose for performing a test, such as verifying a function, identifying defects, or ensuring performance requirements are met.
+106|What is defect prevention?|Defect prevention involves practices and strategies that aim to prevent defects from occurring during the development and testing phases.
+107|What is the difference between verification and validation?|Verification ensures that the product is built correctly according to specifications, while validation checks that the product meets the needs and expectations of the user.
+108|What is pair programming?|Pair programming is an agile development practice where two programmers work together at one workstation, with one writing code and the other reviewing it in real-time.
+109|What is user story testing?|User story testing is the process of verifying that a feature or function described in a user story meets the acceptance criteria and delivers the intended user value.
+110|What is continuous integration?|Continuous integration is a practice where developers frequently merge their code changes into a shared repository, triggering automated builds and tests to detect errors quickly.
+111|What is exploratory testing?|Exploratory testing is an approach where the tester actively explores the application while designing and executing tests simultaneously to discover issues.
+112|What is defect tracking?|Defect tracking is the process of identifying, recording, and monitoring defects to ensure they are addressed and resolved in a timely manner.
+113|What is a performance bottleneck?|A performance bottleneck is a point in the system where the performance is limited, causing delays and inefficiencies that impact overall system behavior.
+114|What is static code analysis?|Static code analysis involves examining source code for potential errors, vulnerabilities, or coding standards violations without executing the program.
+115|What is dynamic code analysis?|Dynamic code analysis checks the behavior of the code during execution to identify runtime issues such as memory leaks, crashes, and security vulnerabilities.
+116|What is a build tool?|A build tool automates tasks related to building software projects, including compiling source code, running tests, and packaging the code into deployable artifacts. Examples include Maven and Gradle.
+117|What is testability?|Testability refers to how easy it is to create test cases and conduct testing on a particular software component or system.
+118|What is software quality assurance (SQA)?|SQA is a set of activities that ensure the software development process and products meet predefined quality standards and requirements.
+119|What is test reporting?|Test reporting is the process of documenting the results of testing activities, including test case execution status, defects found, and overall testing progress.
+120|What is defect leakage?|Defect leakage occurs when a defect is missed during one phase of testing and is found later in production or another phase.
+121|What is functional decomposition?|Functional decomposition breaks down complex processes or systems into smaller, more manageable parts to facilitate better understanding and testing.
+122|What is a test condition?|A test condition is a specific requirement, function, or event that can be tested to determine if the application behaves as expected.
+123|What is the role of a test architect?|A test architect is responsible for designing and implementing a comprehensive test strategy and framework, ensuring that testing processes align with project goals and standards.
+124|What is a test charter?|A test charter is a brief document outlining the scope, objectives, and approach for a specific testing session, often used in exploratory testing.
+125|What is boundary value analysis?|Boundary value analysis is a testing technique that involves creating test cases based on boundary values, as defects often occur at the edges of input ranges.
+126|What is data flow testing?|Data flow testing checks the flow of data within the program, ensuring that data is properly initialized, used, and disposed of.
+127|What is decision table testing?|Decision table testing is a technique that uses a table to represent different combinations of inputs and their corresponding outputs to design comprehensive test cases.
+128|What is domain testing?|Domain testing verifies that the application functions correctly for all input values within a specified domain or range.
+129|What is error guessing?|Error guessing is an informal test design technique where the tester uses experience and intuition to guess potential error-prone areas in the software.
+130|What is equivalence class partitioning?|Equivalence class partitioning divides input data into equivalence classes that can be used to reduce the number of test cases needed while maintaining coverage.
+131|What is fuzz testing?|Fuzz testing involves providing random or unexpected data inputs to the software to identify vulnerabilities, crashes, and unexpected behavior.
+132|What is mutation testing?|Mutation testing involves making small changes to the program's code and then running tests to check if they catch the changes, ensuring the effectiveness of test cases.
+133|What is rapid application development (RAD)?|RAD is a software development methodology that focuses on quickly building prototypes and iterative releases, enabling fast feedback and continuous improvement.
+134|What is defect severity?|Defect severity refers to the impact that a defect has on the system's functionality, ranging from minor to critical.
+135|What is defect priority?|Defect priority indicates the urgency of fixing a defect based on business needs, with high-priority defects needing immediate attention.
+136|What is integration testing?|Integration testing verifies that individual modules or components work together as intended, ensuring that data flow and interactions between them are seamless.
+137|What is manual testing?|Manual testing involves testing the application by executing test cases manually without the use of automation tools.
+138|What is defect clustering?|Defect clustering is the observation that a small number of modules in a project contain most of the defects detected during testing.
+139|What is test execution?|Test execution is the process of running test cases and comparing the actual results with the expected results to verify software behavior.
+140|What is smoke testing?|Smoke testing is a preliminary test to ensure that the basic functionalities of an application are working properly after a new build.
+141|What is beta testing?|Beta testing is conducted by a group of external users in a real-world environment to provide feedback before the final release of the software.
+142|What is traceability in testing?|Traceability refers to the ability to link test cases to their corresponding requirements, ensuring that all requirements are covered by tests.
+143|What is usability testing?|Usability testing evaluates how easy it is for users to interact with the application, identifying areas that need improvement to enhance user experience.
+144|What is user acceptance testing (UAT)?|UAT is the final phase of testing where real users test the application to verify that it meets their requirements and is ready for deployment.
+145|What is test automation?|Test automation is the process of using software tools to execute test cases automatically, improving testing efficiency and coverage.
+146|What is regression testing?|Regression testing verifies that code changes have not adversely affected existing features, ensuring that the application continues to work as expected.
+147|What is a build verification test (BVT)?|BVT is a subset of tests run on a new build to verify its stability before proceeding with further testing.
+148|What is risk-based testing?|Risk-based testing prioritizes testing efforts based on the potential impact and likelihood of risks. It helps focus on testing areas that pose the highest risk to the project.
+149|What is test-driven development (TDD)?|Test-driven development (TDD) is a software development approach where developers write tests for a function before writing the actual code to pass the tests.
+150|What is behavior-driven development (BDD)?|Behavior-driven development (BDD) is an extension of TDD that involves collaboration between developers, testers, and non-technical stakeholders to write tests in plain language.
+151|What is unit testing?|Unit testing is the first level of testing where individual components of the software are tested to ensure that they work as expected.
+152|What is component testing?|Component testing verifies the functionality of individual components of a system in isolation to ensure they work independently before integration.
+153|What is test data?|Test data is the data that is used as input during testing to verify that a software application produces the expected output.
+154|What is test coverage?|Test coverage is a metric that indicates the percentage of code or functionality that is tested to ensure comprehensive testing.
+155|What is defect density?|Defect density measures the number of defects found in a software module per unit size, such as per thousand lines of code or per function point.
+156|What is alpha testing?|Alpha testing is an internal testing phase where the development team tests the software in a controlled environment before releasing it to external users for beta testing.
+157|What is exploratory testing?|Exploratory testing is an approach where the tester actively explores the application without predefined test cases, learning about the software and identifying defects on the fly.
+158|What is negative testing?|Negative testing checks how the system behaves when given invalid or unexpected input to ensure it can handle errors gracefully.
+159|What is compatibility testing?|Compatibility testing verifies that the application works across different devices, browsers, operating systems, and network environments.
+160|What is compliance testing?|Compliance testing ensures that the application meets regulatory, legal, or industry standards.
+161|What is load testing?|Load testing determines how the system behaves under expected user load, ensuring it can handle the anticipated number of concurrent users.
+162|What is spike testing?|Spike testing is a type of performance testing where the application is subjected to a sudden, large increase in load to see how it handles high traffic and recovers.
+163|What is security testing?|Security testing identifies vulnerabilities in a software application to protect data and resources from unauthorized access and ensure data confidentiality, integrity, and availability.
+164|What is usability testing?|Usability testing evaluates the application's user-friendliness and ease of use to ensure a positive user experience.
+165|What is volume testing?|Volume testing assesses the system's ability to handle large volumes of data, checking for performance and functionality issues.
+166|What is soak testing?|Soak testing runs the application at normal load for an extended period to detect issues like memory leaks or performance degradation.
+167|What is a defect lifecycle?|The defect lifecycle, or bug lifecycle, describes the various stages a defect goes through from identification to resolution and closure.
+168|What is a test harness?|A test harness is a collection of software and test data needed to test a program by simulating different conditions and recording the results.
+169|What is root cause analysis?|Root cause analysis is the process of identifying the underlying reasons for defects to prevent them from occurring in the future.
+170|What is a stub in software testing?|A stub is a temporary module that simulates the behavior of a component that a module under test depends on, used in integration testing.
+171|What is a driver in software testing?|A driver is a piece of code that calls a module to be tested, used when testing individual components in isolation.
+172|What is system testing?|System testing evaluates the complete and integrated software to ensure that it meets the specified requirements.
+173|What is integration testing?|Integration testing tests the interaction between integrated units or modules to ensure they work together as expected.
+174|What is end-to-end testing?|End-to-end testing verifies the application's complete flow from start to finish to ensure that the integrated components work together as expected in a production-like environment.
+175|What is regression testing?|Regression testing ensures that recent code changes have not adversely affected existing features and that the application still functions as expected.
+176|What is acceptance testing?|Acceptance testing is performed to determine whether the software meets the acceptance criteria and is ready for delivery to the end-user.
+177|What is a test environment?|A test environment is a configured environment where software testing is executed. It includes hardware, software, network configuration, and other setup needs.
+178|What is test execution?|Test execution is the process of running test cases and comparing the actual results against the expected outcomes.
+179|What is test closure?|Test closure is the phase where testing activities are concluded, test artifacts are archived, and a final report is prepared summarizing the testing outcomes.
+180|What is agile testing?|Agile testing follows the principles of agile development, involving continuous testing with a collaborative approach to ensure software quality throughout the development lifecycle.
+181|What is defect tracking?|Defect tracking is the process of finding, reporting, and managing defects in the software, ensuring they are resolved in a timely manner.
+182|What is software quality assurance (SQA)?|SQA encompasses the processes and activities that ensure software quality is maintained, including adherence to defined standards and practices.
+183|What is white-box testing?|White-box testing involves testing the internal structure, code, and logic of the application, ensuring that specific paths and conditions are verified.
+184|What is black-box testing?|Black-box testing focuses on testing the software's functionality without knowledge of the internal code structure, using input and output validation.
+185|What is the difference between verification and validation?|Verification ensures that the product is built according to specifications (building the product right), while validation checks that the product meets user needs (building the right product).
+186|What is pair testing?|Pair testing is when two testers work together on the same test, sharing ideas and collaborating to explore the application and find defects.
+187|What is test automation framework?|A test automation framework is a set of guidelines, practices, and tools that help in creating and executing automated test scripts efficiently.
+188|What is a test case?|A test case is a set of conditions or inputs with expected results to verify that a particular function of the software works as intended.
+189|What is a test plan?|A test plan is a comprehensive document that outlines the testing strategy, scope, objectives, schedule, and resources needed for testing.
+190|What is boundary value analysis?|Boundary value analysis is a testing technique that involves creating test cases at the boundaries of input ranges to identify edge-case errors.
+191|What is equivalence partitioning?|Equivalence partitioning divides input data into equivalence classes to reduce the number of test cases needed while ensuring sufficient coverage.
+192|What is continuous deployment?|Continuous deployment is an automated process of deploying code changes to production as soon as they pass all required tests.
+193|What is continuous integration?|Continuous integration is the practice of frequently integrating code changes into a shared repository, followed by automated builds and tests to detect issues early.
+194|What is a defect?|A defect is an error or flaw in the software that causes it to behave unexpectedly or produce incorrect results.
+195|What is defect prevention?|Defect prevention involves processes and practices aimed at reducing the number of defects introduced during software development.
+196|What is test-driven development (TDD)?|TDD is a development practice where tests are written before writing the actual code, guiding the coding process and ensuring testable code.

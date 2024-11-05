@@ -1,0 +1,500 @@
+1|What is Java?|Java is a high-level, object-oriented programming language that is platform-independent.
+2|Explain Object-Oriented Programming.|OOP is a programming paradigm based on the concept of objects that contain data and methods.
+3|What is the JVM?|The JVM is the Java Virtual Machine that runs Java bytecode on any platform.
+4|What are access modifiers in Java?|Access modifiers control the visibility of classes, methods, and variables. Examples: public, private, protected, and default.
+5|What is Polymorphism?|Polymorphism is the ability of an object to take on many forms.
+6|What is Inheritance in Java?|Inheritance is a mechanism in which one class acquires the properties and behaviors of another class.
+7|What is Encapsulation?|Encapsulation is the process of wrapping data (fields) and code (methods) together as a single unit.
+8|What is Abstraction?|Abstraction is the concept of hiding the implementation details and showing only the functionality.
+9|What are Constructors in Java?|Constructors are special methods used to initialize objects. They have the same name as the class.
+10|What is the difference between '==' and '.equals()' in Java?|'==' checks for reference equality, while '.equals()' checks for value equality.
+11|What is the JDK?|The JDK (Java Development Kit) includes the compiler, JVM, and other tools required for developing Java applications.
+12|What is the JRE?|The JRE (Java Runtime Environment) provides the libraries, JVM, and other components necessary to run applications.
+13|What is method overloading?|Method overloading allows multiple methods with the same name but different parameters within a class.
+14|What is method overriding?|Method overriding allows a subclass to provide a specific implementation of a method defined in its superclass.
+15|What is the 'final' keyword in Java?|The 'final' keyword can be used with classes, methods, and variables to indicate that they cannot be changed.
+16|What are Interfaces in Java?|Interfaces are abstract types that allow multiple inheritance of method signatures.
+17|What is an Abstract Class?|An abstract class is a class that cannot be instantiated and may contain abstract methods that subclasses must implement.
+18|What is a Static method?|Static methods belong to the class rather than instances of the class and can be called without creating an object.
+19|What is a Package in Java?|Packages are namespaces that organize classes and interfaces, providing a modular way to manage code.
+20|What is the use of 'this' keyword?|'this' refers to the current object and is used to differentiate instance variables from local variables.
+21|What is the 'super' keyword?|'super' is used to refer to the immediate parent class object and can call parent methods and constructors.
+22|What is the 'this()' constructor?|'this()' is used to call another constructor within the same class.
+23|What is the difference between 'ArrayList' and 'LinkedList'?|'ArrayList' uses a dynamic array, while 'LinkedList' uses a doubly linked list. ArrayLists are better for accessing, LinkedLists for insertion and deletion.
+24|What is a HashMap?|HashMap is a collection class that stores key-value pairs and allows for fast retrieval.
+25|What is a Set?|A Set is a collection that does not allow duplicate elements.
+26|What is Exception Handling?|Exception handling is a mechanism to handle runtime errors and maintain normal flow using try-catch blocks.
+27|What are Checked and Unchecked Exceptions?|Checked exceptions are checked at compile-time, while unchecked exceptions are checked at runtime.
+28|What is a 'try-catch' block?|A 'try-catch' block is used to handle exceptions. Code that may throw an exception is placed inside the 'try' block, and the 'catch' block handles it.
+29|What is the use of 'finally' in Java?|'finally' is used to execute code after a try-catch block, regardless of whether an exception occurs.
+30|What is Multithreading?|Multithreading is the ability of a program to execute multiple threads simultaneously.
+31|What is Synchronization?|Synchronization is a mechanism to control the access of multiple threads to shared resources.
+32|What is a Deadlock?|A deadlock occurs when two or more threads are blocked forever, each waiting for the other to release a resource.
+33|What is the purpose of the 'volatile' keyword?|The 'volatile' keyword ensures that changes to a variable are immediately visible to other threads.
+34|What is the difference between 'sleep()' and 'wait()'?|'sleep()' pauses the thread for a specified time, while 'wait()' causes the thread to wait until it is notified.
+35|What is the Java Collection Framework?|The Java Collection Framework provides a set of classes and interfaces for storing and manipulating collections of objects.
+36|What is a Constructor Overloading?|Constructor overloading is when a class has multiple constructors with different parameters.
+37|What is Garbage Collection?|Garbage collection is the process of automatically reclaiming memory by deleting objects that are no longer referenced.
+38|What is Serialization?|Serialization is the process of converting an object into a byte stream to store or transmit it.
+39|What is Deserialization?|Deserialization is the process of converting a byte stream back into an object.
+40|What is a Wrapper Class?|Wrapper classes provide a way to use primitive data types as objects.
+41|What is the difference between 'String', 'StringBuilder', and 'StringBuffer'?|'String' is immutable, while 'StringBuilder' and 'StringBuffer' are mutable. 'StringBuffer' is thread-safe, but 'StringBuilder' is not.
+42|What is the 'transient' keyword?|The 'transient' keyword is used to indicate that a field should not be serialized.
+43|What is the 'instanceof' keyword?|'instanceof' is used to check if an object is an instance of a specific class or interface.
+44|What is an Enum?|An Enum is a special class that represents a group of constants.
+45|What is Lambda Expression?|Lambda expressions are used to provide a clear and concise way to represent single method interfaces using expressions.
+46|What is Stream API?|Stream API is used to process collections of objects in a functional style.
+47|What is Functional Interface?|A functional interface is an interface that contains exactly one abstract method.
+48|What is the purpose of 'Optional' in Java?|'Optional' is used to handle null values gracefully, avoiding null pointer exceptions.
+49|What is Reflection in Java?|Reflection is the ability to inspect and manipulate classes, interfaces, methods, and fields at runtime.
+50|What is the Factory Pattern?|The Factory Pattern is a design pattern used to create objects without specifying the exact class of the object that will be created.
+51|What is Singleton Pattern?|Singleton Pattern ensures that a class has only one instance and provides a global point of access to it.
+52|What is JDBC?|JDBC (Java Database Connectivity) is an API that enables Java applications to interact with databases.
+53|What is Dependency Injection?|Dependency Injection is a design pattern that allows an object's dependencies to be injected by an external entity.
+54|What is 'Autoboxing' and 'Unboxing'?|Autoboxing is the automatic conversion of a primitive type to its corresponding wrapper class. Unboxing is the opposite process.
+55|What is the use of 'static' keyword?|'static' means that the member belongs to the class rather than instances of the class.
+56|What is a Marker Interface?|A Marker Interface is an interface with no methods. It provides runtime information to the JVM.
+57|What is a 'class loader'?|A class loader loads classes into the Java runtime environment.
+58|What is the difference between 'throw' and 'throws'?|'throw' is used to explicitly throw an exception, while 'throws' is used to declare exceptions that a method may throw.
+59|What is the 'default' keyword in interfaces?|The 'default' keyword allows you to define default methods in interfaces.
+60|What is Java Bytecode?|Java bytecode is an intermediate language between source code and machine code, understood by the JVM.
+61|What are default methods in interfaces?|Default methods are methods defined in interfaces that have a body and do not need to be overridden in implementing classes.
+62|What is a JavaBean?|A JavaBean is a reusable software component that follows certain conventions, such as having private fields and public getters/setters.
+63|What is the difference between 'Abstract Class' and 'Interface'?|An abstract class can have both abstract and concrete methods, while an interface can only have abstract methods (unless using default).
+64|What is 'method reference' in Java?|A method reference is a shorthand for a lambda expression that executes a specific method.
+65|What is the Stream API 'map()' function?|The 'map()' function is used to transform each element in a stream.
+66|What is the 'flatMap()' function in Streams?|'flatMap()' is used to flatten a stream of collections into a single stream of elements.
+67|What is the difference between 'map()' and 'flatMap()'?|'map()' transforms each element, while 'flatMap()' transforms each element and merges them into a single stream.
+68|What is the 'Decorator Pattern'?|The Decorator Pattern is a design pattern used to add new functionality to an existing object without altering its structure.
+69|What is the 'Observer Pattern'?|The Observer Pattern is a behavioral design pattern where an object, called the subject, maintains a list of observers that are notified of any changes.
+70|What is the 'Builder Pattern'?|The Builder Pattern is a design pattern used to construct complex objects step by step.
+71|What is 'Generics' in Java?|Generics allow you to define classes, interfaces, and methods with type parameters.
+72|What is the use of 'try-with-resources'?|'try-with-resources' is used to automatically close resources after use.
+73|What is the 'BigDecimal' class?|BigDecimal is used for precise calculations, such as financial and currency calculations.
+74|What is the 'hashCode()' method?|The 'hashCode()' method provides a unique integer representation of an object for hashing purposes.
+75|What is the difference between 'Array' and 'ArrayList'?|'Array' is of fixed size, while 'ArrayList' is dynamic and can grow or shrink as needed.
+76|What is 'JIT Compiler'?|The JIT Compiler (Just-In-Time) translates bytecode into machine code at runtime to improve performance.
+77|What is the difference between 'public', 'protected', 'private', and 'default'?|These are access modifiers that control the visibility of classes, methods, and variables.
+78|What is the 'synchronized' keyword?|The 'synchronized' keyword is used to control access to a block of code by multiple threads.
+79|What is the 'Runnable' interface?|The 'Runnable' interface should be implemented by any class whose instances are intended to be executed by a thread.
+80|What is the 'ExecutorService'?|'ExecutorService' is a framework that simplifies the process of creating, managing, and executing threads.
+81|What is 'Callable' in Java?|'Callable' is similar to 'Runnable', but it can return a result and throw an exception.
+82|What is the 'ConcurrentHashMap'?|'ConcurrentHashMap' is a thread-safe variant of 'HashMap' that allows concurrent read and write operations.
+83|What is the 'ReentrantLock'?|'ReentrantLock' is a lock implementation that provides more control over the lock mechanism compared to synchronized blocks.
+84|What is the 'Fork/Join Framework'?|The Fork/Join Framework is used for parallelism in Java, splitting tasks into smaller subtasks and combining their results.
+85|What is the 'Stream API'?|The Stream API is used to process sequences of elements in a functional way, such as filtering, mapping, and reducing.
+86|What is 'Method Overriding'?|Method Overriding allows a subclass to provide a specific implementation of a method defined in the parent class.
+87|What is 'Method Overloading'?|Method Overloading allows multiple methods with the same name but different parameters in a single class.
+88|What is 'Diamond Problem' in Java?|The Diamond Problem refers to ambiguity when a class inherits from multiple classes that have the same method signature. Java prevents this by not allowing multiple inheritance.
+89|What is the 'volatile' keyword?|The 'volatile' keyword ensures that a variable is read from the main memory, not from a thread's local cache.
+90|What is the difference between 'static' and 'final'?|'static' belongs to the class, not instances, while 'final' ensures that a variable is constant or a method cannot be overridden.
+91|What is 'reflection' in Java?|Reflection is the ability of a program to analyze and modify itself at runtime.
+92|What is 'Java Reflection API'?|Java Reflection API is used to manipulate classes, methods, and fields at runtime.
+93|What is 'ClassNotFoundException'?|ClassNotFoundException is thrown when the JVM tries to load a class that does not exist in the classpath.
+94|What is 'NoClassDefFoundError'?|'NoClassDefFoundError' occurs when the JVM cannot find the definition of a class that was present during compilation.
+95|What is the 'Proxy Pattern'?|The Proxy Pattern provides a surrogate or placeholder for another object to control access to it.
+96|What is 'Dynamic Proxy' in Java?|Dynamic Proxy allows you to create a proxy instance that can implement multiple interfaces at runtime.
+97|What is 'Immutable Class'?|An immutable class is a class whose objects cannot be modified after they are created.
+98|What is the 'Adapter Pattern'?|The Adapter Pattern allows incompatible interfaces to work together by wrapping an existing class with a new interface.
+99|What is 'Annotations' in Java?|Annotations provide metadata to the Java compiler and JVM about the behavior of the code.
+100|What is 'Spring Framework'?|The Spring Framework is a comprehensive programming and configuration model for modern Java-based enterprise applications.
+101|What is 'Java Serialization'?|Serialization is the process of converting an object into a byte stream, so it can be stored in a file or sent over a network.
+102|What is the use of 'transient' keyword?|The 'transient' keyword is used to indicate that a field should not be serialized.
+103|What is 'Externalizable' in Java?|Externalizable is an interface that extends Serializable and allows full control over the serialization process.
+104|What is 'copy constructor' in Java?|A copy constructor is a constructor that initializes an object using another object of the same class.
+105|What is the difference between 'wait()' and 'sleep()' methods in Java?|The 'wait()' method releases the lock on an object, while 'sleep()' pauses the thread without releasing any locks.
+106|What is the 'volatile' keyword in Java?|The 'volatile' keyword ensures that a variable's value is always read from main memory, not a thread's local cache.
+107|What are 'atomic operations' in Java?|Atomic operations are operations that are performed in a single step without interruption, ensuring thread safety.
+108|What is 'EnumMap'?|EnumMap is a specialized Map implementation for use with enum type keys.
+109|What is the difference between 'Vector' and 'ArrayList'?|Vector is synchronized and thread-safe, while ArrayList is not, making ArrayList faster in single-threaded contexts.
+110|What is the 'Diamond Operator' in Java?|The Diamond Operator (`<>`) simplifies the use of generics by inferring the type parameters from the context.
+111|What is 'type inference' in Java?|Type inference allows the compiler to determine the type of a variable based on the context, reducing the need for explicit declarations.
+112|What is 'covariant return type'?|Covariant return type allows a method in a subclass to return a more specific type than the method it overrides in the parent class.
+113|What is the 'Optional' class in Java?|The Optional class is used to represent a value that may or may not be present, helping to avoid NullPointerException.
+114|What is a 'Daemon Thread'?|A Daemon thread is a low-priority thread that runs in the background to perform tasks like garbage collection.
+115|What is 'Reflection'?|Reflection is the ability of a program to inspect and manipulate its own structure, including classes, methods, and fields, at runtime.
+116|What is 'Dependency Injection' (DI)?|Dependency Injection is a design pattern that allows the removal of hard-coded dependencies, making a system more modular.
+117|What is a 'Method Handle' in Java?|A Method Handle is a typed reference to a method or field that provides a way to access them dynamically.
+118|What is 'Immutable Object'?|An immutable object is an object whose state cannot be changed after it is created.
+119|What is 'ConcurrentHashMap'?|ConcurrentHashMap is a thread-safe version of HashMap that allows concurrent read and write operations.
+120|What is the 'Strategy Pattern'?|The Strategy Pattern defines a family of algorithms and encapsulates each one, making them interchangeable.
+121|What is the 'Observer Pattern'?|The Observer Pattern allows an object, called the subject, to notify other objects, called observers, of changes.
+122|What is 'Proxy Pattern'?|The Proxy Pattern provides a surrogate or placeholder for another object to control access to it.
+123|What is the 'Builder Pattern'?|The Builder Pattern is used to construct a complex object step by step.
+124|What is 'Double-Checked Locking'?|Double-Checked Locking is a technique used to reduce the overhead of acquiring a lock by first checking the condition without locking.
+125|What is 'Lazy Initialization'?|Lazy Initialization is a technique to delay the creation of an object until it is needed.
+126|What is the 'Factory Method Pattern'?|The Factory Method Pattern defines a method for creating objects, but allows subclasses to alter the type of objects that will be created.
+127|What is the 'Singleton Design Pattern'?|The Singleton Pattern ensures that a class has only one instance and provides a global point of access to it.
+128|What is the 'Decorator Pattern'?|The Decorator Pattern allows behavior to be added to an object dynamically at runtime.
+129|What is the difference between 'Comparator' and 'Comparable'?|Comparable is used to define the natural ordering of objects, while Comparator allows custom ordering.
+130|What is the 'Adapter Pattern'?|The Adapter Pattern allows incompatible interfaces to work together by wrapping an existing class with a new interface.
+131|What is 'Method Overriding'?|Method Overriding allows a subclass to provide a specific implementation of a method defined in its parent class.
+132|What is 'Generics' in Java?|Generics enable types (classes and interfaces) to be parameters when defining classes, interfaces, and methods.
+133|What is 'Reflection API' in Java?|The Reflection API allows Java programs to examine or modify the behavior of classes, methods, and interfaces at runtime.
+134|What is the 'Factory Design Pattern'?|The Factory Design Pattern is used to create objects without specifying the exact class of object that will be created.
+135|What is 'method reference' in Java?|Method reference is a shorthand notation for a lambda expression that executes one method.
+136|What is 'Functional Interface'?|A Functional Interface is an interface with exactly one abstract method, used in lambda expressions.
+137|What is 'FlatMap' in Streams?|FlatMap transforms each element into a stream and flattens the resulting streams into a single stream.
+138|What is the 'reduce' method in Streams?|The 'reduce' method in Streams is used to accumulate elements of a stream into a single result.
+139|What is 'parallel stream'?|A parallel stream divides a stream's elements into multiple sub-streams, which are processed in parallel.
+140|What is the 'stateful stream'?|Stateful streams maintain state information across elements, such as sorting or distinct elements.
+141|What is the 'ExecutorService'?|ExecutorService is a framework that simplifies the creation, management, and control of threads.
+142|What is 'Callable' interface?|Callable is similar to Runnable, but it can return a result and throw exceptions.
+143|What is the 'Thread Pool'?|A thread pool is a group of pre-instantiated threads that are available to perform tasks, improving performance.
+144|What is 'Fork/Join Framework'?|The Fork/Join Framework is used for parallelism by splitting tasks into smaller subtasks and combining their results.
+145|What is 'Concurrent Collections'?|Concurrent collections are data structures designed to be safely accessed by multiple threads concurrently.
+146|What is 'Java Memory Model'?|The Java Memory Model defines how threads interact through memory and what behaviors are allowed in a multithreaded environment.
+147|What is the 'compareTo()' method?|The 'compareTo()' method is used to compare the current object with the specified object to define the natural ordering.
+148|What is the 'synchronized block'?|A synchronized block is a code block that can only be executed by one thread at a time to prevent race conditions.
+149|What is the 'ReentrantLock'?|ReentrantLock is a lock that allows the same thread to acquire the lock multiple times without causing a deadlock.
+150|What is the 'CountDownLatch'?|CountDownLatch is a synchronization aid that allows threads to wait for a set of operations to complete.
+151|What is 'CyclicBarrier'?|CyclicBarrier is a synchronization aid that allows a set of threads to wait for each other to reach a common barrier point.
+152|What is the 'ScheduledExecutorService'?|ScheduledExecutorService is a framework that allows you to schedule tasks to run periodically or after a fixed delay.
+153|What is the difference between 'ExecutorService' and 'Fork/Join Pool'?|ExecutorService is used for tasks with no dependencies, while Fork/Join Pool is designed for tasks that can be broken down into smaller subtasks.
+154|What is 'JavaFX'?|JavaFX is a software platform for creating and delivering desktop applications with a rich graphical user interface.
+155|What is 'JShell'?|JShell is a REPL (Read-Eval-Print-Loop) tool introduced in Java 9 that allows you to execute Java code interactively.
+156|What is 'Module System' in Java 9?|The Module System (Project Jigsaw) allows you to break down your application into smaller, self-contained modules.
+157|What is 'Local Variable Type Inference'?|Local Variable Type Inference allows you to use 'var' for local variables, letting the compiler infer the type.
+158|What is the 'HTTP Client' API in Java?|The HTTP Client API provides a way to send HTTP requests and receive responses.
+159|What is the 'Streams API' in Java?|The Streams API allows you to perform operations on collections in a functional style, like map, filter, and reduce.
+160|What is the 'Predicate' functional interface?|The Predicate interface represents a boolean-valued function that accepts one argument.
+161|What is 'Supplier' functional interface?|The Supplier interface represents a function that supplies a result but does not take any arguments.
+162|What is 'Consumer' functional interface?|The Consumer interface represents a function that takes one argument but does not return a result.
+163|What is 'BiFunction' functional interface?|BiFunction represents a function that takes two arguments and produces a result.
+164|What is the 'MethodHandle' in Java?|MethodHandle is a typed reference to a method or field, used for dynamic method invocation.
+165|What is 'Stream pipeline'?|A stream pipeline consists of a source, followed by zero or more intermediate operations, and a terminal operation.
+166|What is 'Java Mission Control'?|Java Mission Control is a tool for monitoring and managing Java applications, including performance diagnostics.
+167|What is 'JVisualVM'?|JVisualVM is a tool that provides a visual interface for monitoring and troubleshooting Java applications.
+168|What is 'Javadoc'?|Javadoc is a tool that generates HTML documentation from Java source code.
+169|What is the 'difference between String and StringBuffer'?|String is immutable, while StringBuffer is mutable and used for thread-safe, mutable strings.
+170|What is 'NoClassDefFoundError'?|NoClassDefFoundError is thrown when the JVM cannot find the definition of a class that was available during compilation.
+171|What is 'ClassNotFoundException'?|ClassNotFoundException occurs when an application tries to load a class through its name, but no definition for the class with the specified name can be found.
+172|What is the difference between 'Serializable' and 'Externalizable'?|Serializable uses the default serialization mechanism, while Externalizable allows you to control the serialization process.
+173|What is the 'difference between final, finally, and finalize'?|'final' is a keyword, 'finally' is a block, and 'finalize' is a method.
+174|What is 'Diamond Problem' in Java?|The Diamond Problem occurs in multiple inheritance when two parent classes have the same method name, leading to ambiguity. Java avoids this by not supporting multiple class inheritance.
+175|What is the difference between 'static' and 'instance' variables?|Static variables belong to the class and are shared among all instances, while instance variables belong to each specific object.
+176|What is 'Spring Boot'?|Spring Boot is an extension of the Spring framework that simplifies the setup of new Spring applications.
+177|What is 'Microservices Architecture'?|Microservices Architecture is a design approach where applications are composed of small, independent services that communicate with each other.
+178|What is 'API Gateway'?|An API Gateway acts as a reverse proxy to accept all application programming interface calls, aggregate the services, and return the result.
+179|What is 'Circuit Breaker Pattern'?|The Circuit Breaker Pattern prevents an application from repeatedly trying to execute an operation that is likely to fail.
+180|What is 'Hystrix'?|Hystrix is a latency and fault tolerance library designed to isolate points of access to remote systems.
+181|What is 'JPA'?|JPA (Java Persistence API) is a specification for accessing, persisting, and managing data between Java objects and relational databases.
+182|What is 'Hibernate'?|Hibernate is a framework that implements JPA, providing tools to map Java objects to database tables.
+183|What is 'ORM'?|ORM (Object-Relational Mapping) is a technique that maps Java objects to database tables.
+184|What is the 'difference between JDBC and JPA'?|JDBC is a lower-level API for database access, while JPA is a higher-level abstraction that simplifies database interaction.
+185|What is 'Spring Cloud'?|Spring Cloud provides tools for building distributed systems, including configuration management, service discovery, and circuit breakers.
+186|What is 'Spring Security'?|Spring Security is a framework that focuses on authentication and authorization within Java applications.
+187|What is 'REST API'?|REST API is an architectural style that uses HTTP requests to perform CRUD (Create, Read, Update, Delete) operations.
+188|What is 'SOAP'?|SOAP (Simple Object Access Protocol) is a messaging protocol for exchanging structured information in web services.
+189|What is 'Docker'?|Docker is a platform for developing, shipping, and running applications inside lightweight containers.
+190|What is 'Kubernetes'?|Kubernetes is an open-source container orchestration system that automates the deployment, scaling, and management of containerized applications.
+191|What is the difference between 'GET' and 'POST' requests?|GET requests are used to retrieve data, while POST requests are used to submit data to the server.
+192|What is 'WebSocket'?|WebSocket is a communication protocol that provides full-duplex communication channels over a single TCP connection.
+193|What is the 'difference between Maven and Gradle'?|Maven is a build automation tool that uses XML files, while Gradle uses a more flexible Groovy-based DSL.
+194|What is 'Aspect-Oriented Programming'?|Aspect-Oriented Programming (AOP) is a programming paradigm that aims to increase modularity by allowing the separation of cross-cutting concerns.
+195|What is the 'difference between Spring and Spring Boot'?|Spring is a comprehensive framework for enterprise applications, while Spring Boot simplifies the setup of new Spring applications with embedded servers and less configuration.
+196|What is 'DevOps'?|DevOps is a set of practices that combines software development (Dev) and IT operations (Ops) to improve collaboration and efficiency.
+197|What is the 'difference between Virtual Machine and Container'?|A virtual machine includes a full OS, while a container shares the host OS and is more lightweight.
+198|What is the 'difference between Git and SVN'?|Git is a distributed version control system, while SVN is a centralized version control system.
+199|What is 'CI/CD'?|CI/CD stands for Continuous Integration/Continuous Deployment, a practice that automates the integration and deployment of code changes.
+200|What is 'Docker Compose'?|Docker Compose is a tool for defining and running multi-container Docker applications using a YAML file.
+201|What is the 'Java Virtual Machine' (JVM)?|The JVM is a runtime environment that executes Java bytecode. It enables Java's platform independence by allowing the same bytecode to run on different operating systems.
+202|What is the difference between 'JDK' and 'JRE'?|The JDK (Java Development Kit) includes tools for developing Java applications, such as the compiler. The JRE (Java Runtime Environment) provides the libraries and JVM necessary to run Java programs.
+203|What is 'Platform Independence' in Java?|Platform independence means that Java programs can run on any operating system with a compatible JVM without needing to modify the code.
+204|How does 'Java achieve Platform Independence'?|Java compiles source code into bytecode, which is then interpreted by the JVM, allowing it to run on different platforms.
+205|What are 'primitive data types' in Java?|Primitive data types are predefined by Java and include byte, short, int, long, float, double, char, and boolean.
+206|What is the difference between 'int' and 'Integer'?|`int` is a primitive data type, while `Integer` is a wrapper class that provides methods for manipulating int values as objects.
+207|What is a 'Wrapper Class' in Java?|Wrapper classes allow primitive data types to be used as objects. Examples include `Integer`, `Double`, and `Boolean`.
+208|What is 'Type Casting' in Java?|Type casting is the conversion of one data type into another, such as converting an `int` to a `double`.
+209|What is 'Implicit Casting'?|Implicit casting, or automatic type conversion, occurs when Java automatically converts a smaller data type into a larger data type.
+210|What is 'Explicit Casting'?|Explicit casting, or narrowing, requires the programmer to manually convert a larger data type into a smaller data type.
+211|What is a 'final variable'?|A `final` variable's value cannot be changed once it is assigned. It is a constant.
+212|Can you override a `final` method?|No, a `final` method cannot be overridden by subclasses.
+213|What is a 'final class'?|A `final` class cannot be subclassed, meaning no other class can extend it.
+214|What is 'method overloading'?|Method overloading occurs when multiple methods in the same class have the same name but different parameters.
+215|What is 'method overriding'?|Method overriding occurs when a subclass provides a specific implementation of a method declared in its superclass.
+216|Can a `constructor` be `final`?|No, a constructor cannot be `final` because it is not inherited.
+217|What is the 'difference between overloading and overriding'?|Overloading happens within the same class and is based on different method signatures, while overriding occurs in subclasses and involves the same method signature.
+218|What is a 'default constructor'?|A default constructor is automatically provided by the compiler if no other constructor is defined in a class.
+219|What is 'constructor chaining'?|Constructor chaining refers to calling one constructor from another within the same class or between parent and child classes.
+220|What is 'shadowing'?|Shadowing occurs when a variable declared in an inner scope has the same name as a variable declared in an outer scope.
+221|What is 'access control'?|Access control refers to the visibility of classes, methods, and variables based on modifiers like public, private, and protected.
+222|What is 'data hiding'?|Data hiding is a technique to protect data within an object by making variables private and providing access via public methods.
+223|What are 'Java Packages'?|Packages group related classes and interfaces, preventing naming conflicts and organizing the code.
+224|What is the 'difference between import and static import'?|`import` is used to access classes, while `static import` is used to access static members directly without class references.
+225|What is the purpose of the 'main() method'?|The `main()` method is the entry point for Java applications. It allows the JVM to start program execution.
+226|Can we overload the `main()` method?|Yes, you can overload the `main()` method, but the JVM will only call the standard `main(String[] args)` to start the program.
+227|What is 'String immutability'?|String immutability means that once a `String` object is created, it cannot be modified. Any change creates a new object.
+228|Why are 'Strings immutable in Java'?|Strings are immutable for performance optimization, security, and to simplify the design of the String Pool.
+229|What is the 'String Pool'?|The String Pool is a memory area that stores string literals to save memory by reusing existing strings.
+230|How do you 'compare strings' in Java?|Use `.equals()` to compare the values of strings and `==` to compare references.
+231|What is the 'difference between StringBuffer and StringBuilder'?|Both are mutable, but `StringBuffer` is thread-safe (synchronized), while `StringBuilder` is not, making `StringBuilder` faster.
+232|What is 'autoboxing' in Java?|Autoboxing is the automatic conversion of a primitive type to its corresponding wrapper class.
+233|What is 'unboxing' in Java?|Unboxing is the automatic conversion of a wrapper class to its corresponding primitive type.
+234|What is a 'NullPointerException'?|A `NullPointerException` occurs when the code tries to access a method or field on a null object reference.
+235|How can you avoid `NullPointerException`?|Use proper null checks, the Optional class, and avoid directly calling methods on potentially null references.
+236|What are 'interfaces' in Java?|Interfaces define a contract that classes must follow, including method signatures that implementing classes must provide.
+237|Can an 'interface have concrete methods'?|Yes, since Java 8, interfaces can have default and static methods, which are concrete.
+238|What is the 'diamond problem' in multiple inheritance?|The diamond problem occurs when multiple parent classes have the same method, leading to ambiguity. Java avoids this by not allowing multiple inheritance with classes.
+239|What is 'composition'?|Composition is a design principle where a class is composed of one or more objects, allowing for more flexibility than inheritance.
+240|What is the 'difference between aggregation and composition'?|Aggregation implies a weaker relationship (has-a), while composition implies a stronger relationship (owns-a).
+241|What is the 'difference between class and object'?|A class is a blueprint for creating objects, while an object is an instance of a class.
+242|What is a 'deep copy'?|A deep copy duplicates not only the object but also the objects referenced by it.
+243|What is a 'shallow copy'?|A shallow copy duplicates an object but not the objects referenced by it.
+244|What is 'Serialization'?|Serialization is the process of converting an object's state to a byte stream for storage or transmission.
+245|What is 'Deserialization'?|Deserialization is the process of reconstructing an object from a byte stream.
+246|What is the 'Serializable interface'?|The `Serializable` interface allows an object's state to be serialized. It is a marker interface with no methods.
+247|Can you serialize a static field?|No, static fields belong to the class, not the instance, and are not serialized.
+248|What is the purpose of `transient` keyword in Serialization?|The `transient` keyword prevents fields from being serialized.
+249|What is 'externalizable'?|`Externalizable` is an interface that gives full control over the serialization process, unlike `Serializable`.
+250|What is a 'JVM heap'?|The JVM heap is a runtime memory area where objects are allocated.
+251|What are 'heap and stack memory'?|Heap memory stores objects, while stack memory stores method calls and local variables.
+252|What is 'garbage collection'?|Garbage collection automatically deallocates memory by removing objects that are no longer reachable.
+253|What is 'finalize()' method?|The `finalize()` method is called by the garbage collector before it destroys an object. It can be overridden for cleanup.
+254|What is 'SoftReference' and 'WeakReference'?|`SoftReference` and `WeakReference` refer to objects that can be collected by the garbage collector under memory pressure or when weakly reachable.
+255|What is 'memory leak' in Java?|A memory leak occurs when objects are not released even though they are no longer in use, leading to unnecessary memory consumption.
+256|What is a 'class loader'?|A class loader loads Java classes into the JVM at runtime.
+257|What are the 'types of class loaders'?|Bootstrap, Extension, and System (or Application) class loaders.
+258|What is 'Java Reflection'?|Reflection allows inspection and manipulation of classes, methods, and fields at runtime.
+259|What is 'JIT compiler'?|The JIT (Just-In-Time) compiler translates Java bytecode into native machine code at runtime to improve performance.
+260|What is the 'difference between JDK 1.8 and JDK 1.9'?|JDK 1.9 introduced modules (Project Jigsaw), JShell, and improvements to the Stream API, among other features.
+261|What is 'Module System' in Java?|The Module System (introduced in Java 9) allows better encapsulation and modularity in applications.
+262|What is a 'lambda expression'?|A lambda expression is a shorthand notation for anonymous classes with a single method.
+263|What are the benefits of 'lambda expressions'?|They provide more readable and concise code, improve performance, and support functional programming.
+264|What is 'method reference'?|Method references are shorthand notations for calling methods using `::` syntax.
+265|What are 'default methods' in interfaces?|Default methods are concrete methods in interfaces that provide default implementations and can be overridden by implementing classes.
+266|What is 'Stream API'?|The Stream API allows functional-style operations on collections, such as map, filter, and reduce.
+267|What is 'filter' in Streams?|The `filter` method returns a stream that matches a given predicate.
+268|What is 'map' in Streams?|The `map` method transforms each element of a stream into another form.
+269|What is 'reduce' in Streams?|The `reduce` method combines elements of a stream into a single result.
+270|What is 'parallel stream'?|A parallel stream divides elements into multiple sub-streams, which can be processed in parallel, improving performance.
+271|What is the 'Optional' class?|The `Optional` class is used to avoid null checks by providing a container that may or may not contain a value.
+272|What is 'Collectors' class?|`Collectors` is a utility class that provides methods for collecting results from a stream into lists, maps, sets, etc.
+273|What is 'predicate'?|A `Predicate` is a functional interface that takes a single argument and returns a boolean value.
+274|What is 'functional interface'?|A functional interface has exactly one abstract method and can be used with lambda expressions.
+275|What is 'Consumer' functional interface?|The `Consumer` interface represents a function that takes a single argument and returns no result.
+276|What is 'Supplier' functional interface?|The `Supplier` interface provides a method that returns a result without taking any arguments.
+277|What is 'BiFunction'?|`BiFunction` is a functional interface that accepts two arguments and produces a result.
+278|What is 'SAM' (Single Abstract Method)?|SAM is a feature of functional interfaces that allows them to be implemented using lambda expressions.
+279|What is the 'Factory Pattern'?|The Factory Pattern is used to create objects without specifying the exact class.
+280|What is 'Abstract Factory Pattern'?|The Abstract Factory Pattern provides an interface for creating families of related objects without specifying their concrete classes.
+281|What is 'Builder Pattern'?|The Builder Pattern simplifies the construction of complex objects by providing a step-by-step approach.
+282|What is 'Prototype Pattern'?|The Prototype Pattern creates new objects by cloning an existing object.
+283|What is the 'difference between abstract class and interface'?|Abstract classes can have concrete methods, but interfaces (before Java 8) could only have abstract methods.
+284|What is 'proxy pattern'?|The Proxy Pattern provides a surrogate or placeholder for another object to control access to it.
+285|What is the 'Observer Pattern'?|The Observer Pattern allows a subject to notify observers of state changes.
+286|What is 'Decorator Pattern'?|The Decorator Pattern allows additional responsibilities to be dynamically attached to an object.
+287|What is the 'singleton pattern'?|The Singleton Pattern ensures that a class has only one instance and provides a global point of access.
+288|How can you implement a thread-safe singleton?|Use synchronized blocks, the `volatile` keyword, or the `enum` type to implement a thread-safe singleton.
+289|What is 'dependency injection'?|Dependency Injection is a design pattern that provides objects to a class rather than letting the class create them.
+290|What is 'Loose Coupling'?|Loose Coupling means reducing dependencies between components, making the system more flexible and maintainable.
+291|What is 'Tight Coupling'?|Tight Coupling means high dependency between components, making them harder to maintain and extend.
+292|What is 'factory method'?|A factory method is a method that returns instances of a class, often with varying configurations.
+293|What is 'Generics'?|Generics provide type safety by allowing classes, interfaces, and methods to operate on objects of various types while avoiding type-casting.
+294|What is 'type erasure'?|Type erasure removes generic type information at runtime, ensuring backward compatibility.
+295|What is 'bounded type'?|Bounded types allow you to specify a range of types that a generic can accept, such as `<T extends Number>`.
+296|What is 'wildcard in generics'?|Wildcards are placeholders for unknown types in generics, represented by `?`.
+297|What is 'super keyword in generics'?|The `super` keyword allows lower bounded wildcards, specifying that a generic type must be a superclass of a given class.
+298|What is 'extends keyword in generics'?|The `extends` keyword specifies an upper bound, indicating that a generic type must be a subclass of a given class.
+299|What is the 'Diamond Operator'?|The Diamond Operator (`<>`) simplifies the use of generics by allowing the compiler to infer types automatically.
+300|What is 'var keyword' in Java?|The `var` keyword allows the compiler to infer the type of a local variable, introduced in Java 10.
+301|What is 'try-with-resources' in Java?|The try-with-resources statement is a try statement that declares one or more resources, ensuring that each resource is closed at the end of the statement.
+302|What is a 'Java Archive' (JAR) file?|A JAR file is a package file format that contains multiple Java classes and other resources, like libraries, in a single compressed file.
+303|How do you 'create a JAR file'?|You can create a JAR file using the `jar` command in the command line, such as `jar cf myfile.jar mypackage/`.
+304|What is 'Java Classpath'?|The classpath is the location(s) where the JVM looks for compiled Java classes and other resources.
+305|What is the purpose of the `instanceof` keyword?|The `instanceof` keyword is used to check whether an object is an instance of a specific class or interface.
+306|What is the `volatile` keyword?|`volatile` is a keyword that ensures the value of a variable is always read from the main memory and not from a thread's cache.
+307|What is a 'Functional Interface'?|A functional interface is an interface with only one abstract method. It can contain multiple default or static methods.
+308|What is the 'default keyword' in interfaces?|The `default` keyword allows you to define a method in an interface that has a default implementation.
+309|What is 'Double Brace Initialization'?|Double brace initialization is a technique for initializing collections by using an anonymous inner class, though it's not recommended for regular use.
+310|What is the `assert` keyword?|The `assert` keyword is used to make an assertion, which is a statement that you believe to be true at that point in the program.
+311|What are 'generics'?|Generics allow you to specify a type when defining classes, interfaces, and methods, providing type safety at compile-time.
+312|What is a `wildcard` in generics?|A wildcard (`?`) is used in generics to represent an unknown type, often with `extends` or `super` bounds.
+313|What does `@Override` annotation do?|`@Override` informs the compiler that a method is intended to override a method in the superclass, helping prevent errors.
+314|What is 'type erasure'?|Type erasure removes generic type information at runtime, ensuring backward compatibility with older versions of Java.
+315|What is the 'difference between == and equals()'?|`==` checks if two references point to the same object, while `.equals()` checks if two objects are logically equal.
+316|What does `@FunctionalInterface` do?|`@FunctionalInterface` ensures that the interface cannot have more than one abstract method, helping enforce functional programming.
+317|What is the `throws` keyword?|The `throws` keyword is used in method declarations to specify which exceptions the method can throw.
+318|What is the `throw` keyword?|The `throw` keyword is used to explicitly throw an exception.
+319|What are 'checked exceptions'?|Checked exceptions are exceptions that must be handled at compile-time, using try-catch or declared with `throws`.
+320|What are 'unchecked exceptions'?|Unchecked exceptions are exceptions that do not need to be declared or handled, typically derived from `RuntimeException`.
+321|What is a 'marker interface'?|A marker interface has no methods; it serves to provide metadata to objects, like `Serializable` and `Cloneable`.
+322|What is 'Java reflection'?|Reflection is a feature that allows Java code to inspect and manipulate objects, classes, methods, and fields at runtime.
+323|What does `@Deprecated` mean?|The `@Deprecated` annotation indicates that a method or class should no longer be used and may be removed in future versions.
+324|What is `NullPointerException`?|`NullPointerException` occurs when trying to use a method or field on a null object reference.
+325|What is 'Compile-time Polymorphism'?|Compile-time polymorphism, also known as method overloading, is determined during compilation based on method signatures.
+326|What is 'Runtime Polymorphism'?|Runtime polymorphism, also known as method overriding, is resolved at runtime based on the actual object's class.
+327|What is a 'singleton class'?|A singleton class restricts the instantiation of a class to one object and provides a global point of access to it.
+328|How can you implement a singleton pattern in Java?|You can implement it by making the constructor private and providing a static method that returns the singleton instance.
+329|What is the `enum` keyword?|`enum` defines a set of named constants, providing a type-safe way to work with fixed sets of values.
+330|What is `switch` statement?|`switch` is a control statement that allows a variable to be tested for equality against a list of values.
+331|What is 'auto-boxing'?|Auto-boxing is the automatic conversion of a primitive type to its corresponding wrapper class (e.g., `int` to `Integer`).
+332|What is 'unboxing'?|Unboxing is the automatic conversion of a wrapper class to its corresponding primitive type (e.g., `Integer` to `int`).
+333|What is `serialVersionUID`?|`serialVersionUID` is a unique identifier for `Serializable` classes, used to verify that the sender and receiver of a serialized object maintain compatibility.
+334|What does the `synchronized` keyword do?|`synchronized` is used to control access to critical sections of code by allowing only one thread to execute a block at a time.
+335|What is 'deadlock'?|A deadlock occurs when two or more threads block each other, each waiting for the other to release a resource.
+336|What is the difference between `String`, `StringBuilder`, and `StringBuffer`?|`String` is immutable, `StringBuffer` is mutable and synchronized, while `StringBuilder` is mutable but not synchronized.
+337|What is 'anonymous inner class'?|An anonymous inner class is a class defined within a method without a name, usually to override or implement an interface or class.
+338|What is `clone()` method?|The `clone()` method creates a copy of the object, but it must implement `Cloneable` to avoid `CloneNotSupportedException`.
+339|What is the purpose of `finalize()`?|`finalize()` is called by the garbage collector before an object is destroyed, though it's not reliable and should be avoided for cleanup.
+340|What are 'primitive wrappers'?|Primitive wrappers are classes that provide an object representation for primitive types, such as `Integer`, `Double`, `Boolean`, etc.
+341|What is `BigInteger`?|`BigInteger` is a class that allows you to work with arbitrarily large integers beyond the limit of primitive types.
+342|What is `BigDecimal`?|`BigDecimal` provides a way to handle very large or very precise floating-point numbers, often used for financial calculations.
+343|What is 'method hiding'?|Method hiding occurs when a static method in a subclass has the same name and signature as one in its superclass.
+344|What does `System.gc()` do?|`System.gc()` is a suggestion to the JVM to run the garbage collector, but it's not guaranteed.
+345|What is `hashCode()`?|`hashCode()` returns an integer hash code representing the object, used in hashing-based collections like `HashMap`.
+346|What is the purpose of `equals()` method?|The `equals()` method is used to compare the values of two objects for logical equality.
+347|How does `hashCode()` relate to `equals()`?|Objects that are equal according to `equals()` must have the same `hashCode()`. This is required to maintain consistency in hashing collections.
+348|What is `transient` keyword?|`transient` is used to mark fields that should not be serialized when an object is serialized.
+349|What are 'Java annotations'?|Annotations provide metadata to the Java code, which can be processed by the compiler or at runtime by reflection.
+350|What is `@Override` annotation?|`@Override` tells the compiler that the method is meant to override a method from the superclass, preventing errors.
+351|What does `@SuppressWarnings` do?|`@SuppressWarnings` instructs the compiler to ignore specific warnings, such as deprecated code or unchecked operations.
+352|What is `Comparable` interface?|`Comparable` is used to define the natural order of objects, where objects can be sorted based on `compareTo` method.
+353|What is `Comparator` interface?|`Comparator` allows custom ordering of objects, providing a `compare` method that defines how objects should be compared.
+354|What is 'externalizable'?|`Externalizable` allows complete control over the serialization process, unlike `Serializable`.
+355|What is the 'difference between HashMap and Hashtable'?|`HashMap` is not synchronized, allowing better performance, while `Hashtable` is synchronized, making it thread-safe.
+356|What is 'fail-fast' iterator?|A fail-fast iterator immediately throws a `ConcurrentModificationException` if the collection is modified during iteration.
+357|What is 'fail-safe' iterator?|A fail-safe iterator does not throw `ConcurrentModificationException` because it works on a copy of the collection.
+358|What is the `@SafeVarargs` annotation?|`@SafeVarargs` is used to suppress warnings for parameterized vararg types, ensuring that they are used safely.
+359|What is 'daemon thread'?|A daemon thread is a background thread that runs without blocking the JVM from exiting if no user threads remain.
+360|How can you create a 'daemon thread'?|You can create a daemon thread by calling `setDaemon(true)` on a `Thread` object before it starts.
+361|What is the 'Executor framework'?|The Executor framework simplifies the creation and management of threads by providing a pool of worker threads.
+362|What does `Callable` interface do?|`Callable` is similar to `Runnable`, but it can return a result and throw an exception.
+363|What is 'Java Memory Model' (JMM)?|The JMM defines how threads interact through memory and how changes to memory made by one thread are visible to others.
+364|What is 'ThreadLocal'?|`ThreadLocal` provides a way to store variables that are accessible only to the thread that owns them.
+365|What is 'AtomicInteger'?|`AtomicInteger` is a class that provides atomic operations for integer values, ensuring thread safety without locking.
+366|What is 'java.lang.OutOfMemoryError'?|`OutOfMemoryError` occurs when the JVM cannot allocate enough memory for an object, usually due to heap exhaustion.
+367|What is `Future` in Java?|`Future` represents the result of an asynchronous computation that may or may not have completed.
+368|What is the 'difference between volatile and synchronized'?|`volatile` ensures visibility of changes across threads but does not provide atomicity, while `synchronized` provides both visibility and atomicity.
+369|What is 'SoftReference'?|A `SoftReference` allows an object to be collected when the JVM is low on memory, but not before.
+370|What is 'WeakReference'?|A `WeakReference` allows an object to be collected as soon as it becomes weakly reachable, even if the JVM is not low on memory.
+371|What is 'PhantomReference'?|`PhantomReference` allows a way to determine when an object has been collected, without preventing it from being collected.
+372|What are 'Java Streams'?|Streams represent a sequence of data that can be processed in a functional style, using operations like filter, map, and reduce.
+373|What is the `forEach` method in Streams?|`forEach` is a terminal operation that applies a given action to each element in a stream.
+374|What does 'lazy evaluation' mean in Streams?|Lazy evaluation means that stream operations are not executed until a terminal operation is invoked.
+375|What is 'Pipeline' in Streams?|A pipeline consists of a source, intermediate operations, and a terminal operation, allowing functional processing of data.
+376|What is `Collectors.toList()`?|`Collectors.toList()` collects stream elements into a list.
+377|What is `Collectors.toSet()`?|`Collectors.toSet()` collects stream elements into a set, eliminating duplicates.
+378|What is `Collectors.joining()`?|`Collectors.joining()` concatenates the elements of a stream into a single string.
+379|What is `Collectors.groupingBy()`?|`Collectors.groupingBy()` collects elements into a map where the keys are generated by a classifier function.
+380|What is 'Predicate chaining'?|Predicate chaining allows you to combine multiple predicates using logical operators like `and`, `or`, and `negate`.
+381|What are 'Type Parameters'?|Type parameters allow you to define classes, interfaces, and methods that can operate on objects of various types, making them generic.
+382|What is 'bounded type parameter'?|Bounded type parameters restrict the types that can be passed as arguments by using the `extends` keyword.
+383|What are 'wildcards in generics'?|Wildcards (`?`) are used to represent unknown types, often with `extends` or `super` to limit types.
+384|What is `ConcurrentLinkedQueue`?|`ConcurrentLinkedQueue` is a thread-safe, non-blocking queue that supports concurrent access.
+385|What is `CountDownLatch`?|`CountDownLatch` allows one or more threads to wait until a set of operations being performed by other threads completes.
+386|What is `CyclicBarrier`?|`CyclicBarrier` allows a set of threads to wait for each other to reach a common barrier point.
+387|What is `ReentrantLock`?|`ReentrantLock` is an explicit lock implementation that provides more control than `synchronized`.
+388|What is the 'difference between notify() and notifyAll()'?|`notify()` wakes up one waiting thread, while `notifyAll()` wakes up all waiting threads.
+389|What is `ScheduledExecutorService`?|`ScheduledExecutorService` allows tasks to be scheduled to run periodically or after a fixed delay.
+390|What is 'Fork/Join Framework'?|The Fork/Join Framework is designed for parallelism, dividing tasks into subtasks and combining their results.
+391|What is 'Java 8 Stream API'?|The Stream API allows functional-style operations on collections and streams of data.
+392|What is `mapToInt()` in Streams?|`mapToInt()` transforms elements into an `IntStream`.
+393|What is the `collect()` method?|`collect()` is a terminal operation that transforms the elements of a stream into a different form, such as a collection.
+394|What is `Optional.empty()`?|`Optional.empty()` creates an empty Optional object, indicating the absence of a value.
+395|What is `Optional.ofNullable()`?|`Optional.ofNullable()` creates an Optional object, allowing null values to be passed without throwing a `NullPointerException`.
+396|What is 'Encapsulation'?|Encapsulation is the technique of bundling data (fields) and methods (functions) that operate on the data into a single unit (class).
+397|What is 'Loose Coupling'?|Loose coupling refers to designing classes and systems that are independent and minimize dependencies.
+398|What is `AtomicBoolean`?|`AtomicBoolean` is a boolean value that provides atomic, thread-safe operations.
+399|What is `ConcurrentMap`?|`ConcurrentMap` is a thread-safe version of the `Map` interface, ensuring safe concurrent access.
+400|What are 'Daemon threads'?|Daemon threads run in the background and do not prevent the JVM from exiting when the program finishes.
+401|What is the 'difference between JDK, JRE, and JVM'?|JDK is a development kit to build Java applications, JRE is a runtime environment to run Java applications, and JVM is the engine that executes Java bytecode.
+402|What is 'public static void main(String[] args)'?|'public' allows it to be accessed by the JVM, 'static' allows it to be called without an object, 'void' means it does not return a value, and 'main' is the entry point.
+403|What are the 'rules for constructors' in Java?|Constructors must have the same name as the class, cannot have a return type, and can be overloaded.
+404|What is the 'difference between String, StringBuilder, and StringBuffer'?|String is immutable, StringBuilder is mutable but not synchronized, and StringBuffer is mutable and synchronized.
+405|What is the 'difference between constructor and method'?|A constructor initializes objects and has no return type, while methods perform actions and can have a return type.
+406|What is the 'String Pool'?|The String Pool is a special memory area in the heap that stores string literals to save memory by reusing existing strings.
+407|What are 'final, finalize, and finally' in Java?|`final` is a keyword to restrict classes, methods, and variables; `finalize()` is a method for garbage collection; `finally` is a block that executes regardless of exceptions.
+408|What is the 'difference between this() and super()'?|`this()` calls a constructor of the same class, while `super()` calls a constructor of the superclass.
+409|What is 'overloading a method'?|Overloading allows multiple methods in the same class to have the same name but different parameters.
+410|What is 'overriding a method'?|Overriding allows a subclass to provide a specific implementation of a method that is already defined in its superclass.
+411|What is 'pass by value' in Java?|Java always uses pass by value. For objects, the reference is passed by value, so the actual object reference is copied.
+412|What is the `static` keyword?|`static` makes a variable, method, or block belong to the class rather than instances, allowing shared access among objects.
+413|What is the difference between 'break and continue'?|`break` exits the loop completely, while `continue` skips to the next iteration of the loop.
+414|What are 'local, instance, and static variables'?|Local variables are declared inside methods, instance variables belong to objects, and static variables belong to the class.
+415|What are the 'differences between Java 7 and Java 8'?|Java 8 introduced lambda expressions, the Stream API, default methods, and the Optional class, among others.
+416|What is a 'lambda expression'?|A lambda expression is a concise way to represent an anonymous function that can be passed as a parameter to methods.
+417|What is 'method overloading'?|Method overloading occurs when multiple methods have the same name but different parameters within the same class.
+418|What is 'method overriding'?|Method overriding occurs when a subclass provides its implementation for a method already defined in its superclass.
+419|What is 'multithreading in Java'?|Multithreading is the ability to run multiple threads concurrently, improving performance by performing multiple tasks at once.
+420|What is 'thread safety'?|Thread safety ensures that data is accessed and modified by multiple threads without causing data inconsistency or corruption.
+421|What is the 'difference between String Pool and Heap'?|The String Pool stores string literals, while the heap stores objects, including strings created with the `new` keyword.
+422|What is the `this` keyword?|`this` refers to the current object and is used to differentiate instance variables from local variables.
+423|What is the 'difference between == and .equals()' in Java?|`==` checks for reference equality, while `.equals()` checks for value equality.
+424|What are 'access modifiers' in Java?|Access modifiers determine the visibility of classes, methods, and variables: `public`, `private`, `protected`, and default (package-private).
+425|What are 'checked and unchecked exceptions'?|Checked exceptions must be handled or declared, while unchecked exceptions (runtime exceptions) do not require explicit handling.
+426|What is 'multi-level inheritance'?|Multi-level inheritance occurs when a class is derived from another class, which is also derived from another class.
+427|What is the 'difference between ArrayList and LinkedList'?|`ArrayList` provides fast random access but slow insertions/deletions, while `LinkedList` offers fast insertions/deletions but slow random access.
+428|What is 'public, protected, private, and default' access in Java?|`public` is accessible from anywhere, `protected` within the package and subclasses, `private` only within the class, and default (no keyword) within the package.
+429|What are 'abstract classes and interfaces'?|Abstract classes can have both abstract and concrete methods, while interfaces can only have abstract methods (before Java 8).
+430|What is the purpose of `super` keyword?|`super` is used to access the methods and constructors of a superclass from a subclass.
+431|What is 'method hiding'?|Method hiding occurs when a static method in a subclass has the same name and signature as one in its superclass.
+432|What is 'local variable'?|Local variables are declared inside methods or blocks and are not accessible outside of them.
+433|What is 'static block'?|A static block is executed when the class is loaded, allowing for static initialization code to run.
+434|What are 'static imports'?|Static imports allow the use of static members without specifying the class name.
+435|What is a 'copy constructor'?|A copy constructor initializes an object using another object of the same class.
+436|What is 'functional programming' in Java?|Functional programming is a paradigm that treats computation as the evaluation of mathematical functions, avoiding changing state and mutable data.
+437|What is the difference between 'abstract class and interface'?|An abstract class can have method implementations, while an interface (before Java 8) could not.
+438|What are 'method references'?|Method references are shortcuts for lambda expressions that invoke methods, using `::` syntax.
+439|What is a 'default method' in an interface?|Default methods allow interfaces to have method bodies, providing default behavior that can be overridden.
+440|What is 'inheritance'?|Inheritance is the process where one class acquires the properties and behaviors of another class.
+441|What is the purpose of 'final class'?|A final class cannot be subclassed, preventing inheritance.
+442|What is 'encapsulation'?|Encapsulation is the bundling of data (fields) and code (methods) within a class, providing controlled access through public methods.
+443|What is 'polymorphism'?|Polymorphism allows one interface to be used for a general class of actions, letting the same method to work differently based on the object calling it.
+444|What is 'IS-A relationship'?|The IS-A relationship is a type of inheritance, meaning one class is a subclass of another.
+445|What is 'HAS-A relationship'?|The HAS-A relationship, or composition, means a class contains a reference to an object of another class.
+446|What is a 'singleton pattern'?|The singleton pattern ensures that a class has only one instance and provides a global point of access to that instance.
+447|What is the 'difference between HashMap and HashSet'?|`HashMap` stores key-value pairs, while `HashSet` stores only unique values.
+448|What is 'constructor chaining'?|Constructor chaining refers to calling one constructor from another constructor within the same class or between parent and child classes.
+449|What is 'boxing and unboxing'?|Boxing is converting a primitive type to a wrapper class, and unboxing is converting a wrapper class back to a primitive.
+450|What is 'exception handling'?|Exception handling is a mechanism to handle runtime errors, maintaining the normal flow of the application.
+451|What are 'functional interfaces'?|Functional interfaces have a single abstract method, making them eligible for use with lambda expressions.
+452|What is the 'difference between throw and throws'?|`throw` is used to explicitly throw an exception, while `throws` declares the exceptions a method can throw.
+453|What is the use of `finally` block?|`finally` is executed regardless of whether an exception occurs, making it suitable for cleanup operations.
+454|What is 'method signature'?|A method signature includes the method's name and parameter types, which uniquely identifies a method.
+455|What is the 'difference between static and instance methods'?|Static methods belong to the class and can be called without an instance, while instance methods belong to objects.
+456|What is 'synchronized block'?|A synchronized block is used to limit access to a code block by only one thread at a time.
+457|What are 'enumerations'?|Enumerations (enums) define a fixed set of constants, such as days of the week or state names.
+458|What is 'concurrency'?|Concurrency refers to the execution of multiple tasks simultaneously, enabling efficient use of CPU resources.
+459|What is a 'daemon thread'?|A daemon thread runs in the background and terminates when the JVM exits.
+460|What is 'JVM heap'?|The JVM heap is the runtime data area from which memory for all class instances and arrays is allocated.
+461|What is 'stack memory'?|Stack memory is used for method execution and contains local variables and method calls.
+462|What is 'garbage collection'?|Garbage collection is the process of automatically deallocating memory by removing objects that are no longer in use.
+463|What is the purpose of `System.gc()`?|`System.gc()` is a suggestion to the JVM to perform garbage collection, but it's not guaranteed.
+464|What is the 'difference between abstract class and interface'?|An abstract class can have both abstract and concrete methods, while an interface was strictly abstract before Java 8.
+465|What is 'method overriding'?|Method overriding occurs when a subclass provides a specific implementation of a method already declared in its superclass.
+466|What is 'method overloading'?|Method overloading allows multiple methods with the same name but different parameters in the same class.
+467|What is 'Immutable Object'?|An immutable object is an object whose state cannot be modified after it is created, such as `String`.
+468|What is `Optional` in Java?|`Optional` is a container that may or may not contain a value, used to avoid null references.
+469|What is 'declarative programming'?|Declarative programming focuses on what the program should accomplish rather than detailing how it should be accomplished.
+470|What is the purpose of `try-with-resources`?|`try-with-resources` ensures that resources are closed automatically after the try block is executed.
+471|What is 'functional programming'?|Functional programming treats computation as the evaluation of mathematical functions without changing state or mutable data.
+472|What is a `volatile` variable?|A `volatile` variable ensures that changes made to it are immediately visible to other threads.
+473|What is 'Stream API'?|The Stream API allows functional-style operations on collections, such as filtering, mapping, and reducing.
+474|What is the 'difference between fail-fast and fail-safe iterators'?|Fail-fast iterators throw `ConcurrentModificationException` if the collection is modified, while fail-safe iterators work on a copy and do not throw an exception.
+475|What is 'dependency injection'?|Dependency injection is a design pattern that provides objects with dependencies rather than letting them create dependencies themselves.
+476|What are 'annotations'?|Annotations provide metadata about the program and can be processed by the compiler or at runtime.
+477|What is 'Type Inference'?|Type inference is the ability of the compiler to deduce the type of a variable from its context, reducing the need for explicit declarations.
+478|What is a 'checked exception'?|Checked exceptions must be declared in a method or constructor's `throws` clause if they can be thrown by the execution of the method.
+479|What is an 'unchecked exception'?|Unchecked exceptions do not need to be declared in a method or constructor's `throws` clause, typically derived from `RuntimeException`.
+480|What is a 'singleton class'?|A singleton class is designed to allow only one instance of itself to be created and provides a global access point.
+481|What is 'constructor overloading'?|Constructor overloading is when a class has multiple constructors with different parameter lists.
+482|What is the purpose of `transient` keyword?|The `transient` keyword prevents a field from being serialized.
+483|What is the use of `super()`?|`super()` is used to invoke the constructor of the parent class.
+484|What is the purpose of `this()`?|`this()` is used to call another constructor from the same class.
+485|What is 'Java Collections Framework'?|The Java Collections Framework is a set of classes and interfaces that implement commonly reusable collection data structures.
+486|What are 'Generics'?|Generics allow you to write code that can handle different types of objects, ensuring type safety without casting.
+487|What is 'method reference'?|Method references provide a way to refer to a method without invoking it, simplifying code and increasing readability.
+488|What is 'abstract method'?|An abstract method is declared without an implementation and must be implemented by subclasses.
+489|What is the 'difference between an array and an ArrayList'?|An array is of fixed size and can store only one type of data, while an ArrayList is dynamic and can grow or shrink as needed.
+490|What is 'pass by value'?|Java passes arguments to methods by value, meaning a copy of the variable is passed, not the actual variable.
+491|What is a 'JAR file'?|A JAR (Java ARchive) file is a package file format that bundles Java classes, libraries, and resources.
+492|What are 'inner classes'?|Inner classes are classes defined within another class, which can be static or non-static.
+493|What is 'default constructor'?|A default constructor is automatically created by the compiler if no constructor is defined.
+494|What are 'anonymous classes'?|Anonymous classes are inner classes without a name, usually used to implement interfaces or extend classes for one-time use.
+495|What is 'Dynamic Method Dispatch'?|Dynamic method dispatch is the process where a call to an overridden method is resolved at runtime.
+496|What is the 'difference between composition and inheritance'?|Inheritance derives new classes from existing ones, while composition involves creating classes with objects from other classes.
+497|What is 'Serialization'?|Serialization is the process of converting an object into a byte stream for storage or transmission.
+498|What is 'Deserialization'?|Deserialization is the process of reconstructing an object from a byte stream.
+499|What is `serialVersionUID`?|`serialVersionUID` is a unique identifier that verifies compatibility during the deserialization process.
+500|What is 'multi-threading'?|Multi-threading allows concurrent execution of two or more parts of a program, improving performance.
