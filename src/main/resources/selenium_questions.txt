@@ -1,0 +1,395 @@
+1|What is Selenium?|Selenium is an open-source testing framework for web applications that supports multiple browsers and operating systems.
+2|What are Selenium WebDriver commands?|WebDriver commands are actions you can perform on web elements, like click, sendKeys, getText, and navigate.
+3|How do you handle pop-ups in Selenium?|Pop-ups in Selenium can be handled using the `Alert` interface, which allows switching to an alert with `driver.switchTo().alert()`.
+4|What is the difference between `driver.close()` and `driver.quit()`?|`driver.close()` closes the current window, while `driver.quit()` closes all associated windows and ends the session.
+5|How do you find elements by XPath?|Elements can be located by XPath using `driver.findElement(By.xpath("xpathExpression"))`.
+6|What is the purpose of Selenium Grid?|Selenium Grid allows parallel testing across different machines and browsers, speeding up the testing process.
+7|How do you handle dropdowns in Selenium?|Dropdowns can be handled using the `Select` class, which provides methods like `selectByVisibleText`, `selectByIndex`, and `selectByValue`.
+8|What is an implicit wait in Selenium?|Implicit wait sets a default waiting time for locating elements if they are not immediately available, applied throughout the WebDriver session.
+9|What is an explicit wait in Selenium?|Explicit waits are applied to specific elements and allow a wait time for certain conditions to be met using `WebDriverWait`.
+10|What is FluentWait in Selenium?|`FluentWait` allows customized waiting, including polling intervals and ignoring exceptions for specific conditions.
+11|How can you take a screenshot in Selenium?|A screenshot can be taken with `((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE)` and then saved.
+12|What is Page Object Model (POM) in Selenium?|POM is a design pattern that creates object repositories for each page, improving test maintenance and readability.
+13|How do you handle frames in Selenium?|Frames can be handled by switching to them using `driver.switchTo().frame()` with the frame name, ID, or index.
+14|What are the types of waits in Selenium?|There are three types of waits in Selenium: implicit, explicit, and fluent waits.
+15|How can you upload a file in Selenium?|To upload a file, locate the file upload element and use `sendKeys()` with the file path as an argument.
+16|What is a headless browser, and how can you run tests in it?|A headless browser runs tests without a GUI, useful for CI/CD. In Chrome, it can be enabled using `chromeOptions.addArguments("headless")`.
+17|How do you perform drag-and-drop actions?|Drag-and-drop can be done using the `Actions` class with `clickAndHold`, `moveToElement`, and `release`.
+18|How do you manage cookies in Selenium?|Cookies can be added, deleted, or retrieved using methods like `driver.manage().addCookie()`, `deleteCookieNamed()`, and `getCookies()`.
+19|How can you handle SSL certificate errors in Selenium?|SSL certificate errors can be ignored by setting browser-specific capabilities, like `ChromeOptions` with `--ignore-certificate-errors`.
+20|How do you execute JavaScript in Selenium?|JavaScript can be executed using `JavascriptExecutor`, like `((JavascriptExecutor)driver).executeScript("script")`.
+21|What is TestNG, and how is it used with Selenium?|TestNG is a testing framework that supports annotations, parallel testing, and report generation, and it integrates well with Selenium for structuring tests.
+22|How do you assert conditions in Selenium?|Assertions in Selenium can be done with frameworks like JUnit or TestNG using `assertEquals`, `assertTrue`, etc.
+23|What is the purpose of `Actions` class in Selenium?|The `Actions` class allows advanced interactions like drag-and-drop, double-click, right-click, and key press simulations.
+24|How do you handle multiple windows in Selenium?|Switch between windows by getting their handles with `getWindowHandles()` and using `switchTo().window(handle)`.
+25|What is the difference between XPath and CSS selector?|XPath can navigate both forward and backward in the DOM, while CSS is generally faster and only supports forward navigation.
+26|What is the purpose of the `moveToElement()` method in Selenium?|`moveToElement()` is used to simulate mouse hovering over an element, typically triggering hover effects.
+27|How can you check if an element is displayed?|Use `element.isDisplayed()` to check the visibility of an element on the page.
+28|What are desired capabilities in Selenium?|Desired capabilities are key-value pairs used to set browser properties for sessions, such as browser name, version, and platform.
+29|How do you scroll a page in Selenium?|Scrolling can be done with JavaScript like `executeScript("window.scrollBy(0,500)")` or `scrollIntoView()`.
+30|What is WebDriver Manager, and why is it used?|WebDriver Manager is a library that automatically manages driver binaries, reducing setup time and errors.
+31|What is the `navigate()` method in Selenium?|The `navigate()` method allows you to move forward, back, refresh the page, or open a URL in the current browser window.
+32|How do you simulate pressing the Enter key in Selenium?|You can simulate pressing Enter by using `sendKeys(Keys.ENTER)` on an input field.
+33|What is the difference between `findElement` and `findElements`?|`findElement` returns the first matching element, while `findElements` returns a list of all matching elements.
+34|How do you handle dropdowns with dynamic options?|Dynamic dropdowns can be handled by locating options after each interaction or typing into the input field if supported.
+35|What is XPath axes, and how is it used?|XPath axes allow navigation of the DOM relative to elements, using axes like `following-sibling`, `parent`, and `ancestor`.
+36|How do you maximize the browser window in Selenium?|You can maximize the window using `driver.manage().window().maximize()`.
+37|How do you retrieve the page title in Selenium?|Retrieve the title using `driver.getTitle()`.
+38|What are WebDriver Exceptions?|WebDriver exceptions like `NoSuchElementException`, `TimeoutException`, and `StaleElementReferenceException` indicate various issues encountered during interaction.
+39|How do you manage timeouts in Selenium?|Manage timeouts with implicit, explicit, and page load timeouts via methods like `driver.manage().timeouts()`.
+40|What is a shadow DOM, and how do you handle it?|Shadow DOM elements can be accessed with JavaScript, as they are not accessible directly via standard Selenium locators.
+41|How do you upload multiple files in Selenium?|Multiple files can be uploaded by using `sendKeys()` with paths separated by a newline character.
+42|What is WebDriverWait, and when should it be used?|`WebDriverWait` is used for explicit waits, waiting until specific conditions are met for an element.
+43|How do you retrieve the current URL in Selenium?|Retrieve the current URL with `driver.getCurrentUrl()`.
+44|What is `switchTo()` used for?|`switchTo()` is used to move to a specific frame, alert, or window.
+45|How do you check if an element is enabled?|Use `element.isEnabled()` to check if an element is enabled and interactable.
+46|What are some common locators in Selenium?|Common locators include `id`, `name`, `className`, `tagName`, `linkText`, `partialLinkText`, `cssSelector`, and `xpath`.
+47|How do you verify the presence of a text on a web page?|Use `driver.getPageSource().contains("text")` or verify text within a specific element.
+48|What is `isSelected()` used for?|`isSelected()` checks if an element, like a checkbox or radio button, is selected.
+49|How do you verify the color of a web element in Selenium?|You can retrieve the color style with `getCssValue("color")` and compare it with expected RGB values.
+50|How do you close a specific tab in Selenium?|Switch to the tab using `switchTo().window(handle)`, then close it with `driver.close()`.
+51|How can you download a file in Selenium?|File download handling usually involves setting browser preferences, such as the default download location.
+52|How do you set browser window size in Selenium?|Set the browser size using `driver.manage().window().setSize(new Dimension(width, height))`.
+53|How do you simulate mouse hover in Selenium?|Mouse hover is simulated using `Actions` class with `moveToElement()`.
+54|What is the purpose of `build()` in Actions class?|`build()` compiles multiple actions into a single sequence before execution.
+55|How do you handle broken links in Selenium?|Retrieve all links, check HTTP status codes using libraries like HttpClient, and identify broken ones.
+56|How do you handle file uploads without a visible upload button?|File uploads can often be simulated with `sendKeys()` on a hidden file input element.
+57|How do you count total frames on a webpage?|Get the count of frames by finding all `iframe` tags using `findElements(By.tagName("iframe")).size()`.
+58|What is `moveByOffset()` in Selenium?|`moveByOffset()` is used to move the mouse pointer by specific x and y coordinates.
+59|How do you change user agents in Selenium?|User agents can be changed by setting browser-specific options, like ChromeOptions with `addArguments("user-agent=custom_agent")`.
+60|What is the Page Factory in Selenium?|Page Factory is a class in Selenium for initializing elements using annotations like `@FindBy`, improving readability and maintainability.
+61|How do you simulate right-click (context click) in Selenium?|Simulate a right-click with `Actions` class using `contextClick(element)`.
+62|What is the purpose of the `perform()` method in Selenium?|`perform()` executes the compiled sequence of actions in the `Actions` class.
+63|How do you clear text from an input field?|Use `clear()` method on an input field to delete its content.
+64|How can you retrieve tooltips in Selenium?|Retrieve tooltips with `getAttribute("title")` if set as an HTML attribute.
+65|How do you handle AJAX calls in Selenium?|Handle AJAX by waiting for elements or data changes after the AJAX request completes, often with explicit waits.
+66|What is the purpose of `executeScript` in Selenium?|`executeScript` allows executing JavaScript code within the browser session, useful for interactions not natively supported.
+67|What is an `iframe`, and how do you handle it?|An `iframe` is an embedded page within another page; you handle it by switching to the frame using `switchTo().frame()`.
+68|How do you perform keyboard actions in Selenium?|Keyboard actions can be performed using `Actions` class or `sendKeys` method for specific keys.
+69|What is the difference between `click()` and `submit()`?|`click()` triggers a click event on any clickable element, while `submit()` submits forms.
+70|How do you get all the options from a dropdown?|Retrieve all options using `Select.getOptions()` on a dropdown element.
+71|How do you retrieve the attribute of an element?|Use `getAttribute("attributeName")` to retrieve specific attribute values of an element.
+72|What is the purpose of Desired Capabilities?|Desired Capabilities set properties for the WebDriver instance, like browser type, platform, and version.
+73|What is the purpose of `getWindowHandle()`?|`getWindowHandle()` returns a unique identifier for the current window, useful when managing multiple windows.
+74|How do you navigate to a specific URL?|Navigate to a URL using `driver.get("url")` or `driver.navigate().to("url")`.
+75|How can you retrieve the page source in Selenium?|Retrieve the page source with `driver.getPageSource()`.
+76|What are `Relative Locators`?|Relative Locators, introduced in Selenium 4, allow locating elements in relation to other elements.
+77|How do you zoom in and out using Selenium?|Zoom control can be achieved via JavaScript like `executeScript("document.body.style.zoom='zoomValue'")`.
+78|How do you handle authentication pop-ups?|Authentication pop-ups can be handled by passing credentials in the URL as `https://username:password@site.com`.
+79|How do you change browser preferences?|Browser preferences are set via `ChromeOptions` or `FirefoxProfile` in Selenium.
+80|What is `WebDriverManager`?|`WebDriverManager` automatically manages driver binaries for different browsers, simplifying setup.
+81|How do you open a new tab in Selenium?|Open a new tab by executing JavaScript: `executeScript("window.open()")`.
+82|How do you retrieve the HTML of an element?|Retrieve element HTML with `getAttribute("outerHTML")`.
+83|What is the purpose of `maximize()` in Selenium?|`maximize()` enlarges the browser window to its maximum screen size.
+84|How do you check if an element is displayed?|Check visibility with `element.isDisplayed()`.
+85|How do you drag and drop by offset?|Drag and drop by offset using `Actions` with `clickAndHold`, `moveByOffset`, and `release`.
+86|How do you manage network latency in Selenium?|Set network latency simulation using browser-specific options or tools like Chrome DevTools Protocol.
+87|How do you find broken images on a page?|Find all image elements, check the HTTP status of each source URL, and identify broken images.
+88|What is the purpose of `driver.manage().timeouts()`?|`driver.manage().timeouts()` manages timeout settings for page loads, script execution, and element visibility.
+89|How do you switch to the parent frame?|Switch to the parent frame using `switchTo().parentFrame()`.
+90|How can you scroll to the bottom of a page in Selenium?|Scroll to the bottom using JavaScript: `executeScript("window.scrollTo(0, document.body.scrollHeight)")`.
+91|How do you handle HTTPS certificates?|Handle HTTPS certificates by setting browser preferences, like `--ignore-certificate-errors` for Chrome.
+92|How do you retrieve CSS properties of an element?|Retrieve CSS properties using `getCssValue("propertyName")`.
+93|How do you set Chrome options?|Set Chrome options with `ChromeOptions` and `addArguments` or `setExperimentalOption`.
+94|How do you wait for an element to be clickable?|Use `ExpectedConditions.elementToBeClickable()` in an explicit wait.
+95|How do you wait for text to be present in an element?|Use `ExpectedConditions.textToBePresentInElement()` in an explicit wait.
+96|How can you test mobile websites in Selenium?|Test mobile websites using browser emulators in `ChromeOptions` or real mobile browsers with Appium.
+97|What is RemoteWebDriver?|`RemoteWebDriver` allows running tests on remote servers using Selenium Grid or cloud platforms.
+98|How do you clear cookies in Selenium?|Clear cookies with `driver.manage().deleteAllCookies()`.
+99|How do you handle responsive design testing?|Responsive design testing can be done by resizing the browser window or emulating different devices.
+100|What is implicit wait, and how does it work?|Implicit wait sets a maximum wait time for elements to appear before throwing an exception, applied across all element searches.
+131|What is the difference between ChromeDriver and WebDriver?|`ChromeDriver` is specific to Chrome, while `WebDriver` is an interface that supports multiple browsers.
+132|What are the limitations of Selenium?|Limitations include lack of support for desktop applications, limited image verification, and the need for an active browser session.
+133|How do you highlight elements in Selenium?|Highlight elements by executing JavaScript to change the element's style temporarily.
+134|How can you simulate a double-click?|Use `Actions` class with `doubleClick()` to simulate a double-click.
+135|What is headless testing?|Headless testing runs the browser without a UI, often used for CI/CD to save resources.
+136|How do you check if an element is present?|Check presence by catching exceptions from `findElement`, or use `findElements` to return an empty list if absent.
+137|What are commonly used methods in the `Actions` class?|Common methods include `clickAndHold`, `moveToElement`, `release`, `dragAndDrop`, and `doubleClick`.
+138|How can you automate CAPTCHA in Selenium?|Automating CAPTCHA is not recommended; instead, handle CAPTCHAs by getting developer tokens or using third-party services.
+139|What is the purpose of `switchTo().defaultContent()`?|`switchTo().defaultContent()` switches to the main page content from a frame or iframe.
+140|How do you execute asynchronous JavaScript in Selenium?|Use `executeAsyncScript()` to run asynchronous JavaScript, often used for waiting on AJAX calls.
+141|What is the difference between Selenium IDE and Selenium WebDriver?|Selenium IDE is a record-and-playback tool, while WebDriver is a scripting tool that allows greater flexibility and control over browser actions.
+142|How do you capture screenshots in Selenium?|Capture screenshots using `TakesScreenshot` interface with `getScreenshotAs` method.
+143|What is Fluent Wait in Selenium?|Fluent Wait is a type of explicit wait that allows you to set the frequency with which the condition is checked before throwing an exception.
+144|How do you handle SSL certificates in Firefox?|Use `FirefoxOptions` to accept insecure SSL certificates by setting `acceptInsecureCerts` to true.
+145|What is GeckoDriver?|GeckoDriver is the driver for Firefox that enables WebDriver to interact with the browser.
+146|How do you scroll to an element in Selenium?|Scroll to an element using JavaScript: `executeScript("arguments[0].scrollIntoView(true);", element)`.
+147|What is the difference between Selenium 3 and Selenium 4?|Selenium 4 introduced W3C WebDriver protocol, relative locators, and improvements in the DevTools Protocol.
+148|How do you simulate pressing Ctrl+A in Selenium?|Use `Actions` class with `keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL)` to simulate Ctrl+A.
+149|What is Robot class, and how is it used?|`Robot` class in Java can simulate keyboard and mouse actions at the OS level, useful for handling OS-level dialogs.
+150|How do you get the size of a web element?|Use `element.getSize()` to retrieve the width and height of an element.
+151|How do you retrieve the tag name of an element?|Use `element.getTagName()` to retrieve the tag name of an element.
+152|How do you simulate drag-and-drop between elements?|Use `Actions` class with `dragAndDrop(source, target)` method to simulate drag-and-drop.
+153|How do you maximize a headless browser window?|In headless mode, set a specific window size using `driver.manage().window().setSize(new Dimension(width, height))`.
+154|What are the different exceptions in Selenium?|Common exceptions include `NoSuchElementException`, `ElementNotVisibleException`, and `TimeoutException`.
+155|How do you verify text in an alert?|Switch to the alert and use `alert.getText()` to retrieve the text.
+156|What is the role of Desired Capabilities in Selenium?|Desired Capabilities are used to define properties like browser, OS, and version for remote test execution.
+157|What is the purpose of `assertEquals()` in Selenium?|`assertEquals()` is used to compare expected and actual values in test assertions.
+158|How do you retrieve all cookies in Selenium?|Retrieve all cookies using `driver.manage().getCookies()`.
+159|How do you delete a specific cookie?|Use `driver.manage().deleteCookieNamed("cookie_name")` to delete a specific cookie.
+160|How do you check if a checkbox is selected?|Use `element.isSelected()` to check if a checkbox is selected.
+161|What is the purpose of `@FindBy` annotation?|`@FindBy` annotation is used with Page Factory to locate elements.
+162|How do you handle file downloads in headless mode?|Set browser preferences for file download location and disable dialog boxes.
+163|How do you retrieve element coordinates?|Retrieve coordinates using `element.getLocation()`.
+164|What is Soft Assert in Selenium?|Soft Assert allows the test to continue even after an assertion failure, collecting all errors at the end.
+165|How do you refresh a webpage in Selenium?|Refresh the page using `driver.navigate().refresh()`.
+166|How do you handle new window pop-ups?|Use `getWindowHandles()` to retrieve all open windows and switch using `switchTo().window(handle)`.
+167|How do you handle multiple elements with the same locator?|Use `findElements` which returns a list of all matching elements.
+168|How do you navigate backward in Selenium?|Navigate backward using `driver.navigate().back()`.
+169|How do you check if an element is invisible?|Use `ExpectedConditions.invisibilityOfElementLocated` in an explicit wait.
+170|What are relative locators in Selenium 4?|Relative locators allow locating elements relative to other elements, like `above()`, `below()`, `near()`.
+171|How do you retrieve the current window handle?|Use `driver.getWindowHandle()` to get the handle of the current window.
+172|How do you capture network requests in Selenium?|Capture network requests using DevTools Protocol in Selenium 4 for browsers that support it.
+173|What is W3C WebDriver?|W3C WebDriver is a standardized protocol for browser automation, providing cross-browser compatibility.
+174|What is the purpose of `sendKeys()`?|`sendKeys()` simulates typing text into an input field.
+175|How do you set a cookie in Selenium?|Add a cookie using `driver.manage().addCookie(new Cookie("name", "value"))`.
+176|What are switch-case statements in Selenium?|Switch-case statements are used for conditional logic, such as handling multiple alert types or error messages.
+177|How do you capture console logs in Selenium?|Capture console logs using the DevTools Protocol for supported browsers.
+178|How do you add implicit wait in Selenium?|Add implicit wait with `driver.manage().timeouts().implicitlyWait(time, TimeUnit.SECONDS)`.
+179|How do you check if an element is displayed?|Use `element.isDisplayed()` to verify if an element is visible on the page.
+180|How do you get the height and width of a window?|Use `driver.manage().window().getSize()` to get the dimensions of the browser window.
+181|What is the purpose of `JavaScriptExecutor`?|`JavaScriptExecutor` allows running JavaScript code in the browser session.
+182|How do you retrieve the first selected option in a dropdown?|Retrieve it with `select.getFirstSelectedOption()`.
+183|What is `implicitlyWait()` used for?|`implicitlyWait()` sets a default wait time for finding elements across all actions.
+184|How do you clear cache in Selenium?|Clear cache by navigating to `chrome://settings/clearBrowserData` or setting preferences before test execution.
+185|What is the function of the `pageLoadTimeout()`?|`pageLoadTimeout()` sets the maximum wait time for a page to load.
+186|How do you verify an element’s tooltip?|Use `getAttribute("title")` to retrieve tooltip text if defined as a title attribute.
+187|How do you check for broken images?|Check by verifying the `naturalWidth` property using JavaScript.
+188|What are `ChromeOptions` used for?|`ChromeOptions` are used to configure Chrome-specific settings like headless mode or extensions.
+189|What is Stale Element Reference Exception?|It occurs when an element is no longer attached to the DOM, usually after a page refresh or navigation.
+190|How do you switch to a specific tab?|Use `getWindowHandles()` and `switchTo().window(handle)` to switch tabs.
+191|What is `findElements`?|`findElements` returns a list of elements matching a locator, useful when multiple elements are expected.
+192|What are the types of waits in Selenium?|Waits include implicit, explicit, and fluent waits.
+193|How do you check for a secure connection?|Check for HTTPS in the URL or verify security-related elements on the page.
+194|How do you retrieve the session ID in Selenium?|Retrieve session ID by casting `RemoteWebDriver` to `driver.getSessionId()`.
+195|How do you manage cookies in Selenium?|Manage cookies with `driver.manage().getCookies()`, `addCookie`, and `deleteCookieNamed`.
+196|How do you use WebDriverWait?|Use `WebDriverWait` to specify wait conditions like `visibilityOf` or `elementToBeClickable`.
+197|How do you capture error messages?|Capture error messages by locating the error element and retrieving its text with `getText()`.
+198|How do you handle fixed headers in Selenium?|Use JavaScript `scrollBy` to ensure elements beneath fixed headers are visible.
+199|What is POM (Page Object Model)?|POM is a design pattern in Selenium to create reusable page classes, improving maintainability.
+200|How do you set browser language in Selenium?|Set the language preference in `ChromeOptions` or `FirefoxProfile` settings.
+201|What is an Explicit Wait?|An explicit wait is a condition-based wait that pauses execution until a specific condition is met.
+202|What are Expected Conditions?|Expected Conditions are predefined conditions for explicit waits, like `visibilityOfElementLocated`.
+203|How do you perform a double-click?|Use `Actions.doubleClick(element).perform()` for double-click actions.
+204|How do you handle multi-select dropdowns?|Use `Select` class methods like `selectByIndex` and `getAllSelectedOptions` for multi-select dropdowns.
+205|What is `By` in Selenium?|`By` is a class used to locate elements on a web page using various strategies like `id`, `name`, or `xpath`.
+206|How do you set up a remote WebDriver?|Set up a remote WebDriver with `RemoteWebDriver` and specify `DesiredCapabilities`.
+207|What are `Cookie` objects used for?|`Cookie` objects store individual cookie data like name, value, and expiry.
+208|How do you close all browser windows?|Close all windows with `driver.quit()`.
+209|What is `NoSuchElementException`?|`NoSuchElementException` occurs when WebDriver is unable to locate an element.
+210|What is JavaScript click?|JavaScript click executes `element.click()` using JavaScript when WebDriver’s click fails.
+211|What is WebDriver’s Page Load Strategy?|Page Load Strategy defines when WebDriver considers a page load complete, with options like `normal`, `eager`, and `none`.
+212|How do you scroll to a specific position?|Scroll to a specific position using JavaScript with `window.scrollTo(x, y)`.
+213|How do you select a value from a dropdown?|Use the `Select` class methods like `selectByVisibleText`.
+214|How do you upload files in Selenium?|Use `sendKeys(filePath)` on an `<input type="file">` element to upload files.
+215|How do you run tests in multiple browsers?|Set up multiple drivers for different browsers, or use Selenium Grid.
+216|What is WebDriverException?|`WebDriverException` is a general error related to the WebDriver.
+217|How do you handle multiple iframes?|Switch to each iframe by `switchTo().frame(index)` or `switchTo().frame(element)`.
+218|What is ChromeDriver?|ChromeDriver is an executable that allows WebDriver to control the Chrome browser.
+219|What is `ExpectedConditions.visibilityOfElementLocated()`?|It waits until an element is visible on the page.
+220|How do you handle scroll bars?|Scroll to elements using JavaScript `scrollIntoView`.
+221|How do you handle authentication pop-ups?|Use `URL` with credentials embedded or configure `ChromeOptions` and `FirefoxProfile`.
+222|What is the difference between `getWindowHandle()` and `getWindowHandles()`?|`getWindowHandle()` returns the current window’s handle, while `getWindowHandles()` returns all open windows.
+223|How do you handle session timeouts?|Reinitialize the driver or manage sessions through cookies and session storage.
+224|How do you capture tooltips?|Capture tooltips by locating the element with the `title` attribute or using JavaScript.
+225|What are the advantages of using Selenium?|Selenium offers open-source, cross-browser testing with a large community and integrations with various tools.
+226|What is WebDriverManager?|`WebDriverManager` is a library that manages browser drivers automatically.
+227|What is the `Select` class?|The `Select` class provides methods to interact with dropdown lists in Selenium.
+228|What is the difference between `driver.close()` and `driver.quit()`?|`close()` closes the current window, while `quit()` closes all associated windows.
+229|How do you handle non-HTML pop-ups?|Use `Robot` class for handling non-HTML dialogs.
+230|How do you verify color in Selenium?|Use `getCssValue("color")` to retrieve and verify the color of an element.
+231|How do you handle file uploads in a headless browser?|Set file upload preferences using browser options.
+232|What is XPath, and why is it used?|XPath is a path-based language to locate elements based on their XML structure.
+233|How do you get the attribute value of an element?|Use `getAttribute("attributeName")` to retrieve an attribute’s value.
+234|What is the function of `@CacheLookup`?|`@CacheLookup` is used in Page Factory to cache web elements for faster access.
+235|How do you verify text alignment in Selenium?|Verify text alignment by checking CSS properties like `text-align`.
+236|What are WebElements in Selenium?|WebElements represent elements on a web page, allowing interaction via WebDriver.
+237|How do you handle an element that’s not interactable?|Use JavaScript Executor or adjust waits and conditions to make it interactable.
+238|What is `setPreference` in FirefoxOptions?|`setPreference` customizes Firefox, like setting the download directory and handling alerts.
+239|How do you verify link validity in Selenium?|Verify link validity by sending HTTP requests to the link URL.
+240|What is JSON Wire Protocol?|JSON Wire Protocol was the communication protocol in Selenium 3 for browser automation.
+241|What is Sauce Labs, and how does it relate to Selenium?|Sauce Labs is a cloud-based testing platform that supports Selenium tests on various browsers and OS configurations.
+242|How do you interact with hidden elements?|Use JavaScript Executor to interact with hidden elements by executing JavaScript.
+243|What is the purpose of WebDriver’s `navigate()` method?|`navigate()` allows for moving forward, backward, refreshing, and opening URLs.
+244|What is browser profiling in Selenium?|Browser profiling configures browser settings, like enabling/disabling add-ons or managing privacy settings.
+245|How do you handle Ajax calls in Selenium?|Use explicit waits for specific conditions to handle elements that appear after Ajax calls.
+246|How do you retrieve text from a disabled input field?|Use JavaScript with `getAttribute("value")` to retrieve text from a disabled input.
+247|What are the limitations of Selenium?|Selenium can't automate non-browser applications, complex captcha handling, and limited mobile app support.
+248|How do you inspect network requests in Selenium?|Use Selenium 4’s DevTools Protocol to inspect and monitor network requests.
+249|How do you handle ‘stale element reference’ errors?|Use explicit waits or re-locate the element to handle `StaleElementReferenceException`.
+250|How do you retrieve text using XPath?|Use `element.getText()` with an XPath locator to retrieve the text.
+251|What is the difference between `isDisplayed()` and `isEnabled()`?|`isDisplayed()` checks if the element is visible; `isEnabled()` checks if the element is interactive.
+252|What is an iframe, and how do you handle it?|An iframe is an HTML document within another document. Use `switchTo().frame()` to access it.
+253|What is the difference between `switchTo().frame()` by index and by name?|Switching by index refers to the iframe’s order, while by name refers to the iframe’s `name` or `id` attribute.
+254|How do you handle WebDriver commands when running headless?|Use headless-specific configurations and adjustments for visual-dependent actions.
+255|What is a hybrid framework in Selenium?|A hybrid framework combines multiple testing frameworks, like data-driven and keyword-driven.
+256|How do you handle checkboxes in Selenium?|Use `isSelected()` to check state and `click()` to toggle.
+257|How do you interact with dynamic elements?|Use dynamic locators, relative locators, and explicit waits for handling dynamic elements.
+258|How do you close a specific browser window?|Switch to the desired window handle, then call `driver.close()`.
+259|What is the `NoSuchFrameException`?|This exception occurs when WebDriver cannot locate a specified frame.
+260|How do you retrieve page source in Selenium?|Retrieve the page source using `driver.getPageSource()`.
+261|How do you perform a right-click action?|Use `Actions.contextClick(element).perform()` to perform a right-click.
+262|How do you select a specific option from a dropdown?|Use the `Select` class methods such as `selectByVisibleText` or `selectByValue`.
+263|What are the different types of alerts?|There are simple alerts, confirmation alerts, and prompt alerts.
+264|How do you handle browser logs in Selenium?|Use Selenium DevTools to capture and manage browser logs.
+265|How do you upload files in headless Chrome?|Set preferences for file downloads and configure file paths.
+266|What is the difference between XPath `text()` and `contains()` functions?|`text()` matches exact text, while `contains()` matches partial text within elements.
+267|How do you handle multi-window pop-ups?|Use `getWindowHandles()` and switch to each window as required.
+268|How do you handle hidden elements using CSS?|Use CSS visibility properties to make hidden elements interactable for testing.
+269|What is `JavascriptExecutor`’s role in Selenium?|It executes JavaScript within the browser, useful for interactions beyond WebDriver’s capabilities.
+270|How do you click an element if `click()` doesn’t work?|Use JavaScript Executor with `executeScript("arguments[0].click();", element)`.
+271|How do you retrieve page URL in Selenium?|Retrieve it using `driver.getCurrentUrl()`.
+272|What is the purpose of `driver.getTitle()`?|`getTitle()` retrieves the current page’s title.
+273|How do you interact with browser scrolls?|Use JavaScript `scrollBy()` or `scrollIntoView()` for vertical or horizontal scrolling.
+274|How do you manage browser cookies?|Use `addCookie()`, `getCookies()`, and `deleteCookieNamed()` for managing cookies.
+275|How do you run a Selenium test on a remote server?|Use `RemoteWebDriver` with the remote server URL and desired capabilities.
+276|How do you maximize the browser window?|Maximize using `driver.manage().window().maximize()`.
+277|How do you retrieve the CSS value of an element?|Use `getCssValue("property_name")` to retrieve specific CSS values.
+278|How do you handle shadow DOM elements?|Use JavaScript to access shadow DOM elements since WebDriver doesn’t directly support it.
+279|How do you avoid StaleElementReferenceException?|Use explicit waits or re-fetch elements after page reloads.
+280|What is a headless browser?|A headless browser runs without a GUI, useful for faster and CI/CD-based test executions.
+281|What is the purpose of `driver.get()`?|`driver.get()` opens a URL in the browser.
+282|How do you handle modal dialogs in Selenium?|Use explicit waits or JavaScript Executor to interact with modal dialogs.
+283|How do you retrieve the current window’s handle?|Use `driver.getWindowHandle()` to retrieve the active window handle.
+284|How do you perform click-and-hold operations?|Use `Actions.clickAndHold(element).perform()` to perform click-and-hold actions.
+285|What is `WindowHandles`?|`getWindowHandles()` returns all open windows’ handles for multi-window handling.
+286|How do you implement data-driven testing in Selenium?|Use data providers like TestNG or Excel files to implement data-driven testing.
+287|What is `Alert` in Selenium?|The `Alert` interface handles JavaScript alerts and pop-ups.
+288|How do you handle browser timeouts?|Use `pageLoadTimeout`, `implicitlyWait`, and `setScriptTimeout` for managing timeouts.
+289|How do you perform touch actions in Selenium?|Use Selenium’s `TouchActions` or mobile-specific libraries for touch events.
+290|What are `Fluent Wait` and polling frequency?|`FluentWait` specifies wait duration and polling interval, retrying conditions until met.
+291|How do you simulate keyboard shortcuts?|Use `Actions.sendKeys()` with modifier keys for shortcuts like Ctrl+C, Ctrl+V.
+292|What is `Keys` in Selenium?|`Keys` is a class for simulating keyboard keys, like `Keys.ENTER`, `Keys.TAB`.
+293|How do you handle frame switching?|Use `driver.switchTo().frame()` for switching to iframes within a page.
+294|How do you wait until an element is clickable?|Use `ExpectedConditions.elementToBeClickable(locator)` with explicit wait.
+295|What is `By.className()` used for?|`By.className()` locates elements by their class attribute.
+296|How do you work with multiple data files in Selenium?|Load different files or sheets using Apache POI or similar libraries for data-driven testing.
+297|What is `driver.switchTo().alert()`?|It handles alerts by switching WebDriver’s context to the active alert.
+298|How do you manage network throttling in Selenium?|Use DevTools Protocol to set network throttling conditions.
+299|What is the purpose of `driver.quit()`?|`quit()` closes all browser windows and ends the WebDriver session.
+300|How do you simulate pressing the `ENTER` key?|Use `element.sendKeys(Keys.ENTER)` to simulate the `ENTER` key.
+301|How do you check for broken images?|Use JavaScript’s `naturalWidth` property or HTTP requests to verify image status.
+302|What is the difference between `id` and `name` locators?|`id` is unique on a page, while `name` can be duplicated across elements.
+303|What is WebDriver’s DevTools Protocol?|It’s an API in Selenium 4 to interact with Chrome DevTools for capturing logs, network events, etc.
+304|How do you retrieve attribute values?|Use `getAttribute("attributeName")` to retrieve specific attribute values.
+305|What is `driver.manage().deleteAllCookies()`?|It clears all cookies in the browser session.
+306|How do you create a custom wait?|Use `FluentWait` and specify conditions to create custom waits.
+307|How do you handle page load delays?|Use `pageLoadTimeout` or explicit waits for specific elements.
+308|What is the function of `driver.close()`?|`close()` closes the current browser window.
+309|How do you set up a grid in Selenium?|Set up Selenium Grid by configuring a hub and connecting multiple nodes.
+310|What are WebDriver exceptions?|These are errors raised by WebDriver, such as `NoSuchElementException` or `TimeoutException`.
+311|How do you capture page load performance?|Use WebDriver’s DevTools Protocol to measure page load times and performance.
+312|What is browser compatibility testing?|It ensures your web application works as expected across different browsers.
+313|How do you check if an element is enabled?|Use `element.isEnabled()` to check if the element is interactive.
+314|What is the difference between `sendKeys` and `click`?|`sendKeys` types input, while `click` performs a click action on an element.
+315|How do you validate the URL of a page?|Use `driver.getCurrentUrl()` to retrieve and validate the URL.
+316|How do you execute tests in parallel?|Use `TestNG` or `JUnit` for parallel execution by configuring `@Test` annotations.
+317|What is WebDriverFactory?|It’s a pattern for creating and managing WebDriver instances across tests.
+318|How do you retrieve console errors in Selenium?|Use the DevTools Protocol to capture browser console logs.
+319|How do you ensure element visibility?|Use `ExpectedConditions.visibilityOfElementLocated()` to wait until visible.
+320|What are the different types of waits?|Selenium provides implicit, explicit, and fluent waits for managing conditions.
+321|How do you handle file download pop-ups?|Configure the browser profile to automatically download files.
+322|How do you manage browser plugins?|Use browser-specific options like `ChromeOptions` or `FirefoxProfile` to load plugins.
+323|How do you change user agents?|Set custom user agents using browser options like `ChromeOptions.addArguments("--user-agent=custom-agent")`.
+324|What is `driver.switchTo().defaultContent()`?|It exits an iframe, returning control to the main document.
+325|How do you check for secure (HTTPS) connections?|Retrieve the URL and check if it begins with `https://`.
+326|How do you handle unexpected pop-ups?|Use `ExpectedConditions.alertIsPresent()` to detect unexpected pop-ups.
+327|How do you simulate network conditions?|Use DevTools Protocol in Selenium 4 to set network conditions.
+328|How do you verify JavaScript errors?|Capture JavaScript errors by listening to browser console logs.
+329|What is the use of `driver.getCurrentUrl()`?|It retrieves the current page’s URL.
+330|How do you get text from dropdown options?|Use `Select.getOptions()` and iterate to retrieve each option’s text.
+331|What is the `Select` class in Selenium?|The `Select` class is used to interact with dropdowns in Selenium, allowing selection by index, visible text, or value.
+332|How do you handle auto-suggestions in a text field?|Type partially and use XPath to locate suggestions, selecting them based on the visible text.
+333|What is FluentWait?|`FluentWait` is a wait that defines max wait time and polling frequency, useful for handling unpredictable conditions.
+334|How do you refresh a page in Selenium?|Use `driver.navigate().refresh()` or `driver.get(driver.getCurrentUrl())`.
+335|How do you maximize a window in headless mode?|Use `options.addArguments("--start-maximized")` for headless browser instances.
+336|What is WebDriverWait?|`WebDriverWait` is an explicit wait applied to certain conditions, waiting until an expected condition is met.
+337|How do you select multiple checkboxes?|Use a loop or multi-select locators with `click()` to toggle each checkbox.
+338|What is the difference between `quit()` and `close()`?|`quit()` closes all browser windows and sessions, while `close()` closes only the current window.
+339|How do you scroll to the bottom of a page?|Use JavaScript with `window.scrollTo(0, document.body.scrollHeight)`.
+340|How do you handle multi-select dropdowns?|Use `Select` with `selectByIndex`, `selectByValue`, and `selectByVisibleText` to handle multiple selections.
+341|How do you switch between multiple browser tabs?|Use `getWindowHandles()` and `switchTo().window(handle)` to navigate between tabs.
+342|What is implicit wait?|Implicit wait sets a default wait time for finding elements, applicable globally for all elements.
+343|How do you verify page title in Selenium?|Use `driver.getTitle()` and compare it with the expected title.
+344|What is `TimeoutException`?|`TimeoutException` occurs when a command exceeds the defined wait time.
+345|How do you find broken links on a page?|Retrieve URLs and validate HTTP responses using `HttpURLConnection`.
+346|How do you capture screenshots in Selenium?|Use `TakesScreenshot` interface and `getScreenshotAs()` to capture screenshots.
+347|What is Selenium Grid?|Selenium Grid allows parallel test execution across multiple browsers and platforms.
+348|What is the purpose of `getAttribute()`?|`getAttribute()` retrieves the value of a specified attribute from an element.
+349|How do you handle file uploads?|Use `sendKeys()` on the file input element or set the file path directly if supported.
+350|How do you handle authentication pop-ups?|Use credentials in the URL, like `http://username:password@url`.
+351|What is the difference between `findElement()` and `findElements()`?|`findElement()` returns a single WebElement, while `findElements()` returns a list of elements.
+352|How do you disable notifications in Chrome?|Set `ChromeOptions` with `addArguments("--disable-notifications")`.
+353|How do you retrieve selected text from a dropdown?|Use `Select.getFirstSelectedOption().getText()` to retrieve selected dropdown text.
+354|What is `Alert` interface?|`Alert` interface handles JavaScript alerts and provides methods to accept, dismiss, and get text.
+355|How do you handle SSL certificates?|Use `ChromeOptions` or `FirefoxOptions` to ignore SSL errors.
+356|How do you switch to a specific iframe?|Use `driver.switchTo().frame()` with index, name, or WebElement reference.
+357|What is browser console log capture?|Using DevTools Protocol, capture browser console logs for debugging.
+358|How do you capture tooltips in Selenium?|Retrieve the `title` attribute or use `Actions.moveToElement()` and capture tooltip text.
+359|How do you wait for an element to disappear?|Use `ExpectedConditions.invisibilityOfElementLocated()` with explicit wait.
+360|What is WebDriverFactory?|WebDriverFactory is a custom class to manage WebDriver instance creation based on the browser type.
+361|How do you perform drag and drop in Selenium?|Use `Actions.dragAndDrop(source, target).perform()` to drag and drop elements.
+362|How do you handle dynamic tables?|Use XPath with dynamic indexing to locate cells based on content or position.
+363|What is the function of `clear()` in WebDriver?|`clear()` removes any text in input fields.
+364|How do you handle different page layouts in automation?|Use responsive testing, adjusting locators and actions for different layouts.
+365|How do you capture AJAX loading status?|Use explicit wait for conditions, like `ExpectedConditions.visibilityOfElementLocated()`.
+366|What is Desired Capabilities?|Desired Capabilities set browser properties and configurations in Selenium Grid.
+367|What is the difference between `pageLoadTimeout` and `implicitlyWait`?|`pageLoadTimeout` is for page load, while `implicitlyWait` waits for element visibility.
+368|How do you switch to an alert pop-up?|Use `driver.switchTo().alert()` and perform actions like `accept()`, `dismiss()`.
+369|How do you check element color in Selenium?|Use `getCssValue("color")` and compare with expected CSS color.
+370|What is BrowserStack in Selenium?|BrowserStack is a cloud platform that supports Selenium tests across various browsers and OSes.
+371|How do you retrieve HTML source of an element?|Use `getAttribute("outerHTML")` to get the complete HTML of an element.
+372|What is the purpose of `ExpectedConditions.titleContains()`?|`titleContains()` waits until the page title contains a specified text.
+373|How do you verify HTTPS URLs?|Check the URL with `driver.getCurrentUrl()` and verify it starts with `https`.
+374|How do you handle alerts using Actions class?|Use `Actions.sendKeys(Keys.ENTER)` as an alternative to handle alerts.
+375|What is `PageFactory` in Selenium?|`PageFactory` is a class for initializing WebElements with annotations like `@FindBy`.
+376|How do you handle date pickers?|Use XPath or CSS to select specific dates in date picker elements.
+377|What is JavaScript click?|JavaScript click is executed using JavaScriptExecutor when standard `click()` fails.
+378|How do you interact with radio buttons?|Use `isSelected()` to check state and `click()` to select or deselect.
+379|What is the use of `driver.getCurrentUrl()`?|It retrieves the current page URL to verify or validate navigation.
+380|How do you set up a custom Chrome profile?|Use `ChromeOptions` with a profile path to load custom settings.
+381|How do you check if an element is clickable?|Use `ExpectedConditions.elementToBeClickable()` in an explicit wait.
+382|What is the difference between `navigate().to()` and `get()`?|`navigate().to()` allows forward/backward navigation, while `get()` loads a URL directly.
+383|How do you manage hidden elements in Selenium?|Use JavaScript with `style.display` or `scrollIntoView()` to make hidden elements visible.
+384|What is TestNG?|TestNG is a testing framework that supports test configuration, parallel execution, and reporting.
+385|How do you handle Windows file download pop-ups?|Set browser preferences for automatic downloads or use third-party tools.
+386|How do you manage logs in Selenium?|Use logging libraries like Log4j or capture console logs using DevTools Protocol.
+387|How do you inspect AJAX elements?|Use explicit waits or check `readyState` with JavaScript to manage AJAX load times.
+388|How do you switch back from an iframe?|Use `driver.switchTo().defaultContent()` to return to the main document.
+389|What are the WebDriver exceptions?|Common exceptions include `NoSuchElementException`, `TimeoutException`, and `StaleElementReferenceException`.
+390|How do you use relative locators?|Relative locators in Selenium 4 allow positioning based on element relationships.
+391|How do you retrieve page title using JavaScript?|Use `executeScript("return document.title")` to retrieve the title.
+392|What is CSS selector?|CSS selector is a pattern used to select elements based on their classes, IDs, and attributes.
+393|How do you manage database connections?|Use JDBC or ORM frameworks for database interactions within Selenium.
+394|How do you capture page load time in Selenium?|Use DevTools Protocol to measure load times or timestamps for start/end of page load.
+395|What is the difference between `findElementById` and `findElementByName`?|`findElementById` is faster as `ID` is unique, while `findElementByName` may have duplicates.
+396|What is the difference between `getAttribute` and `getText`?|`getAttribute` retrieves attribute values, while `getText` fetches visible text.
+397|How do you run headless tests in Firefox?|Set `FirefoxOptions` with `addArguments("-headless")` for headless execution.
+398|How do you click an element using JavaScript?|Use `executeScript("arguments[0].click();", element)` for JavaScript-based clicks.
+399|What is Selenium WebDriver?|WebDriver is a browser automation tool that provides an API for interacting with web elements.
+400|How do you capture console errors in Selenium?|Capture console errors using DevTools Protocol or JavaScript logging listeners.
+401|What is automation testing?|Automation testing uses software tools to perform tests that verify the software behavior.
+402|What is parameterized testing?|Parameterized testing allows tests to run with multiple sets of input data.
+403|How do you clear text from an input field?|Use `clear()` to remove existing text in an input field.
+404|How do you handle pagination in Selenium?|Loop through pagination elements to navigate and retrieve data.
+405|What are some challenges with Selenium?|Challenges include handling dynamic elements, waiting mechanisms, and managing multi-browser compatibility.
+406|How do you handle pop-ups in Selenium?|Handle pop-ups using `Alert` interface or dismiss pop-ups using `ExpectedConditions.alertIsPresent()`.
+407|What is `implicitlyWait`?|`implicitlyWait` is a global wait for finding elements, setting maximum wait time for element location.
+408|What is the purpose of `findElementByXPath`?|`findElementByXPath` locates elements using XML-like paths in the HTML structure.
+409|What is DevTools Protocol?|DevTools Protocol allows low-level interaction with the browser, useful for capturing network requests and console logs.
+410|How do you handle slow-loading elements?|Use `WebDriverWait` with `ExpectedConditions` to wait for slow-loading elements.
+411|How do you use `executeAsyncScript`?|`executeAsyncScript` is used for asynchronous JavaScript code, returning control after completion.
+412|What is TestNG `@DataProvider`?|`@DataProvider` provides multiple sets of data to a test method, enabling data-driven testing.
+413|How do you generate Selenium reports?|Generate reports using TestNG or third-party libraries like Extent Reports.
+414|How do you test responsive designs?|Use browser resizing or emulators to test different resolutions and screen sizes.
+415|What is XCUITest?|XCUITest is an iOS test automation framework supported by Appium for testing iOS applications.
+416|How do you upload a file in Selenium?|Use `sendKeys` on a file upload input element to set the file path directly.
+417|What is Sauce Labs?|Sauce Labs is a cloud-based platform for testing across various browsers, devices, and operating systems.
+418|What is Selenium RC?|Selenium RC was an older version that injected JavaScript into the browser; it’s now obsolete.
+419|How do you measure browser performance?|Use DevTools Protocol or JavaScript for metrics like navigation timing and resource loading.
+420|How do you find an element with multiple attributes in XPath?|Use `XPath` with `and` conditions to match multiple attributes.
+421|What is `Actions.clickAndHold`?|`clickAndHold` clicks an element without releasing, useful for drag-and-drop interactions.
+422|How do you validate links in Selenium?|Use `HttpURLConnection` to check HTTP response codes for link validity.
+423|How do you handle network throttling?|Use DevTools Protocol in Selenium 4 to simulate network conditions.
+424|How do you switch between Windows in Selenium?|Use `getWindowHandles` and iterate to switch to specific windows.
+425|What are data-driven tests?|Data-driven tests are tests that run with multiple sets of data, typically from files or databases.

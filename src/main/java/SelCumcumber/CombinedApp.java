@@ -1,4 +1,4 @@
-package SelCumcumber;
+package SelCucumber;
 
 import javax.swing.*;
 import java.awt.*;
@@ -19,16 +19,21 @@ public class CombinedApp {
     public CombinedApp() {
         questions = new ArrayList<>();
         answers = new ArrayList<>();
-        showInitialSelection(); // Show the first selection for Java or SDLC
+        showInitialSelection(); // Show the first selection for Java, Software Testing, Selenium, or TestNG
     }
 
     private void showInitialSelection() {
-        String[] options = {"JAVA", "SOFTWARE TESTING"};
+        String[] options = {"JAVA", "SOFTWARE TESTING", "SELENIUM", "TESTNG"};
         String selection = (String) JOptionPane.showInputDialog(null, "Select Category", "Choose",
                 JOptionPane.PLAIN_MESSAGE, null, options, options[0]);
 
         if (selection != null) {
-            loadQuestionsFromFile(selection.equals("JAVA") ? "questions.txt" : "new qu.txt");
+            switch (selection) {
+                case "JAVA" -> loadQuestionsFromFile("questions.txt");
+                case "SOFTWARE TESTING" -> loadQuestionsFromFile("new qu.txt");
+                case "SELENIUM" -> loadQuestionsFromFile("selenium_questions.txt");
+                case "TESTNG" -> loadQuestionsFromFile("testng_questions.txt");
+            }
             createAndShowGUI();
         }
     }

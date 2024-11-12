@@ -1,0 +1,200 @@
+1|What is TestNG?|TestNG is a testing framework inspired by JUnit and NUnit, providing more powerful and flexible features for test configuration, execution, and reporting.
+2|What are annotations in TestNG?|Annotations in TestNG are special markers like `@Test`, `@BeforeMethod`, and `@AfterClass` that control the execution flow of test methods.
+3|What is the purpose of the `@Test` annotation?|The `@Test` annotation marks a method as a test case that TestNG should execute.
+4|How do you set test priorities in TestNG?|Test priorities are set with `priority` parameter in `@Test` annotation to define the order in which tests should run.
+5|What is `@BeforeMethod`?|`@BeforeMethod` runs before each test method, commonly used for setup actions.
+6|What is `@AfterMethod`?|`@AfterMethod` executes after each test method, often used for cleanup.
+7|How do you run test cases in parallel in TestNG?|Add `parallel` and `thread-count` attributes in the TestNG XML file to enable parallel execution.
+8|What is a `DataProvider` in TestNG?|`DataProvider` is a method marked with `@DataProvider` annotation that supplies test data to a test method, supporting data-driven testing.
+9|How do you disable a test case?|Set `enabled=false` in the `@Test` annotation to skip a test case.
+10|How does TestNG handle exceptions?|Use `expectedExceptions` parameter in `@Test` to specify expected exceptions.
+11|What is the purpose of the TestNG `@BeforeSuite` annotation?|The `@BeforeSuite` annotation is used to run a method before all tests in the suite, typically for setting up a suite-wide configuration.
+12|What is the `@AfterSuite` annotation?|`@AfterSuite` runs after all tests in the suite have completed, often used for cleanup operations.
+13|What is `@BeforeTest` in TestNG?|`@BeforeTest` runs before any test method within a `<test>` tag in the TestNG XML file, used for setting up test-level configurations.
+14|What does `@AfterTest` do?|`@AfterTest` executes after all test methods within a `<test>` tag in the XML file, commonly used for closing resources.
+15|What is the difference between `@BeforeClass` and `@BeforeMethod`?|`@BeforeClass` runs once before all methods in a class, while `@BeforeMethod` runs before each test method.
+16|What is the TestNG `suite.xml` file?|The `suite.xml` file is the main configuration file where you define the suite, test cases, classes, and execution order.
+17|How do you pass parameters in TestNG?|Use `@Parameters` annotation in combination with `<parameter>` tags in the XML file to pass parameters.
+18|What is `@DataProvider` in TestNG?|`@DataProvider` allows for data-driven testing by passing multiple sets of data to a single test method.
+19|What is `@Factory` annotation?|The `@Factory` annotation allows creating instances of test classes dynamically, useful for generating multiple instances with different data.
+20|How does `@Test(enabled=false)` work?|Setting `enabled=false` in the `@Test` annotation skips the test method from being executed.
+21|Can we use `@Test` on methods that return values?|Yes, but TestNG ignores the return value unless explicitly handled by another method.
+22|What is `@Listeners` annotation?|The `@Listeners` annotation is used to specify classes that implement TestNG listener interfaces like `ITestListener`.
+23|What is an ITestListener?|`ITestListener` is an interface in TestNG for tracking events such as test start, finish, and failure.
+24|What is the `dependsOnMethods` attribute?|`dependsOnMethods` allows one test method to depend on the successful execution of another method.
+25|What is `dependsOnGroups` in TestNG?|`dependsOnGroups` specifies that a test method depends on the successful completion of all methods within a group.
+26|How do you set a timeout in TestNG?|Use `timeOut` parameter in `@Test` annotation to set a maximum execution time in milliseconds.
+27|What is the purpose of the `@BeforeGroups` annotation?|`@BeforeGroups` runs before any methods in a specific group, ideal for group-specific setup.
+28|What does `@AfterGroups` do?|`@AfterGroups` runs after all methods in a specified group, commonly used for group-specific cleanup.
+29|How do you group tests in TestNG?|Use the `groups` parameter in `@Test` annotation to specify groups for test methods.
+30|What is a soft assert in TestNG?|Soft assertions allow tests to continue execution even if an assertion fails, reported only at the end.
+31|What is the difference between SoftAssert and Assert in TestNG?|SoftAssert allows multiple assertions, while Assert stops execution on the first failure.
+32|How do you include/exclude tests in TestNG?|Use `<include>` and `<exclude>` tags in the XML file or `@Test(groups)` to include/exclude tests.
+33|What is `ITestResult` in TestNG?|`ITestResult` provides information about the test case status, start time, end time, and any exceptions thrown.
+34|How do you retry failed tests in TestNG?|Implement `IRetryAnalyzer` and attach it to the test with the `retryAnalyzer` parameter.
+35|What is the `priority` parameter in TestNG?|The `priority` parameter controls the order in which test methods execute within a class.
+36|Can you run specific test methods from the command line?|Yes, by specifying the test method name with `-testclass` or `-methods` options.
+37|What is `parallel="methods"`?|`parallel="methods"` allows each test method to run in parallel across multiple threads.
+38|What is `parallel="classes"`?|`parallel="classes"` allows each test class to execute concurrently in different threads.
+39|How do you set `retryAnalyzer` globally?|Define `retryAnalyzer` in the XML suite file using `<listeners>`.
+40|What is `@Parameters` in TestNG?|`@Parameters` allows you to pass parameters from the XML suite file into your test methods.
+41|How does `@DataProvider(parallel=true)` work?|Setting `parallel=true` in `@DataProvider` enables parallel execution of data sets within a test method.
+42|What is `ITestContext`?|`ITestContext` is an interface that provides runtime information about the test context, including suite, test names, and test results.
+43|How do you create custom TestNG reports?|Implement `IReporter` or `IReporterListener` to generate custom reports.
+44|What is the purpose of `@AfterClass`?|`@AfterClass` runs after all test methods in a class have executed, usually for cleanup.
+45|What is `@BeforeGroups`?|`@BeforeGroups` runs before all methods in a specified group, useful for group-specific setup.
+46|How do you test an application with multiple sets of data?|Use `@DataProvider` to pass multiple sets of data to a test method.
+47|What is the `alwaysRun` attribute?|Setting `alwaysRun=true` ensures that the annotated method executes even if dependent methods fail.
+48|How do you skip a test case based on runtime conditions?|Use `throw new SkipException()` to skip a test dynamically.
+49|What is a custom listener in TestNG?|Custom listeners implement TestNG listener interfaces like `ITestListener` to handle events like test start and failure.
+50|How do you handle dependencies between test classes?|Set dependencies using the `dependsOnMethods` or `dependsOnGroups` attributes in `@Test`.
+51|How to use `groups` in TestNG?|Define groups in `@Test(groups={"groupName"})` to run specific sets of tests.
+52|Can we run only a specific group of tests?|Yes, by defining the group in the XML file or using the `groups` parameter in `@Test`.
+53|What is `suite.name` in TestNG?|`suite.name` provides the name of the test suite in the current execution context.
+54|What does `parallel="tests"` mean?|`parallel="tests"` runs each `<test>` in a suite concurrently across multiple threads.
+55|What is `invocationCount` in TestNG?|`invocationCount` allows a test method to be executed multiple times.
+56|How do you set priority for groups?|Group priorities can’t be set; prioritize methods within groups instead.
+57|What is `@Test(singleThreaded=true)`?|`@Test(singleThreaded=true)` forces all methods in a class to run on a single thread.
+58|What is `ISuiteListener`?|`ISuiteListener` is a TestNG listener interface that allows monitoring suite start and finish events.
+59|What is `@Ignore` in TestNG?|`@Ignore` can skip individual test methods or whole test classes.
+60|How does TestNG handle multiple `@DataProvider`?|TestNG supports multiple `@DataProvider`s; specify the provider with `dataProvider` in `@Test`.
+61|What is `ITestNGMethod`?|`ITestNGMethod` provides information about a test method, including name, groups, and parameters.
+62|How can we prioritize test suites?|Define the order in the XML file with `<suite>` tags.
+63|What is `suite.xml` used for?|The `suite.xml` file configures the suite, test cases, parallel execution, and groups for TestNG.
+64|What is `dependsOnGroups`?|`dependsOnGroups` sets dependencies between test methods and groups, ensuring that the group executes before the dependent method.
+65|How do you run multiple suites?|Define multiple `<suite>` tags in a master XML file or pass multiple suite XMLs to TestNG.
+66|What is `@AfterSuite`?|`@AfterSuite` runs after all tests in a suite, ideal for teardown tasks.
+67|What is `testng-failed.xml`?|`testng-failed.xml` is automatically generated by TestNG for rerunning failed tests.
+68|How to log events in TestNG?|Use `Reporter.log()` or a custom listener to log events.
+69|What are listeners in TestNG?|Listeners monitor test events and provide custom reporting or action on test completion.
+70|What is `ISuite`?|`ISuite` represents a TestNG suite, holding information about all tests within the suite.
+71|What is the use of `SoftAssert`?|`SoftAssert` collects assertion failures without halting test execution.
+72|What is `@AfterTest`?|`@AfterTest` executes after all test methods within a `<test>` tag, typically used for cleanup.
+73|Can TestNG run JUnit tests?|Yes, TestNG supports running JUnit tests by including the JUnit library.
+74|What is `skipException`?|`SkipException` skips a test method at runtime.
+75|What is `@Listeners`?|`@Listeners` attaches listeners to test classes to capture test lifecycle events.
+76|How do you manage dependencies in TestNG?|Use `dependsOnMethods` or `dependsOnGroups` in `@Test`.
+77|What is `@Optional`?|`@Optional` provides default values for parameters.
+78|What is `@BeforeSuite`?|`@BeforeSuite` executes before any test in a suite.
+79|Can we use multiple `@Test` methods in a class?|Yes, TestNG supports multiple test methods in a single class.
+80|What is `test-output` folder?|The `test-output` folder contains reports and logs generated by TestNG.
+81|What are `@Factory` tests?|`@Factory` creates instances of test classes, useful for data-driven tests.
+82|How do you exclude tests in TestNG?|Use `<exclude>` in the XML file or `enabled=false` in `@Test`.
+83|What is `@BeforeMethod`?|`@BeforeMethod` runs before each test method in a class.
+84|How do you set test properties?|Set properties in XML or pass via `@Parameters`.
+85|How to create a custom reporter?|Implement `IReporter` interface to create custom TestNG reports.
+86|What is `@Test(groups={"group1"})`?|Groups organize tests for selective execution.
+87|What is `@Test(priority=1)`?|`priority` sets the order of test execution.
+88|What is a `DataProvider`?|Supplies data to test methods for parameterized tests.
+89|What is `@BeforeTest`?|Runs before each `<test>` in XML.
+90|What is `assertEquals`?|Asserts two values are equal.
+91|What is `assertNotEquals`?|Asserts two values are not equal.
+92|What is `assertTrue`?|Asserts condition is true.
+93|What is `assertFalse`?|Asserts condition is false.
+94|What is `@AfterGroups`?|Runs after group methods complete.
+95|How to run tests in parallel?|Set `parallel="methods"`, `parallel="classes"`, or `parallel="tests"` in XML.
+96|What is `@BeforeClass`?|Runs before any method in a class.
+97|How do you handle failed tests?|Use `retryAnalyzer` for automatic retry.
+98|How to skip tests in TestNG?|Use `enabled=false` or throw `SkipException`.
+99|What is `@Factory`?|Generates instances of test classes.
+100|What is `TestNG`?|A testing framework inspired by JUnit and NUnit for Java applications.
+101|What is `@Test(enabled = false)` in TestNG?|This annotation skips the test, allowing you to disable test methods without removing them from code.
+102|How to define test dependencies in TestNG?|Use `dependsOnMethods` or `dependsOnGroups` attributes in `@Test` annotations.
+103|How does `priority` work in TestNG?|Priority controls the execution order of test methods within a class; lower priority numbers execute first.
+104|What is the use of `assertNull` in TestNG?|`assertNull` verifies that an object is null.
+105|What is `assertNotNull`?|It checks that an object is not null.
+106|How do you pass test parameters in TestNG?|Use `@Parameters` with XML configuration to inject parameters into test methods.
+107|What is `@DataProvider(name = "data")` in TestNG?|It specifies the name of a data provider, which can be referred to by the test method.
+108|How to handle exceptions in TestNG?|Set `expectedExceptions` in `@Test` to specify which exceptions a test method should expect.
+109|What is the use of `@AfterMethod`?|`@AfterMethod` runs after each test method, typically used for cleanup tasks.
+110|What is `@Test(invocationCount = n)`?|It specifies the number of times a test method should execute.
+111|How to set parallel execution for `@DataProvider`?|Set `parallel=true` in the `@DataProvider` annotation for parallel execution of data sets.
+112|What is `assertEquals(double actual, double expected, double delta)`?|It checks the equality of two double values within a given tolerance level (delta).
+113|What does `@Factory` annotation do?|`@Factory` dynamically creates test instances, useful for running tests with different configurations.
+114|How to create groups in TestNG?|Define groups using `groups` attribute in `@Test`.
+115|What is `assertSame`?|`assertSame` checks if two references point to the same object.
+116|What does `@BeforeGroups` do?|Runs once before any method in the specified group.
+117|How to perform soft assertions in TestNG?|Use `SoftAssert` to execute multiple assertions without stopping on failure.
+118|What is `test-output` folder?|This folder contains reports and logs generated by TestNG after test execution.
+119|What is the use of `@Optional`?|`@Optional` provides default values for `@Parameters` when no values are supplied in XML.
+120|What is `assertTrue`?|It checks if a condition is `true`.
+121|What is `assertFalse`?|It checks if a condition is `false`.
+122|What is the use of `timeOut` in `@Test`?|Specifies the maximum time a test method should take; if exceeded, the test fails.
+123|What is `@BeforeSuite`?|Runs once before any test in a suite.
+124|What does `assertNotEquals` do?|Verifies that two values are not equal.
+125|What is the use of `RetryAnalyzer`?|`RetryAnalyzer` retries a failed test a specified number of times.
+126|What is `@BeforeTest`?|Runs before all test methods in a `<test>` tag in XML.
+127|How do you create custom listeners?|Implement listener interfaces like `ITestListener`, `ISuiteListener`, or `IReporter`.
+128|What is `@AfterGroups`?|Executes after all methods in a group have run.
+129|What is `assertArrayEquals`?|Asserts that two arrays are equal.
+130|How do you skip a test method conditionally?|Use `SkipException` in a test method to skip it at runtime.
+131|What does `alwaysRun = true` mean?|Ensures that a method runs even if dependent methods fail.
+132|What is `@Test(singleThreaded = true)`?|Forces all methods in a class to run on a single thread.
+133|How does TestNG support parallelism?|Set `parallel` attribute in XML to enable parallel execution at method, class, or test level.
+134|What is `@Listeners`?|`@Listeners` attaches listeners to a test class for monitoring.
+135|What is the role of `IReporter`?|`IReporter` generates custom reports after test execution.
+136|How do you run a single test in a TestNG suite?|Specify the test method in the XML file or use the `-methods` command line option.
+137|What is the function of `@BeforeMethod`?|Executes before each test method in a class, used for setup tasks.
+138|What is the difference between `@Factory` and `@DataProvider`?|`@Factory` creates multiple test instances, while `@DataProvider` supplies data to a single test instance.
+139|What is `@Parameters` used for?|Injects parameters from XML configuration into test methods.
+140|How to set test dependencies?|Use `dependsOnMethods` or `dependsOnGroups` in the `@Test` annotation.
+141|What is `@AfterSuite`?|Runs after all tests in a suite have finished, typically for cleanup.
+142|What is the use of `SoftAssert`?|Soft assertions allow multiple verifications without stopping test execution.
+143|What is `@AfterClass`?|Executes after all test methods in a class, generally for cleanup tasks.
+144|How does `assertEquals` work?|Verifies that two values are equal.
+145|How to retry failed tests in TestNG?|Implement `IRetryAnalyzer` and assign it to the test method.
+146|How to handle grouping in TestNG?|Define groups in `@Test` and specify them in XML for selective execution.
+147|What is `ISuiteListener`?|Monitors the suite's start and completion events.
+148|What is `assertNotSame`?|Asserts that two references point to different objects.
+149|What is `assertTrue(condition)`?|Checks if a given condition is true.
+150|What is `assertFalse(condition)`?|Checks if a condition is false.
+151|What is `@AfterTest`?|Runs after all test methods in a `<test>` tag, often used for cleanup.
+152|What is `assertSame(object1, object2)`?|Checks if two references point to the same object.
+153|How to execute tests in multiple browsers?|Use Selenium WebDriver with TestNG and configure browsers in XML.
+154|What is `assertNotSame(object1, object2)`?|Verifies that two objects are not the same.
+155|How does TestNG differ from JUnit?|TestNG has more features like parallelism, data providers, and listeners, while JUnit is simpler.
+156|How to set test execution order?|Use `priority` attribute in `@Test`.
+157|What is `@Ignore` annotation?|Skips a test method or class from execution.
+158|What is `ITestContext`?|Provides information about the test context, such as suite name, test name, and parameters.
+159|What is the `dependsOnMethods` attribute?|Sets dependencies between methods to ensure specific execution order.
+160|How does TestNG handle timeout?|Use `timeOut` attribute to set maximum test execution time.
+161|What is `SoftAssert.assertAll()`?|Aggregates all soft assertion failures and reports them at the end of the test.
+162|What does `parallel="classes"` do?|Executes each test class in a separate thread.
+163|What is `parallel="methods"`?|Executes each test method in parallel across multiple threads.
+164|How do you run failed tests automatically?|Use the `testng-failed.xml` file generated by TestNG.
+165|What is `suite.xml`?|The XML configuration file for defining test suites and execution order.
+166|How to pass multiple parameters to a test?|Use `@Parameters` or `@DataProvider`.
+167|What is `@BeforeClass` used for?|Executes setup code once before any methods in the class.
+168|How do you prioritize tests?|Set priority in `@Test(priority=n)`.
+169|What is `@AfterMethod`?|Runs after each test method, commonly used for cleanup tasks.
+170|What is `IRetryAnalyzer`?|An interface that allows retrying failed tests.
+171|What is `@Factory`?|Used for generating multiple instances of test classes.
+172|How do you exclude tests?|Use `<exclude>` in XML or `enabled=false` in `@Test`.
+173|What is `ITestListener`?|Provides methods for monitoring test events like start, success, and failure.
+174|How do you execute tests in parallel?|Set the `parallel` attribute in XML.
+175|What is `invocationCount`?|Repeats a test method a specified number of times.
+176|What is `assertEqualsIgnoringCase`?|Compares two strings while ignoring case differences.
+177|What does `alwaysRun=true` mean?|Ensures a method runs even if dependent methods fail.
+178|How do you run a group of tests?|Use `@Test(groups="groupName")` and configure in XML.
+179|How to add a listener to TestNG?|Use `@Listeners` annotation or configure in XML.
+180|What is `assertNotEqualsIgnoringCase`?|Checks if two strings are not equal, ignoring case differences.
+181|What is `ITestResult`?|Holds test result details like success, failure, and duration.
+182|How to skip tests in TestNG?|Use `enabled=false` or `SkipException`.
+183|What is `ITestListener`?|A listener for tracking test lifecycle events.
+184|What is `IRetryAnalyzer`?|Enables retrying of failed tests.
+185|How to set test groups in TestNG?|Use `groups` attribute in `@Test`.
+186|What is `ISuiteListener`?|A listener for suite-level events.
+187|How to capture logs in TestNG?|Use logging frameworks or custom listeners.
+188|How to ignore a test method?|Use `@Test(enabled=false)`.
+189|What is `testng.xml`?|The configuration file defining the test suite and execution order.
+190|How do you share test data between methods?|Use `@DataProvider`.
+191|What is the default priority in TestNG?|Priority is `0` by default if not specified.
+192|How to run tests on multiple devices?|Use Selenium Grid or Appium with TestNG.
+193|What is `skipException`?|Throws an exception to skip a test method.
+194|How to handle exceptions?|Use `expectedExceptions` in `@Test`.
+195|What is `assertAll()` in SoftAssert?|Reports all assertions at the end of the test.
+196|How to set test dependencies?|Use `dependsOnMethods` and `dependsOnGroups`.
+197|What is `SoftAssert`?|Executes multiple assertions without stopping on failure.
+198|How to run a single test?|Specify the method name in XML or command line.
+199|What is the `test-output` folder?|Contains reports and logs generated after test execution.
+200|What is the `@BeforeSuite` annotation?|Runs setup code before any tests in a suite.
