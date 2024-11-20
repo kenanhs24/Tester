@@ -1,0 +1,100 @@
+1|What is API testing?|API testing validates the functionality, reliability, performance, and security of APIs.
+2|What is an API?|An API (Application Programming Interface) enables communication between two software systems.
+3|What are the types of APIs?|Types include Web APIs (REST, SOAP), Database APIs, and Operating System APIs.
+4|What is the difference between REST and SOAP APIs?|REST is lightweight and uses HTTP, while SOAP is protocol-based and uses XML.
+5|What is a RESTful API?|A RESTful API follows REST principles like statelessness, resource-based URIs, and CRUD operations.
+6|What is an endpoint in API testing?|An endpoint is a URL where the API can be accessed by a client.
+7|What are HTTP methods in API testing?|Common methods include GET, POST, PUT, PATCH, DELETE.
+8|What is the difference between GET and POST?|GET retrieves data, while POST sends data to the server.
+9|What is the purpose of the PUT method?|PUT updates or replaces a resource on the server.
+10|What is the DELETE method?|It removes a resource on the server.
+11|What is a query parameter in an API?|A query parameter is appended to the URL to filter or sort data.
+12|What is a header in API testing?|Headers provide metadata, such as authorization tokens or content type.
+13|What is the Content-Type header?|It specifies the data format being sent, such as JSON or XML.
+14|What is the Accept header?|It specifies the format the client expects in the response.
+15|What is a request body?|The request body contains data sent with POST, PUT, or PATCH methods.
+16|What is a response body?|The response body contains data returned by the server after a request.
+17|What are status codes in API testing?|Status codes indicate the result of a request, e.g., 200 (OK), 404 (Not Found).
+18|What is a 2xx HTTP status code?|It indicates success, such as 200 (OK) or 201 (Created).
+19|What is a 4xx HTTP status code?|It indicates client errors, such as 400 (Bad Request) or 401 (Unauthorized).
+20|What is a 5xx HTTP status code?|It indicates server errors, such as 500 (Internal Server Error).
+21|What is an authentication in API testing?|Authentication verifies the identity of a client making API requests.
+22|What is the difference between authentication and authorization?|Authentication verifies identity, while authorization checks access permissions.
+23|What are common authentication methods for APIs?|Common methods include Basic Auth, OAuth, API Key, and Bearer Token.
+24|What is Basic Authentication?|Basic Authentication uses a username and password encoded in base64.
+25|What is OAuth in API testing?|OAuth is an open standard for secure token-based authentication.
+26|What is the difference between OAuth 1.0 and OAuth 2.0?|OAuth 2.0 is simpler, more secure, and widely used compared to OAuth 1.0.
+27|What is an API key?|An API key is a unique identifier for authenticating API requests.
+28|What is a Bearer Token?|A Bearer Token is a security token used for API access, usually in the Authorization header.
+29|What is JSON in API testing?|JSON (JavaScript Object Notation) is a lightweight data format commonly used in APIs.
+30|What is XML in API testing?|XML (eXtensible Markup Language) is a structured data format used in SOAP APIs.
+31|What is the difference between JSON and XML?|JSON is lightweight and human-readable, while XML is verbose and supports attributes.
+32|What is API rate limiting?|Rate limiting restricts the number of API requests a client can make in a specific timeframe.
+33|What is throttling in API testing?|Throttling controls the rate of incoming requests to prevent overloading the server.
+34|What is API pagination?|Pagination divides API responses into manageable chunks for large datasets.
+35|What is a REST API constraint?|Constraints include statelessness, client-server architecture, cacheability, and uniform interface.
+36|What is idempotency in APIs?|Idempotency ensures that repeated API requests have the same effect, e.g., PUT or DELETE methods.
+37|What is HATEOAS in REST APIs?|HATEOAS (Hypermedia as the Engine of Application State) provides links to navigate between resources.
+38|What is Postman?|Postman is a popular API testing tool for sending requests and validating responses.
+39|What is the purpose of a Postman collection?|A collection organizes API requests for reuse and testing.
+40|What are Postman environments?|Environments store variables like URLs, tokens, and credentials for API testing.
+41|What is the difference between global and environment variables in Postman?|Global variables are available across collections, while environment variables are specific to an environment.
+42|What is the purpose of a pre-request script in Postman?|A pre-request script runs before the API request to set up variables or authentication.
+43|What is the purpose of a test script in Postman?|A test script validates the API response using assertions.
+44|What is Newman in Postman?|Newman is a command-line tool for running Postman collections and automating tests.
+45|What is a mock server in API testing?|A mock server simulates API responses for testing without relying on the live API.
+46|What is Swagger?|Swagger (OpenAPI) is a framework for designing, documenting, and testing APIs.
+47|What is the difference between OpenAPI and Swagger?|Swagger is part of the OpenAPI ecosystem; OpenAPI is the specification, while Swagger includes tools.
+48|What is a Swagger UI?|Swagger UI provides a web interface for exploring and testing APIs based on OpenAPI specifications.
+49|What is API documentation?|API documentation explains how to use the API, including endpoints, methods, and authentication.
+50|What is the importance of API testing?|API testing ensures the correctness, reliability, and security of the application’s core functionality.
+51|What are the types of API testing?|Types include functional, performance, security, and validation testing.
+52|What is functional testing in APIs?|It verifies that API endpoints return correct responses for given inputs.
+53|What is performance testing in APIs?|It measures response times, throughput, and scalability under load.
+54|What is security testing in APIs?|It ensures that APIs are secure against vulnerabilities like injection attacks or unauthorized access.
+55|What is API validation testing?|It checks whether the API conforms to its specifications and standards.
+56|What is the difference between manual and automated API testing?|Manual testing involves using tools like Postman, while automated testing uses scripts and frameworks.
+57|What is SoapUI?|SoapUI is a tool for testing SOAP and REST APIs, focusing on functional and performance testing.
+58|What is the difference between REST Assured and Postman?|REST Assured is a Java library for automated testing, while Postman is a GUI-based tool for manual and automated testing.
+59|What is API mocking?|API mocking simulates API behavior for testing when the actual API is unavailable.
+60|What is API fuzz testing?|Fuzz testing sends invalid, unexpected, or random data to APIs to identify vulnerabilities.
+61|What is contract testing in APIs?|It verifies that APIs conform to a predefined contract or schema.
+62|What is API schema validation?|It ensures the API response matches the expected schema defined in JSON Schema or OpenAPI.
+63|What is API integration testing?|It validates interactions between multiple APIs or between APIs and databases.
+64|What is the difference between unit testing and API testing?|Unit testing tests individual functions, while API testing focuses on entire API endpoints.
+65|What are common API testing tools?|Tools include Postman, SoapUI, REST Assured, JMeter, and Swagger.
+66|What is the purpose of assertions in API testing?|Assertions validate expected outcomes, such as status codes, response times, or data fields.
+67|What is a negative test case in API testing?|A negative test case verifies how the API handles invalid or unexpected inputs.
+68|What is a positive test case in API testing?|A positive test case verifies that the API returns correct responses for valid inputs.
+69|What is API response time?|Response time is the time taken by the API server to return a response to a request.
+70|What is the importance of headers in API testing?|Headers provide metadata such as authentication tokens, content type, or caching policies.
+71|What is API error handling?|Error handling ensures that APIs return meaningful error messages and codes for invalid requests.
+72|What is the difference between synchronous and asynchronous APIs?|Synchronous APIs wait for a response, while asynchronous APIs handle requests and responses independently.
+73|What is the importance of logging in API testing?|Logging helps track request and response details for debugging and analysis.
+74|What is the purpose of an API gateway?|An API gateway manages API traffic, including routing, authentication, and rate limiting.
+75|What is API versioning?|API versioning ensures backward compatibility by providing multiple versions of an API.
+76|What are common API vulnerabilities?|Vulnerabilities include injection attacks, broken authentication, insecure data storage, and exposure of sensitive data.
+77|What is CORS in API testing?|CORS (Cross-Origin Resource Sharing) allows or restricts requests from different origins.
+78|What is a rate-limiting error?|It occurs when a client exceeds the allowed number of API requests within a specific period.
+79|What is load testing in APIs?|Load testing evaluates API performance under expected user traffic.
+80|What is stress testing in APIs?|Stress testing evaluates API behavior under extreme traffic conditions.
+81|What is an API dependency?|An API dependency occurs when one API relies on another for data or functionality.
+82|What is the purpose of API chaining?|API chaining executes multiple API calls in a sequence, where the output of one serves as the input for the next.
+83|What is a 401 Unauthorized error?|It indicates missing or invalid authentication credentials.
+84|What is a 403 Forbidden error?|It indicates the client does not have permission to access the resource.
+85|What is a 404 Not Found error?|It indicates that the requested resource does not exist.
+86|What is a 500 Internal Server Error?|It indicates a server-side issue preventing the API from processing the request.
+87|What is the purpose of JWT in API testing?|JWT (JSON Web Token) is used for secure API authentication and data exchange.
+88|What is GraphQL?|GraphQL is a query language for APIs that allows clients to request only the data they need.
+89|What is the difference between REST and GraphQL?|REST uses fixed endpoints, while GraphQL uses a single endpoint and flexible queries.
+90|What is a webhook in APIs?|A webhook sends real-time notifications to external systems when specific events occur.
+91|What is a gRPC?|gRPC is a high-performance RPC framework for client-server communication using Protocol Buffers.
+92|What is the purpose of API headers like `Cache-Control`?|`Cache-Control` manages caching behavior for API responses.
+93|What is API sandboxing?|API sandboxing provides a testing environment that mimics production.
+94|What is a data-driven test in API testing?|It tests the API with multiple sets of input data.
+95|What is an API retry mechanism?|It resends a failed request to handle temporary errors or timeouts.
+96|What is the purpose of `pm.sendRequest` in Postman?|It sends a new HTTP request from a pre-request or test script.
+97|What is the difference between SOAP and REST API testing?|SOAP APIs use strict XML formats, while REST APIs are more flexible and commonly use JSON.
+98|What is an API endpoint testing strategy?|It defines how endpoints will be tested, such as input validation, response verification, and performance testing.
+99|What is token expiration in API testing?|It ensures tokens expire after a specified time for enhanced security.
+100|What is the importance of API testing in microservices?|API testing ensures reliable communication and data exchange between microservices.

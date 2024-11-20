@@ -1,0 +1,100 @@
+1|What is AWS?|AWS (Amazon Web Services) is a cloud computing platform offering various services such as storage, computing, and networking.
+2|What are the core services provided by AWS?|Core services include EC2, S3, RDS, Lambda, and VPC.
+3|What is EC2 in AWS?|EC2 (Elastic Compute Cloud) provides resizable virtual servers for running applications.
+4|What is S3 in AWS?|S3 (Simple Storage Service) is an object storage service for storing and retrieving data.
+5|What is RDS in AWS?|RDS (Relational Database Service) is a managed database service supporting multiple database engines.
+6|What is AWS Lambda?|Lambda is a serverless compute service that runs code in response to events.
+7|What is the difference between Elastic Beanstalk and EC2?|Elastic Beanstalk automates application deployment, while EC2 provides raw virtual servers.
+8|What is a VPC in AWS?|VPC (Virtual Private Cloud) is a private network within AWS for launching resources.
+9|What are security groups in AWS?|Security groups act as virtual firewalls controlling inbound and outbound traffic for resources.
+10|What is IAM in AWS?|IAM (Identity and Access Management) manages access to AWS services and resources securely.
+11|What are IAM roles?|IAM roles grant temporary permissions to entities without using credentials.
+12|What are IAM policies?|Policies define permissions and control access to AWS resources.
+13|What is an AWS region?|A region is a geographical area where AWS hosts its data centers.
+14|What is an AWS availability zone?|An availability zone is an isolated data center within a region for fault tolerance.
+15|What is the difference between a region and an availability zone?|A region contains multiple availability zones, which are isolated for redundancy.
+16|What is CloudFormation in AWS?|CloudFormation automates infrastructure provisioning using templates.
+17|What is the purpose of AWS CLI?|The AWS CLI (Command Line Interface) allows managing AWS services using commands.
+18|What is an Elastic Load Balancer?|ELB distributes incoming traffic across multiple EC2 instances for high availability.
+19|What are the types of load balancers in AWS?|Types include Application Load Balancer, Network Load Balancer, and Classic Load Balancer.
+20|What is an Auto Scaling Group?|An Auto Scaling Group adjusts the number of EC2 instances based on demand.
+21|What is Route 53 in AWS?|Route 53 is a scalable Domain Name System (DNS) web service.
+22|What is CloudWatch?|CloudWatch monitors AWS resources and applications, providing metrics and logs.
+23|What is AWS CloudTrail?|CloudTrail tracks API calls and user activities in an AWS account.
+24|What is the difference between CloudWatch and CloudTrail?|CloudWatch monitors resources, while CloudTrail logs API activity.
+25|What is S3 bucket versioning?|Versioning keeps multiple versions of an object in an S3 bucket for recovery.
+26|What is the maximum size of an S3 object?|The maximum size is 5TB per object.
+27|What is the difference between S3 and EBS?|S3 is object storage, while EBS (Elastic Block Store) provides block storage for EC2.
+28|What is the difference between EBS and EFS?|EBS is for single-instance storage, while EFS (Elastic File System) supports multiple instances.
+29|What is the difference between public and private S3 buckets?|Public buckets are accessible to everyone, while private buckets restrict access.
+30|What is AWS DynamoDB?|DynamoDB is a fully managed NoSQL database service.
+31|What is the difference between RDS and DynamoDB?|RDS is a relational database, while DynamoDB is a NoSQL database.
+32|What is AWS ElasticCache?|ElasticCache provides in-memory caching for faster application performance.
+33|What is the difference between Redis and Memcached in ElasticCache?|Redis supports persistence, while Memcached is for volatile caching.
+34|What is an AWS S3 lifecycle policy?|A lifecycle policy automatically manages objects by transitioning them to different storage classes or deleting them.
+35|What are the different S3 storage classes?|Storage classes include Standard, Intelligent-Tiering, Standard-IA, One Zone-IA, Glacier, and Deep Archive.
+36|What is AWS Glue?|Glue is a fully managed ETL (Extract, Transform, Load) service.
+37|What is the purpose of AWS Step Functions?|Step Functions coordinate multiple AWS services into serverless workflows.
+38|What is AWS Kinesis?|Kinesis processes and analyzes streaming data in real-time.
+39|What is the difference between Kinesis Data Streams and Kinesis Firehose?|Data Streams processes real-time data, while Firehose delivers data to destinations like S3 or Redshift.
+40|What is the AWS Shared Responsibility Model?|AWS secures the infrastructure, while customers secure their data and applications.
+41|What is AWS Fargate?|Fargate is a serverless compute engine for running containers.
+42|What is ECS in AWS?|ECS (Elastic Container Service) manages containers on AWS.
+43|What is EKS in AWS?|EKS (Elastic Kubernetes Service) is a managed Kubernetes service.
+44|What is AWS CodePipeline?|CodePipeline automates CI/CD for building, testing, and deploying applications.
+45|What is AWS CodeBuild?|CodeBuild compiles source code and runs tests.
+46|What is AWS CodeDeploy?|CodeDeploy automates application deployment to EC2 or Lambda.
+47|What is AWS CodeCommit?|CodeCommit is a source code repository service like Git.
+48|What is the purpose of AWS Config?|AWS Config tracks changes in resource configurations and ensures compliance.
+49|What is AWS Systems Manager?|Systems Manager provides tools for managing resources and automating tasks.
+50|What is AWS Secrets Manager?|Secrets Manager stores and retrieves sensitive information like passwords and API keys.
+51|What is AWS KMS?|KMS (Key Management Service) manages encryption keys for secure data storage.
+52|What is the difference between KMS and Secrets Manager?|KMS encrypts and manages keys, while Secrets Manager stores secrets.
+53|What is AWS SQS?|SQS (Simple Queue Service) manages message queues for decoupling components.
+54|What is the difference between SQS and SNS?|SQS is for message queues, while SNS (Simple Notification Service) is for pub/sub messaging.
+55|What is AWS MQ?|MQ is a managed message broker service compatible with RabbitMQ and ActiveMQ.
+56|What is AWS Elastic Transcoder?|Elastic Transcoder converts media files into different formats and resolutions.
+57|What is AWS CloudFront?|CloudFront is a Content Delivery Network (CDN) for fast delivery of content globally.
+58|What is the difference between CloudFront and S3?|CloudFront delivers cached content globally, while S3 stores content.
+59|What is AWS Direct Connect?|Direct Connect establishes a dedicated network connection to AWS.
+60|What is AWS Snowball?|Snowball is a physical device for transferring large amounts of data to and from AWS.
+61|What is AWS Athena?|Athena queries data stored in S3 using SQL.
+62|What is AWS Redshift?|Redshift is a data warehouse for analyzing structured and semi-structured data.
+63|What is the difference between Redshift and RDS?|Redshift is optimized for analytics, while RDS is for transactional databases.
+64|What is the AWS Well-Architected Framework?|It is a set of best practices for designing secure, reliable, and cost-efficient applications on AWS.
+65|What is AWS Inspector?|Inspector assesses security vulnerabilities in EC2 instances.
+66|What is AWS Trusted Advisor?|Trusted Advisor provides recommendations to improve security, performance, and cost optimization.
+67|What is the purpose of AWS Elastic IP?|Elastic IP provides a static IP address for EC2 instances.
+68|What is the difference between an AMI and a snapshot?|AMI is a machine image, while a snapshot is a backup of EBS volumes.
+69|What is AWS LightSail?|LightSail provides simplified cloud services for small applications.
+70|What is AWS Batch?|Batch manages and runs batch computing jobs.
+71|What is AWS Outposts?|Outposts extend AWS services to on-premises environments.
+72|What is AWS Data Pipeline?|Data Pipeline automates data workflows between AWS and on-premises data sources.
+73|What is AWS Transfer Family?|It provides managed file transfers over SFTP, FTPS, and FTP.
+74|What is AWS Elastic Beanstalk?|Elastic Beanstalk deploys and manages applications automatically.
+75|What is the purpose of a NAT Gateway?|A NAT Gateway allows private instances to access the internet without exposing them.
+76|What is AWS Shield?|Shield protects applications from DDoS attacks.
+77|What is the difference between Shield Standard and Shield Advanced?|Shield Standard is free and offers basic protection, while Shield Advanced provides advanced features for a fee.
+78|What is AWS WAF?|WAF (Web Application Firewall) protects web applications from common exploits.
+79|What is the difference between WAF and Shield?|WAF filters traffic, while Shield focuses on DDoS protection.
+80|What is AWS Identity Center?|Identity Center provides centralized identity management for AWS accounts.
+81|What is the purpose of S3 Transfer Acceleration?|It speeds up data transfers to S3 using optimized network paths.
+82|What is the AWS Marketplace?|Marketplace is a digital catalog of third-party software and services.
+83|What is the purpose of AWS Glue Data Catalog?|It organizes metadata for datasets used in analytics and machine learning.
+84|What is the difference between CloudFormation and Terraform?|CloudFormation is AWS-specific, while Terraform is multi-cloud.
+85|What is AWS EMR?|EMR (Elastic MapReduce) processes large datasets using big data frameworks like Hadoop and Spark.
+86|What is AWS DataSync?|DataSync automates data transfer between on-premises and AWS.
+87|What is AWS Backup?|Backup automates the backup of AWS resources like EBS, RDS, and DynamoDB.
+88|What is AWS SageMaker?|SageMaker is a machine learning service for building, training, and deploying models.
+89|What is the difference between On-Demand and Reserved Instances?|On-Demand instances are pay-as-you-go, while Reserved Instances offer discounts for long-term commitments.
+90|What is the purpose of Spot Instances?|Spot Instances provide unused EC2 capacity at a lower cost.
+91|What is the AWS Free Tier?|Free Tier provides limited free access to AWS services for new customers.
+92|What is AWS Certificate Manager?|Certificate Manager issues and manages SSL/TLS certificates.
+93|What is AWS GuardDuty?|GuardDuty detects threats using machine learning and threat intelligence.
+94|What is AWS Detective?|Detective investigates and analyzes potential security issues.
+95|What is Amazon QuickSight?|QuickSight is a business intelligence tool for visualizing data.
+96|What is the difference between AWS Personal Health Dashboard and AWS Service Health Dashboard?|Personal Health Dashboard provides personalized alerts, while Service Health Dashboard shows global service status.
+97|What is the AWS Pricing Calculator?|It estimates costs for AWS services based on usage.
+98|What is the difference between AWS Global Accelerator and CloudFront?|Global Accelerator improves application availability, while CloudFront is for content delivery.
+99|What is AWS AppRunner?|AppRunner deploys containerized web applications automatically.
+100|What is the difference between public, private, and elastic IP addresses in AWS?|Public IP is dynamic, private IP is internal, and Elastic IP is a static public IP.

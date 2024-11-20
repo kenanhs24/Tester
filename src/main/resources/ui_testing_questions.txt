@@ -1,0 +1,100 @@
+1|What is UI testing?|UI (User Interface) testing ensures that the graphical user interface meets requirements and functions correctly.
+2|What is the purpose of UI testing?|To verify the usability, design, and functionality of the application from the user's perspective.
+3|What are the types of UI testing?|Manual testing, automated testing, and exploratory testing.
+4|What is the difference between UI testing and UX testing?|UI testing focuses on design elements, while UX testing evaluates user experience and satisfaction.
+5|What tools are used for UI testing?|Tools include Selenium, Cypress, TestComplete, Katalon, and Appium.
+6|What is cross-browser testing in UI testing?|Testing the application on multiple browsers to ensure compatibility.
+7|What is cross-device testing?|Testing the application on different devices (e.g., mobile, tablet, desktop).
+8|How do you verify UI elements in automated UI testing?|Use locators like ID, class, name, XPath, or CSS selectors to identify and interact with elements.
+9|What are the key challenges in UI testing?|Challenges include dynamic elements, cross-browser compatibility, responsiveness, and frequent UI changes.
+10|What is visual regression testing?|It ensures that changes to the UI do not affect the existing visual appearance of the application.
+11|How do you test responsiveness in UI?|Use browser developer tools to test the application at different screen resolutions or use automated tools like Selenium.
+12|What is pixel-perfect testing in UI?|Ensuring that the UI design matches the design specifications exactly in terms of layout, spacing, and colors.
+13|What is the importance of accessibility testing in UI?|It ensures the application is usable for people with disabilities, following standards like WCAG.
+14|What is the role of locators in UI testing?|Locators are used to identify and interact with elements in UI testing.
+15|What is a test strategy for UI testing?|A plan that defines the scope, approach, resources, and schedule for UI testing.
+16|How do you test a login form?|Verify field validations, error messages, successful login, and UI responsiveness.
+17|What is exploratory UI testing?|Testing the application without predefined test cases to discover unexpected issues.
+18|What is usability testing in UI?|It evaluates how easy it is for users to interact with the application.
+19|What is compatibility testing in UI?|Testing the application on different browsers, devices, and operating systems.
+20|How do you handle dynamic elements in UI testing?|Use dynamic locators like XPath with `contains()` or `starts-with()` and implement wait conditions.
+21|What is the difference between black-box testing and UI testing?|Black-box testing focuses on functionality without knowing the code, while UI testing focuses on user interface behavior.
+22|What is the difference between functional testing and UI testing?|Functional testing validates functionality; UI testing validates user interface elements and their behavior.
+23|What is a UI mockup?|A visual representation of the application's UI design.
+24|How do you test error messages in UI?|Trigger errors intentionally and verify if the error messages are displayed as per requirements.
+25|What is state testing in UI?|Validating UI behavior when an element or system is in a particular state (e.g., loading, success, error).
+26|How do you test a search box?|Check input validation, placeholder text, and behavior for valid and invalid searches.
+27|What is the role of assertions in automated UI testing?|Assertions verify the expected results during test execution.
+28|What is data-driven testing in UI?|Executing the same test with different sets of input data to ensure consistent behavior.
+29|How do you validate tooltips in UI?|Hover over the element and verify if the tooltip text is displayed correctly.
+30|What is localization testing in UI?|Testing the application for different languages, regions, and cultural formats.
+31|What is the difference between sanity testing and UI testing?|Sanity testing validates the functionality, while UI testing focuses on the interface's design and usability.
+32|How do you test dropdowns in UI?|Verify the list items, selection behavior, and alignment with design specifications.
+33|What is end-to-end testing in UI?|Testing the complete workflow of an application from the UI perspective.
+34|How do you test file upload functionality in UI?|Verify file selection, file type validation, upload success, and error messages.
+35|What is boundary testing in UI?|Testing the UI at its boundaries, such as field length limits and screen resolutions.
+36|What is the importance of CSS validation in UI testing?|It ensures that the UI styles match the design specifications.
+37|How do you test modal popups in UI?|Verify their appearance, behavior, and ability to close or interact with elements.
+38|How do you test drag-and-drop functionality in UI?|Simulate the drag-and-drop action and verify the behavior.
+39|What is exploratory testing in UI?|Testing without predefined test cases to uncover issues by exploring the application.
+40|What is smoke testing in UI?|Basic UI testing to ensure critical functionality is working before detailed testing.
+41|What are UI test cases for a shopping cart?|Verify add/remove items, update quantity, calculate totals, and checkout process.
+42|How do you test a responsive menu?|Test the menu's behavior on various screen sizes and resolutions.
+43|What is performance testing for UI?|Testing the UI's response time and behavior under load.
+44|What is a UI test plan?|A document outlining the objectives, approach, and scope of UI testing.
+45|How do you test user roles in UI?|Verify if users with different roles can access only their allowed features.
+46|What is smoke testing for UI?|Basic tests to ensure that the most important UI elements are functional.
+47|How do you test validation messages in forms?|Test input fields with valid and invalid data to check the error messages.
+48|What is regression testing in UI?|Re-executing UI test cases to ensure recent changes have not broken existing functionality.
+49|How do you automate UI testing?|Use tools like Selenium, Cypress, or Appium to write and execute automated test scripts.
+50|What are the challenges in UI automation?|Challenges include handling dynamic elements, frequent UI changes, and cross-browser compatibility.
+51|How do you test UI animations?|Verify animations using automation tools that support timing validation or manual observation for smoothness and correctness.
+52|What is A/B testing in UI?|A/B testing compares two versions of a UI to determine which performs better based on user feedback or metrics.
+53|How do you test color contrast in UI?|Use tools like Axe or manual methods to ensure compliance with accessibility standards (WCAG).
+54|What are the common types of UI bugs?|Alignment issues, broken links, inconsistent fonts, color mismatches, and incorrect element placements.
+55|What is the role of screenshots in UI testing?|Screenshots provide visual proof of the current UI state and help document issues for debugging.
+56|How do you test pagination in UI?|Verify navigation between pages, correct item counts, and the display of page numbers.
+57|What are the key components of a UI test case?|Steps, expected results, input data, and preconditions.
+58|What is grid testing in UI?|Testing the alignment and responsiveness of grid layouts in the UI.
+59|How do you test hover effects in UI?|Use tools like Selenium to simulate mouse hover and verify the expected behavior.
+60|What is snapshot testing in UI?|It captures a UI's current state and compares it against a baseline to detect unexpected changes.
+61|How do you handle pop-ups in automated UI testing?|Use automation tool commands like `driver.switchTo().alert()` to interact with alerts or pop-ups.
+62|How do you validate images in UI?|Check image loading, resolution, alt text, and alignment.
+63|What are the best practices for UI testing?|Test early, focus on user flows, prioritize cross-browser testing, and use both manual and automated approaches.
+64|How do you test date pickers in UI?|Verify date selection, default values, and input formats.
+65|What are the risks of skipping UI testing?|Potential issues include broken functionality, poor user experience, and design inconsistencies.
+66|How do you validate font consistency in UI?|Compare fonts, sizes, and weights with design specifications across the UI.
+67|What are accessibility checks for UI testing?|Verify screen reader compatibility, keyboard navigation, and compliance with WCAG standards.
+68|How do you test error handling in UI?|Trigger errors intentionally and verify error messages, UI responses, and logging mechanisms.
+69|What is exploratory UI testing?|Unstructured testing focused on discovering defects by exploring the application without predefined test cases.
+70|How do you test localization in UI?|Verify language translations, cultural formatting, and text alignment for various regions.
+71|How do you test alerts and notifications in UI?|Verify the appearance, timing, and dismissal functionality of alerts.
+72|What is the difference between UI testing and integration testing?|UI testing focuses on the user interface, while integration testing validates the interaction between components or systems.
+73|How do you test a file download feature in UI?|Verify the file type, size, and location, and ensure it opens correctly after download.
+74|What is progressive enhancement in UI?|A design approach that ensures basic functionality works on all devices, with advanced features for modern browsers.
+75|How do you test tooltips in UI?|Hover over the element and verify the tooltip's text, position, and display behavior.
+76|What is the difference between manual UI testing and automated UI testing?|Manual testing involves human effort, while automated testing uses tools to execute predefined test scripts.
+77|How do you test responsive tables in UI?|Check table behavior on different screen sizes, including scrolling, alignment, and visibility of columns.
+78|What is baseline testing in UI?|Comparing the current UI state with a baseline to identify changes or regressions.
+79|How do you test dark mode in UI?|Verify color contrast, visibility, and design consistency in dark mode.
+80|What is a UI component library?|A collection of pre-built UI components (e.g., buttons, modals) for consistent design and faster development.
+81|How do you test auto-suggestion fields in UI?|Type partial input and verify suggestions based on relevance and accuracy.
+82|What is heuristic evaluation in UI?|An expert-based evaluation of a UI's usability against established heuristics or guidelines.
+83|How do you test tab navigation in UI?|Verify focus movement, keyboard navigation, and proper highlighting of active tabs.
+84|What is the role of a wireframe in UI testing?|Wireframes serve as a reference for verifying UI structure and layout.
+85|How do you test breadcrumbs in UI?|Verify navigation links, hierarchy display, and alignment with the current page.
+86|What is performance testing for UI?|Measuring the UI's response time, load times, and behavior under stress conditions.
+87|How do you test video or audio players in UI?|Verify playback functionality, controls (e.g., play, pause), and compatibility with different formats.
+88|What is the importance of viewport testing?|It ensures the UI behaves correctly on various screen sizes and resolutions.
+89|How do you test sliders in UI?|Verify minimum/maximum values, drag behavior, and alignment with the design.
+90|How do you handle flaky tests in UI automation?|Use stable locators, implement waits, and address dynamic element issues.
+91|How do you validate the alignment of UI elements?|Compare with design specifications or use tools like browser developer tools for pixel-perfect validation.
+92|What is the importance of user personas in UI testing?|They help simulate real-world scenarios by focusing on specific user types.
+93|How do you test input fields for validation?|Verify boundary values, invalid inputs, and required field messages.
+94|What is boundary testing in UI?|Testing the limits of input fields, resolutions, or other UI constraints.
+95|How do you test sticky headers or footers in UI?|Scroll through the page and verify if the header/footer remains visible and functional.
+96|What is CSS regression testing?|Ensuring CSS changes do not break the existing design using tools like Percy or BackstopJS.
+97|How do you test form submissions in UI?|Verify input validation, success/error messages, and data submission.
+98|What is the importance of CI/CD in UI automation?|It ensures automated tests run consistently with every code deployment.
+99|How do you test hover menus in UI?|Simulate hover actions and verify menu visibility, functionality, and alignment.
+100|What is the role of a design system in UI testing?|It ensures consistency in design elements, making testing more structured and efficient.

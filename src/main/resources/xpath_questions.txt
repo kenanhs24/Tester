@@ -1,0 +1,100 @@
+1|What is XPath?|XPath is a language used to navigate and locate elements in an XML document or an HTML DOM.
+2|What are the types of XPath?|There are two types: Absolute XPath and Relative XPath.
+3|What is Absolute XPath?|Absolute XPath uses a complete path from the root node, e.g., `/html/body/div`.
+4|What is Relative XPath?|Relative XPath starts from anywhere in the DOM structure using `//`, e.g., `//div[@id='content']`.
+5|What is the difference between Absolute and Relative XPath?|Absolute XPath is a full path and prone to changes, while Relative XPath is shorter and more robust.
+6|How do you write XPath using attributes?|Use `@attribute_name=value`, e.g., `//input[@id='username']`.
+7|What is the purpose of `contains()` in XPath?|`contains()` matches elements whose attribute values partially match a given text, e.g., `//input[contains(@id, 'user')]`.
+8|What is the purpose of `starts-with()` in XPath?|`starts-with()` matches elements whose attribute values start with specific text, e.g., `//div[starts-with(@class, 'menu')]`.
+9|How do you find an element by text using XPath?|Use the `text()` function, e.g., `//a[text()='Login']`.
+10|How do you write XPath using OR and AND?|Use `|` for OR, and `and` for AND, e.g., `//input[@id='user' or @name='username']`.
+11|How do you select an element based on its position?|Use `index`, e.g., `(//div)[2]` selects the second `<div>` element.
+12|What is the difference between `(//div)[1]` and `//div[1]`?|`(//div)[1]` selects the first `<div>` from all, while `//div[1]` selects the first `<div>` under its parent.
+13|How do you write XPath for dynamic elements?|Use functions like `contains()` or `starts-with()` for dynamic attribute values.
+14|How do you locate sibling elements using XPath?|Use `following-sibling` or `preceding-sibling`, e.g., `//div[@id='header']/following-sibling::div`.
+15|What is the `ancestor` axis in XPath?|`ancestor` selects all ancestors (parent, grandparent, etc.) of a node, e.g., `//span/ancestor::div`.
+16|What is the `descendant` axis in XPath?|`descendant` selects all descendants (children, grandchildren, etc.) of a node, e.g., `//div[@id='container']/descendant::span`.
+17|What is the `parent` axis in XPath?|`parent` selects the immediate parent of a node, e.g., `//span/parent::div`.
+18|What is the `self` axis in XPath?|`self` selects the current node, e.g., `//div[@class='menu']/self::div`.
+19|How do you select multiple elements with XPath?|Use the `|` operator, e.g., `//input[@type='text'] | //button[@type='submit']`.
+20|How do you locate an element with a specific child using XPath?|Use `child` or conditions, e.g., `//div[child::span]` or `//div[./span[@class='icon']]`.
+21|How do you find an element using partial text?|Use `contains(text(), 'partialText')`, e.g., `//a[contains(text(), 'Sign')]`.
+22|How do you find elements with a specific attribute value?|Use `@attribute=value`, e.g., `//button[@name='submit']`.
+23|How do you find the last element in a list using XPath?|Use `last()`, e.g., `(//div)[last()]`.
+24|How do you find elements that are visible on the page?|Combine conditions, e.g., `//div[@class='content' and not(contains(@style, 'display:none'))]`.
+25|What is the difference between `child` and `descendant` in XPath?|`child` selects direct children, while `descendant` selects all nested elements.
+26|How do you select the nth child of an element using XPath?|Use `nth` position, e.g., `//ul/li[3]` selects the third `<li>` in `<ul>`.
+27|How do you find all links on a webpage using XPath?|Use the `<a>` tag, e.g., `//a`.
+28|How do you locate an input element inside a form using XPath?|Use context, e.g., `//form[@id='loginForm']//input[@name='username']`.
+29|How do you select the parent of an element using XPath?|Use the `parent` axis, e.g., `//span[@class='label']/parent::div`.
+30|How do you select the first element in a group using XPath?|Use `[1]`, e.g., `(//input[@type='text'])[1]`.
+31|How do you write XPath for elements without attributes?|Use the tag name only, e.g., `//p` selects all `<p>` elements.
+32|How do you locate an element by its inner text?|Use `text()`, e.g., `//button[text()='Submit']`.
+33|What is the `following` axis in XPath?|`following` selects all nodes after the current node, e.g., `//h1/following::p`.
+34|What is the `preceding` axis in XPath?|`preceding` selects all nodes before the current node, e.g., `//div[@id='footer']/preceding::div`.
+35|What is the `not()` function in XPath?|`not()` is used to exclude elements, e.g., `//div[not(@class='hidden')]`.
+36|What is the difference between `*` and `node()` in XPath?|`*` matches all elements, while `node()` matches all nodes (elements, text, comments).
+37|How do you locate an element by its class using XPath?|Use the `@class` attribute, e.g., `//div[@class='container']`.
+38|How do you locate an element by multiple attributes?|Combine conditions, e.g., `//input[@type='text' and @name='username']`.
+39|How do you find all elements with a specific tag name?|Use the tag name, e.g., `//div` selects all `<div>` elements.
+40|What is the `position()` function in XPath?|`position()` returns the position of a node in a set, e.g., `//li[position()=2]`.
+41|How do you select elements by index in XPath?|Use `[index]`, e.g., `//tr[3]` selects the third `<tr>` element.
+42|How do you find elements with an attribute that ends with a specific value?|Use `ends-with()` (if supported), e.g., `//div[ends-with(@id, 'end')]`.
+43|What is the difference between `//` and `/` in XPath?|`//` selects nodes in the entire document, while `/` selects nodes from the root.
+44|How do you locate a checkbox using XPath?|Use the `<input>` tag with `type='checkbox'`, e.g., `//input[@type='checkbox']`.
+45|How do you locate radio buttons using XPath?|Use the `<input>` tag with `type='radio'`, e.g., `//input[@type='radio']`.
+46|What is the `normalize-space()` function in XPath?|`normalize-space()` trims leading and trailing spaces from text, e.g., `//span[normalize-space(text())='Login']`.
+47|How do you write XPath for elements with a specific number of children?|Use `count()`, e.g., `//div[count(child::*)=3]`.
+48|What is the difference between `@*` and `node()`?|`@*` matches all attributes, while `node()` matches all nodes.
+49|How do you write XPath for elements containing specific text and an attribute?|Combine `contains()` with attributes, e.g., `//button[contains(text(), 'Add') and @type='button']`.
+50|How do you select elements with specific namespace in XPath?|Use the namespace, e.g., `//ns:tag` where `ns` is the namespace prefix.
+51|How do you locate an element using partial attribute values?|Use `contains()`, e.g., `//input[contains(@id, 'user')]`.
+52|What is the difference between `//` and `./` in XPath?|`//` searches the entire DOM, while `./` starts the search from the current node.
+53|How do you locate elements by their tag and attribute?|Use `@attribute`, e.g., `//div[@id='header']`.
+54|How do you write an XPath to locate the nth occurrence of an element?|Use indexing, e.g., `(//button)[3]` selects the third `<button>`.
+55|How do you find elements using an attribute that starts with a specific value?|Use `starts-with()`, e.g., `//input[starts-with(@id, 'user')]`.
+56|What is the `child` axis in XPath?|`child` selects immediate children of a node, e.g., `//div/child::span`.
+57|How do you select all descendants of an element?|Use `descendant::`, e.g., `//ul/descendant::li` selects all `<li>` under `<ul>`.
+58|What is the `following-sibling` axis in XPath?|`following-sibling` selects siblings after the current node, e.g., `//h2/following-sibling::p`.
+59|How do you locate the first element of a specific type?|Use `[1]`, e.g., `//input[@type='text'][1]`.
+60|What is the `preceding-sibling` axis in XPath?|`preceding-sibling` selects siblings before the current node, e.g., `//li[@class='active']/preceding-sibling::li`.
+61|How do you select the last child of an element using XPath?|Use `last()`, e.g., `//ul/li[last()]`.
+62|How do you locate elements without a specific attribute?|Use `not()`, e.g., `//input[not(@type)]`.
+63|What is the difference between `@id='value'` and `contains(@id, 'value')`?|The first matches an exact value; the second matches a partial value.
+64|How do you select all nodes in the DOM using XPath?|Use `//*`, which selects all elements.
+65|What is the `ancestor-or-self` axis in XPath?|`ancestor-or-self` selects the node and all its ancestors, e.g., `//span/ancestor-or-self::div`.
+66|How do you find an element with multiple conditions in XPath?|Use `and`, e.g., `//div[@id='header' and @class='main']`.
+67|What is the `following` axis in XPath?|`following` selects all nodes after the current node in the document, e.g., `//h2/following::div`.
+68|How do you locate an element by combining text and attributes?|Combine `text()` and `@attribute`, e.g., `//a[text()='Login' and @class='btn']`.
+69|What is the `preceding` axis in XPath?|`preceding` selects all nodes before the current node in the document, e.g., `//div[@id='footer']/preceding::div`.
+70|How do you write XPath for elements with no child nodes?|Use `[not(child::*)]`, e.g., `//div[not(child::*)]`.
+71|What is the difference between `//tag` and `./tag`?|`//tag` selects nodes anywhere in the document, while `./tag` selects nodes relative to the current node.
+72|How do you find elements by multiple classes in XPath?|Use `contains()` multiple times, e.g., `//div[contains(@class, 'class1') and contains(@class, 'class2')]`.
+73|What is the `attribute` axis in XPath?|`attribute` selects attributes of a node, e.g., `//input/attribute::type`.
+74|How do you locate elements by their position among siblings?|Use `position()`, e.g., `//li[position()=3]` selects the third `<li>`.
+75|How do you select the first child of an element?|Use `*[1]`, e.g., `//div/*[1]`.
+76|How do you select the nth child of a parent element?|Use indexing, e.g., `//div[@id='container']/child::*[3]`.
+77|How do you find all nodes including text and comments?|Use `node()`, e.g., `//div/node()`.
+78|How do you select the last node among siblings?|Use `last()`, e.g., `//div[last()]`.
+79|How do you locate elements based on partial text?|Use `contains(text(), 'partial')`, e.g., `//p[contains(text(), 'welcome')]`.
+80|How do you locate an element based on text ignoring whitespace?|Use `normalize-space()`, e.g., `//a[normalize-space(text())='Home']`.
+81|How do you locate an element with a dynamic ID in XPath?|Use `starts-with()` or `contains()`, e.g., `//div[starts-with(@id, 'dynamic')]`.
+82|What is the difference between `//tag` and `//tag[@attr='value']`?|`//tag` selects all elements with the tag, while `//tag[@attr='value']` selects only elements with the specified attribute and value.
+83|How do you locate all sibling elements of a node?|Use `following-sibling::*`, e.g., `//li[@class='current']/following-sibling::*`.
+84|How do you find elements by combining text and index?|Use `text()` with indexing, e.g., `(//a[text()='Next'])[2]`.
+85|What is the `parent` axis in XPath?|`parent` selects the parent of a node, e.g., `//span[@class='label']/parent::div`.
+86|How do you locate elements with a specific attribute but no child nodes?|Use `[not(child::*)]`, e.g., `//div[@id='unique' and not(child::*)]`.
+87|How do you find an element with a specific tag and partial class?|Use `contains(@class, 'value')`, e.g., `//div[contains(@class, 'header')]`.
+88|How do you locate an element by its sibling?|Use `following-sibling` or `preceding-sibling`, e.g., `//div[@id='header']/following-sibling::ul`.
+89|How do you find the immediate child of an element?|Use `/child::`, e.g., `//div/child::p`.
+90|How do you select all attributes of an element?|Use `@*`, e.g., `//input[@*]`.
+91|What is the difference between `child::` and `/`?|`child::` explicitly selects children, while `/` is a shorthand for selecting children.
+92|How do you locate an element using multiple partial matches?|Combine `contains()`, e.g., `//div[contains(@class, 'main') and contains(@id, 'content')]`.
+93|What is the difference between `text()` and `node()`?|`text()` selects only text nodes, while `node()` selects all nodes (elements, attributes, text, comments).
+94|How do you select all child nodes of an element?|Use `child::*`, e.g., `//ul/child::*`.
+95|How do you write XPath for elements containing both text and specific attributes?|Combine `text()` and attributes, e.g., `//a[text()='Submit' and @class='button']`.
+96|How do you locate elements using a mix of relative and absolute XPath?|Combine both, e.g., `/html/body//div[@class='container']`.
+97|How do you select all links inside a specific div?|Use the `<a>` tag with context, e.g., `//div[@id='footer']//a`.
+98|How do you locate an element by its index in a group?|Use `(//tag)[index]`, e.g., `(//input[@type='text'])[2]`.
+99|What is the purpose of `ends-with()` in XPath?|`ends-with()` selects elements whose attribute value ends with specific text, e.g., `//div[ends-with(@id, 'footer')]`.
+100|How do you write XPath for elements with a specific child count?|Use `count()`, e.g., `//ul[count(li)=5]`.

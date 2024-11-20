@@ -1,0 +1,100 @@
+1|What is JUnit?|JUnit is a Java framework used for writing and running unit tests.
+2|What is the purpose of JUnit?|JUnit helps test individual units of code, ensuring that each component functions as expected.
+3|What are the features of JUnit?|Features include annotations, assertions, test suites, and integration with build tools like Maven.
+4|What is the latest version of JUnit?|As of now, the latest version is JUnit 5, also known as Jupiter.
+5|What is the difference between JUnit 4 and JUnit 5?|JUnit 5 introduces new annotations, modular architecture, and improved extensions compared to JUnit 4.
+6|What are annotations in JUnit?|Annotations provide metadata to configure and run tests, e.g., `@Test`, `@BeforeEach`, `@AfterEach`.
+7|What is the use of the `@Test` annotation?|It marks a method as a test case.
+8|What is the use of the `@BeforeEach` annotation?|It runs setup code before each test method.
+9|What is the use of the `@AfterEach` annotation?|It runs cleanup code after each test method.
+10|What is the `@BeforeAll` annotation?|It runs setup code once before all test methods in a class.
+11|What is the `@AfterAll` annotation?|It runs cleanup code once after all test methods in a class.
+12|What is the use of assertions in JUnit?|Assertions validate the expected and actual outcomes in test cases.
+13|What are the commonly used assertions in JUnit?|`assertEquals`, `assertTrue`, `assertFalse`, `assertNull`, `assertNotNull`, `assertThrows`.
+14|What is the `assertEquals` method?|It checks if two values are equal.
+15|What is the `assertTrue` method?|It checks if a condition is true.
+16|What is the `assertFalse` method?|It checks if a condition is false.
+17|What is the `assertNull` method?|It checks if an object is null.
+18|What is the `assertNotNull` method?|It checks if an object is not null.
+19|What is the `assertThrows` method?|It checks if a specific exception is thrown by a method.
+20|What is a test suite in JUnit?|A test suite is a collection of test cases that run together.
+21|How do you create a test suite in JUnit?|Use the `@Suite` and `@SelectClasses` annotations to group tests.
+22|What is the `@Disabled` annotation in JUnit?|It disables a test method or class, preventing it from running.
+23|What is the `@RepeatedTest` annotation in JUnit?|It runs the same test multiple times.
+24|What is the difference between `@BeforeEach` and `@BeforeAll`?|`@BeforeEach` runs before each test, while `@BeforeAll` runs once before all tests.
+25|What is the difference between `@AfterEach` and `@AfterAll`?|`@AfterEach` runs after each test, while `@AfterAll` runs once after all tests.
+26|What is the purpose of `@ParameterizedTest` in JUnit?|It runs the same test with different inputs.
+27|What is the `@CsvSource` annotation?|It provides multiple sets of input values for `@ParameterizedTest`.
+28|What is the `@ValueSource` annotation?|It provides a single array of input values for `@ParameterizedTest`.
+29|What is the `@MethodSource` annotation?|It provides test data using a static method for `@ParameterizedTest`.
+30|What is the `@Timeout` annotation?|It specifies the maximum time a test can run before failing.
+31|What is the purpose of the `@Nested` annotation?|It organizes test methods into logical groups.
+32|What is the `@Tag` annotation in JUnit?|It is used to categorize and filter test cases.
+33|What is the difference between `@Tag` and `@DisplayName`?|`@Tag` is for categorization, while `@DisplayName` is for naming the test in reports.
+34|What is the purpose of `@DisplayName`?|It sets a custom name for a test method.
+35|What is the `@TempDir` annotation in JUnit?|It creates a temporary directory for test methods.
+36|How do you handle exceptions in JUnit tests?|Use `assertThrows` to validate exceptions in test methods.
+37|What is the use of `fail()` in JUnit?|It explicitly fails a test case.
+38|What is the difference between `assertArrayEquals` and `assertEquals`?|`assertArrayEquals` compares arrays, while `assertEquals` compares individual values.
+39|What is the role of test fixtures in JUnit?|Fixtures provide a fixed baseline environment for running tests.
+40|What is the difference between unit tests and integration tests?|Unit tests test individual components, while integration tests validate interactions between components.
+41|What is the purpose of `@TestFactory`?|It creates dynamic test cases at runtime.
+42|What is the `@DynamicTest` annotation?|It creates test cases dynamically for runtime evaluation.
+43|What is the `@TempDir` annotation in JUnit?|It creates temporary files or directories for testing.
+44|How do you run JUnit tests in Maven?|Use the `mvn test` command.
+45|What is the purpose of the `maven-surefire-plugin`?|It runs unit tests in Maven.
+46|What is the difference between `JUnit` and `TestNG`?|JUnit is simpler and more commonly used for unit testing, while TestNG offers advanced features like parallel execution.
+47|How do you integrate JUnit with Jenkins?|Use Jenkins' Maven or Gradle plugins to automate JUnit tests.
+48|What is the purpose of `Mockito` in JUnit tests?|Mockito is a framework for mocking objects in unit tests.
+49|What is the purpose of the `@Mock` annotation?|It creates mock objects for testing.
+50|What is the purpose of the `@InjectMocks` annotation?|It injects mock objects into the class being tested.
+51|How do you test private methods in JUnit?|Use reflection or restructure code to make the methods testable indirectly.
+52|What is the purpose of `@RunWith` in JUnit?|It customizes the test runner used to execute tests.
+53|What is the `TestWatcher` API in JUnit?|It monitors the execution lifecycle of tests for logging and reporting.
+54|How do you skip tests in JUnit?|Use the `@Disabled` annotation.
+55|What is the difference between `JUnit 4` and `JUnit 5` assertions?|JUnit 5 assertions are more flexible and provide better exception handling.
+56|How do you use JUnit with IntelliJ IDEA?|Add JUnit dependencies to the project and use IntelliJ's built-in test runner.
+57|What is the `assertIterableEquals` method?|It checks if two iterables contain the same elements in the same order.
+58|What is the difference between `@ExtendWith` and `@RunWith`?|`@ExtendWith` is used in JUnit 5 for extensions, while `@RunWith` is used in JUnit 4 for runners.
+59|What is the purpose of `@TestInstance`?|It defines the lifecycle of test instances (per method or per class).
+60|How do you group tests in JUnit?|Use tags with the `@Tag` annotation.
+61|What is the purpose of `@SelectPackages`?|It specifies packages to include in a test suite.
+62|What is the purpose of `@SelectClasses`?|It specifies classes to include in a test suite.
+63|What is the `JUnit Platform`?|It is the foundation of JUnit 5 that provides the infrastructure to run tests.
+64|How do you run JUnit tests in Gradle?|Use the `gradle test` command.
+65|What is a dependency injection in JUnit?|It is the process of injecting required objects into test methods automatically.
+66|What is the purpose of `@EnabledIf`?|It conditionally enables test cases based on expressions.
+67|What is the purpose of `@Condition` in JUnit?|It enables or disables tests dynamically at runtime.
+68|What is the purpose of `@BeforeAll`?|It executes a method once before all test cases in a class.
+69|What is the difference between `assertEquals` and `assertSame`?|`assertEquals` checks value equality, while `assertSame` checks reference equality.
+70|What is the `assertAll` method in JUnit?|It groups multiple assertions into a single test case.
+71|What is the `assertIterableEquals` method?|It compares two iterable objects for equality.
+72|What is the `assertArrayEquals` method?|It checks if two arrays are equal.
+73|What is the `@TestTemplate` annotation?|It provides a template for running multiple tests with dynamic parameters.
+74|What is the `assertTimeout` method?|It fails a test if it exceeds a specified timeout.
+75|What is the purpose of the `@ResourceLock` annotation?|It synchronizes access to shared resources during tests.
+76|What is `@EnabledOnOs`?|It runs tests only on specified operating systems.
+77|What is `@DisabledOnOs`?|It disables tests on specified operating systems.
+78|What is `@EnabledOnJre`?|It runs tests on specific Java Runtime Environments.
+79|What is `@DisabledOnJre`?|It disables tests on specific Java Runtime Environments.
+80|What is `@TempDir`?|It provides a temporary directory for use during tests.
+81|What is the purpose of the `assumeTrue` method?|It skips tests based on specific conditions.
+82|What is the `assumeFalse` method?|It skips tests if a condition evaluates to false.
+83|What is the purpose of the `@Order` annotation?|It specifies the order of test execution.
+84|How do you handle flaky tests in JUnit?|Use retries or stabilize dynamic conditions in the code.
+85|How do you test time-sensitive code?|Use the `assertTimeout` method to validate execution time.
+86|What is the `@ExtendWith` annotation?|It registers custom extensions for tests.
+87|What is a JUnit extension?|An extension customizes the behavior of tests in JUnit 5.
+88|What is the purpose of the `@RepeatedTest` annotation?|It runs the same test multiple times.
+89|How do you handle parameterized tests?|Use `@ParameterizedTest` with annotations like `@ValueSource`, `@CsvSource`, or `@MethodSource`.
+90|What is the `@TempDir` annotation?|It creates temporary files or directories for test cases.
+91|How do you test exceptions in JUnit?|Use `assertThrows` to validate exceptions.
+92|What is the `@Order` annotation?|It sets the order of execution for tests.
+93|What is `assertNotSame`?|It checks if two objects do not refer to the same instance.
+94|What is `assertLinesMatch`?|It compares two lists of strings line by line.
+95|What is `assertInstanceOf`?|It checks if an object is an instance of a specified class.
+96|How do you disable tests based on conditions?|Use `assumeTrue` or `@EnabledIf`.
+97|What is `@DisplayNameGeneration`?|It customizes the display names for test methods.
+98|How do you generate reports for JUnit tests?|Use plugins like Surefire or third-party reporting tools.
+99|How do you test database connections in JUnit?|Use in-memory databases or mocking frameworks.
+100|What are the best practices for JUnit testing?|Write isolated tests, mock dependencies, use meaningful names, and focus on edge cases.

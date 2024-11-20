@@ -1,0 +1,100 @@
+1|What is Jenkins?|Jenkins is an open-source automation server used for continuous integration and continuous delivery (CI/CD).
+2|What are the main features of Jenkins?|Features include easy installation, plugin support, distributed builds, and pipeline integration.
+3|What is continuous integration (CI)?|CI is a development practice where code changes are integrated frequently and verified by automated tests.
+4|What is continuous delivery (CD)?|CD ensures that code is always in a deployable state, enabling frequent and reliable releases.
+5|How do you install Jenkins?|Download Jenkins from the official site, install it using Java, or use Docker for containerized installations.
+6|What is a Jenkins pipeline?|A pipeline is a suite of plugins that automate the process of building, testing, and deploying applications.
+7|What are the types of Jenkins pipelines?|Two types: Declarative Pipeline and Scripted Pipeline.
+8|What is the difference between Declarative and Scripted Pipelines?|Declarative is simpler and uses a defined structure, while Scripted is more flexible and uses Groovy code.
+9|What is a Jenkins job?|A job is a task or process configured in Jenkins to build, test, or deploy code.
+10|What is a freestyle project in Jenkins?|A freestyle project is a simple build job with custom configurations for tasks like compiling code and running tests.
+11|What is the role of plugins in Jenkins?|Plugins extend Jenkins' functionality, such as adding SCM integration, test reporting, and notifications.
+12|How do you install plugins in Jenkins?|Go to "Manage Jenkins" > "Manage Plugins" and install plugins from the available list.
+13|What is the purpose of the Jenkins workspace?|The workspace is a directory on the Jenkins server where the source code and build artifacts are stored.
+14|What is the Jenkins master-slave architecture?|The master coordinates tasks, while slaves execute them on distributed nodes.
+15|What is the use of Jenkins agents?|Agents (slaves) are used to distribute build jobs across multiple machines.
+16|How do you create a Jenkins job?|Go to "New Item," choose the job type (e.g., Freestyle, Pipeline), and configure it.
+17|What is the `Jenkinsfile`?|`Jenkinsfile` is a text file that defines a Jenkins pipeline as code.
+18|How do you run a Jenkins pipeline?|Create a job, select "Pipeline," and provide the pipeline script or a `Jenkinsfile`.
+19|What are stages in a Jenkins pipeline?|Stages represent different steps in the pipeline, like "Build," "Test," and "Deploy."
+20|What is the `post` section in a Jenkins pipeline?|It defines actions to perform after pipeline execution, such as notifications or cleanup.
+21|What is the `agent` block in a Jenkins pipeline?|It specifies where the pipeline or stage should run (e.g., on a specific agent or docker container).
+22|What are environment variables in Jenkins?|Environment variables store data that can be accessed during a job execution, like `BUILD_NUMBER` or `WORKSPACE`.
+23|What is the `BUILD_NUMBER` environment variable?|It provides the unique build number for the current job.
+24|What is the difference between `stable` and `unstable` builds in Jenkins?|A stable build passes all tests, while an unstable build has issues like test failures.
+25|How do you schedule builds in Jenkins?|Use the "Build Periodically" option with CRON syntax for scheduling.
+26|What is the purpose of the Jenkins `Blue Ocean` plugin?|Blue Ocean provides a modern and user-friendly interface for Jenkins pipelines.
+27|What is the `checkout` step in Jenkins?|It checks out source code from the version control system (e.g., Git, SVN).
+28|How do you integrate Jenkins with Git?|Use the Git plugin to clone repositories and trigger builds on commits.
+29|What is the difference between `poll SCM` and `webhook` triggers?|`poll SCM` periodically checks for changes, while webhooks trigger builds instantly on changes.
+30|What is the purpose of the `archiveArtifacts` step?|It archives build artifacts for future use or reference.
+31|How do you trigger a build from another job?|Use the "Build other projects" option or `build` step in pipelines.
+32|What is the purpose of the `pipeline` block in a Jenkinsfile?|It defines the structure of a Jenkins pipeline, including stages and steps.
+33|What is the `sh` step in a Jenkins pipeline?|It executes shell commands on Unix-based systems.
+34|What is the `bat` step in a Jenkins pipeline?|It executes batch commands on Windows-based systems.
+35|What is the difference between `input` and `timeout` in Jenkins?|`input` pauses the pipeline for user input, while `timeout` fails the pipeline after a specified duration.
+36|What is the `retry` step in Jenkins?|It retries a step or block if it fails, up to a specified number of times.
+37|What is a parameterized build in Jenkins?|A build that accepts parameters (e.g., branch name, environment) for dynamic execution.
+38|What is the `when` directive in a Jenkins pipeline?|It conditionally runs a stage based on expressions or variables.
+39|What is the `parallel` directive in a Jenkins pipeline?|It runs multiple stages concurrently.
+40|What is the `stash` step in Jenkins?|It stores files for use in later pipeline stages or nodes.
+41|What is the `unstash` step in Jenkins?|It retrieves stashed files for use in the current stage.
+42|How do you configure email notifications in Jenkins?|Use the "E-mail Notification" or "Extended E-mail Notification" plugin.
+43|What is the role of the `post` section in a pipeline?|It defines post-execution tasks like cleanup, notifications, or archiving results.
+44|What is the Jenkins CLI?|The Jenkins Command-Line Interface allows remote interaction with a Jenkins instance.
+45|What is the difference between `build` and `trigger` in Jenkins?|`build` starts another job, while `trigger` schedules it to run after a specific condition.
+46|What is the `catchError` step in Jenkins?|It marks a stage as successful even if errors occur, for graceful handling.
+47|What is the purpose of the `try-catch` block in a Jenkins pipeline?|It handles exceptions gracefully during pipeline execution.
+48|What is the Jenkins Artifactory plugin?|It integrates Jenkins with JFrog Artifactory for artifact management.
+49|How do you secure Jenkins?|Use user authentication, role-based access control (RBAC), and HTTPS.
+50|What is the purpose of the Jenkins credentials store?|It securely stores credentials (e.g., passwords, API keys) for use in pipelines.
+51|How do you create credentials in Jenkins?|Go to "Manage Jenkins" > "Manage Credentials" and add credentials.
+52|What is the Jenkins Matrix Authorization Strategy?|It defines fine-grained permissions for users and groups.
+53|How do you back up Jenkins?|Backup the `$JENKINS_HOME` directory, which contains configuration and job data.
+54|What is the Jenkinsfile library?|It stores reusable pipeline code for modular and maintainable pipelines.
+55|What is a shared library in Jenkins?|A shared library is a reusable piece of Groovy code for pipelines stored in a Git repository.
+56|What is the difference between `input` and `parameters` in Jenkins?|`input` pauses the pipeline for manual approval, while `parameters` accept input at build time.
+57|What is the Jenkins Monitoring plugin?|It monitors Jenkins performance metrics and resources.
+58|What is a distributed build in Jenkins?|It runs builds on multiple nodes to optimize resource usage and parallelism.
+59|What is the Jenkins pipeline syntax generator?|It provides a graphical way to generate pipeline code snippets.
+60|What is the purpose of the `sleep` step in a Jenkins pipeline?|It pauses the pipeline for a specified duration.
+61|How do you handle flaky tests in Jenkins?|Use retries, test stabilization techniques, or mark tests as unstable.
+62|What is the `currentBuild` object in Jenkins?|It provides information about the current build, like status and result.
+63|How do you deploy artifacts using Jenkins?|Use plugins like "Deploy to Container" or custom scripts in pipelines.
+64|What is the difference between `BUILD SUCCESS` and `BUILD FAILURE`?|`BUILD SUCCESS` indicates successful execution, while `BUILD FAILURE` indicates errors.
+65|What is the Jenkins Declarative Agent?|It defines where the pipeline or stage should run, like `node`, `docker`, or `any`.
+66|What is the `input` step in Jenkins?|It pauses the pipeline and waits for manual user input.
+67|What is a webhook in Jenkins?|A webhook is a URL triggered by external services (e.g., GitHub) to start builds automatically.
+68|What is the `dir` step in Jenkins?|It changes the working directory during a pipeline execution.
+69|What is the `lock` step in Jenkins?|It prevents simultaneous execution of critical stages by acquiring a lock.
+70|What is the Jenkins Job DSL plugin?|It allows job configuration as code using Groovy scripts.
+71|How do you set environment variables in Jenkins pipelines?|Use the `environment` block or the `withEnv` step.
+72|What is the `parallel` directive in a Jenkinsfile?|It enables the execution of multiple stages concurrently.
+73|What is the purpose of the `tool` step in Jenkins?|It specifies the tool to use for a build, like JDK or Maven.
+74|What is the `git` step in Jenkins?|It clones a Git repository.
+75|How do you integrate Jenkins with Selenium?|Use Jenkins to execute Selenium test suites in CI/CD pipelines.
+76|What is a `lightweight checkout` in Jenkins?|It checks out only the Jenkinsfile, reducing the data fetched from Git.
+77|How do you restart Jenkins?|Use the `restart` option in Jenkins' web UI or CLI commands.
+78|What is a pipeline as code in Jenkins?|It stores pipeline definitions in code, often in a `Jenkinsfile`.
+79|What is the `unstable` status in Jenkins?|It indicates a build succeeded but has warnings or failed tests.
+80|How do you configure parallel builds in Jenkins?|Use the "Execute concurrent builds if necessary" option or the `parallel` directive in pipelines.
+81|What is the difference between `node` and `agent` in Jenkins?|`node` is Scripted Pipeline syntax, while `agent` is Declarative Pipeline syntax.
+82|How do you manage large pipelines in Jenkins?|Use shared libraries, modular stages, and parameterized builds.
+83|What is a build trigger in Jenkins?|It starts a job automatically based on conditions like SCM changes or time schedules.
+84|What is the Jenkins Configuration as Code (JCasC) plugin?|It allows managing Jenkins configurations as YAML files.
+85|How do you check Jenkins logs?|Access logs in the `$JENKINS_HOME/logs` directory or the Jenkins UI.
+86|What is the `disableConcurrentBuilds` directive?|It prevents a job from running multiple builds simultaneously.
+87|What is the `catchError` step in Jenkins?|It allows a stage to proceed even after encountering errors.
+88|How do you archive artifacts in Jenkins?|Use the `archiveArtifacts` step in the pipeline or configure it in job settings.
+89|What is a "Downstream Job" in Jenkins?|A job triggered by another job, usually as part of a sequence.
+90|What is a "Pipeline Trigger" in Jenkins?|It triggers pipelines based on events like SCM commits or other pipeline completions.
+91|How do you use Docker with Jenkins?|Use the Docker plugin or define Docker containers in pipeline scripts.
+92|What is the Jenkins Promoted Builds plugin?|It promotes builds to higher environments after passing quality checks.
+93|What is Jenkins RBAC?|Role-Based Access Control restricts user permissions based on roles.
+94|How do you set up Jenkins for CI/CD?|Integrate SCM, configure build/test/deploy pipelines, and use plugins for automation.
+95|What is the difference between `input` and `approval` in Jenkins?|`input` waits for manual input, while `approval` is a specific type of gatekeeping for deployment.
+96|What is the `options` block in a Jenkinsfile?|It defines job-level options like build timeout or retry conditions.
+97|What is the `pipeline as code` concept?|It defines Jenkins pipelines in code using a `Jenkinsfile` stored in version control.
+98|How do you manage secrets in Jenkins?|Use the credentials plugin to securely store and access secrets.
+99|What is the `skipDefaultCheckout` option?|It prevents Jenkins from checking out code by default in a pipeline.
+100|What is the purpose of the Jenkins Crumb?|Crumbs prevent CSRF (Cross-Site Request Forgery) attacks in Jenkins.

@@ -1,0 +1,100 @@
+1|What is Cucumber?|Cucumber is a testing framework that supports Behavior Driven Development (BDD).
+2|What is BDD?|BDD is a development approach that encourages collaboration between developers, testers, and business stakeholders using plain text.
+3|What is a feature file in Cucumber?|A feature file contains scenarios written in Gherkin language that describe the behavior of the application.
+4|What is Gherkin?|Gherkin is a plain-text language used in Cucumber to write feature files in a readable format.
+5|What are the keywords used in Gherkin?|Keywords include `Feature`, `Scenario`, `Given`, `When`, `Then`, `And`, `But`, and `Background`.
+6|What is the `Feature` keyword in Cucumber?|It defines the high-level functionality or feature being tested.
+7|What is a scenario in Cucumber?|A scenario is a concrete example of how the application should behave in a specific situation.
+8|What is the purpose of the `Given` step?|`Given` defines the initial context or preconditions for a scenario.
+9|What is the purpose of the `When` step?|`When` specifies the action or event that triggers the test.
+10|What is the purpose of the `Then` step?|`Then` verifies the expected outcome or result of the test.
+11|What is a step definition in Cucumber?|A step definition connects Gherkin steps to Java code that executes the test.
+12|What is the purpose of the `Background` keyword?|`Background` defines steps that are common to all scenarios in a feature file.
+13|What is the difference between a `Scenario` and a `Scenario Outline`?|A `Scenario` tests a single case, while a `Scenario Outline` uses examples to run multiple cases.
+14|What is the purpose of the `Examples` table in Cucumber?|It provides input data for parameterized scenarios in a `Scenario Outline`.
+15|What is the `@CucumberOptions` annotation?|It configures test execution, such as specifying feature files, glue code, and reports.
+16|What is the purpose of the `tags` option in `@CucumberOptions`?|It allows filtering which scenarios or features to run based on tags.
+17|How do you define a tag in Cucumber?|Add `@tagName` above the `Feature` or `Scenario` in a feature file.
+18|What is the `glue` option in `@CucumberOptions`?|It specifies the package path for step definitions and hooks.
+19|What is the `dryRun` option in Cucumber?|When set to `true`, it checks that every step in the feature file has a corresponding step definition.
+20|What is the `monochrome` option in Cucumber?|When set to `true`, it makes the console output more readable by removing unnecessary characters.
+21|What is a Cucumber runner class?|It is a class annotated with `@RunWith(Cucumber.class)` to execute the Cucumber tests.
+22|What is the difference between `@RunWith` and `@CucumberOptions`?|`@RunWith` specifies the test runner, while `@CucumberOptions` configures test execution.
+23|What is the purpose of hooks in Cucumber?|Hooks, like `@Before` and `@After`, execute setup or teardown code before or after scenarios.
+24|What is the difference between `@Before` and `@BeforeStep` in Cucumber?|`@Before` runs before each scenario, while `@BeforeStep` runs before each step.
+25|What is the purpose of `@AfterStep`?|It runs code after each step in a scenario.
+26|How do you share data between steps in Cucumber?|Use dependency injection with tools like PicoContainer or store data in shared variables.
+27|What is the `DataTable` in Cucumber?|`DataTable` is used to pass tabular data to step definitions.
+28|What is the difference between `DataTable` and `Examples`?|`DataTable` passes data to a single step, while `Examples` parameterize entire scenarios.
+29|What is parameterization in Cucumber?|Parameterization allows running the same scenario with different sets of input data.
+30|How do you use regular expressions in step definitions?|Define patterns in step definitions to match parameterized steps in Gherkin.
+31|What is the `transform` method in Cucumber?|It converts data in Gherkin steps to custom types in step definitions.
+32|How do you handle assertions in Cucumber?|Use testing libraries like JUnit, TestNG, or AssertJ to write assertions in step definitions.
+33|What is the `@Pending` annotation in Cucumber?|It marks a step as pending and skips its execution.
+34|What is the purpose of the `World` object in Cucumber?|It is used to share state between step definitions.
+35|What is the difference between `@Before` and `@Background`?|`@Before` runs code for all scenarios, while `Background` adds steps to all scenarios in a feature file.
+36|What is a feature tag in Cucumber?|A tag applied to a `Feature` to group related scenarios.
+37|How do you run multiple tags in Cucumber?|Use logical operators like `or` (`@tag1,@tag2`) and `and` (`@tag1 and @tag2`).
+38|What are Cucumber reports?|Reports provide a summary of test execution, including passed, failed, and skipped scenarios.
+39|What is the `pretty` formatter in Cucumber?|It prints Gherkin steps and results in a readable format to the console.
+40|What is the `html` formatter in Cucumber?|It generates HTML reports for test execution.
+41|What is the purpose of the `json` formatter?|It generates JSON reports for integration with external tools.
+42|What is the difference between a local and remote feature file?|A local feature file resides on the tester's machine, while a remote file is shared via a repository or server.
+43|What are some common Cucumber plugins?|Plugins include `cucumber-html`, `cucumber-junit`, and `cucumber-json`.
+44|How do you integrate Cucumber with Selenium?|Use Selenium WebDriver in step definitions to interact with the browser.
+45|How do you run Cucumber tests in Maven?|Use the `cucumber-maven-plugin` or `mvn test` with `@CucumberOptions`.
+46|How do you integrate Cucumber with Jenkins?|Configure a Jenkins job to run Cucumber tests using Maven or Gradle.
+47|What is the `ScenarioContext` in Cucumber?|It stores data for the duration of a scenario, enabling data sharing between steps.
+48|What is the purpose of `@StepScope` in Cucumber?|It defines the scope of step definitions for better modularity and data sharing.
+49|What is the difference between `@Smoke` and `@Regression` tags?|`@Smoke` tags mark critical tests, while `@Regression` tags cover broader scenarios.
+50|What is the `SnippetType` option in Cucumber?|It specifies the style of generated step definitions, like `CamelCase` or `underscore_case`.
+51|What is the `cucumber.api` package?|It contains classes and annotations for writing and executing Cucumber tests.
+52|How do you run a single scenario in Cucumber?|Use the `--name` option with the scenario name, e.g., `mvn test -Dcucumber.options="--name 'Scenario Name'"`.
+53|What is the difference between `Scenario` and `Scenario Outline`?|`Scenario` is for single cases, while `Scenario Outline` is for multiple cases using examples.
+54|How do you generate Cucumber step definitions automatically?|Run Cucumber in `dryRun` mode to see unmatched steps and generate skeletons.
+55|What is the purpose of the `@AfterAll` hook?|It executes teardown code after all scenarios in a test run.
+56|What is the `PendingException` in Cucumber?|It indicates that a step definition is not yet implemented.
+57|What is the `@Target` annotation in Cucumber?|It specifies where an annotation can be applied, such as methods or classes.
+58|What is the `@Name` annotation in Cucumber?|It customizes the name of a test in reports.
+59|How do you use external configuration files in Cucumber?|Load them using libraries like Apache Commons Configuration or Spring.
+60|What is the difference between JUnit and Cucumber?|JUnit is a unit testing framework, while Cucumber is used for BDD and acceptance testing.
+61|How do you debug Cucumber tests?|Use IDE breakpoints or logging frameworks like Log4j.
+62|What is the purpose of the `–glue` option?|It specifies the package where step definitions are located.
+63|What is the `Cucumber.api.cli.Main` class?|It is the entry point for running Cucumber tests from the command line.
+64|How do you integrate Cucumber with TestNG?|Use the `CucumberTestNG` class and configure tests using `@CucumberOptions`.
+65|What is a shared step definition?|A step definition that can be reused across multiple scenarios or feature files.
+66|What is a `doc string` in Cucumber?|A `doc string` passes multi-line text to a step definition.
+67|What is the purpose of the `formatter` option?|It specifies the output format for test results.
+68|What is the `glue` keyword in `@CucumberOptions`?|It defines the package path for step definitions and hooks.
+69|What is the difference between `@CucumberOptions` and `@Parameters`?|`@CucumberOptions` configures test execution, while `@Parameters` passes runtime data.
+70|How do you create reusable step definitions?|Use parameterized steps and modular code design.
+71|What is the `And` keyword in Gherkin?|It continues the flow of Given, When, or Then steps.
+72|What is the `But` keyword in Gherkin?|It specifies exceptions or exclusions in scenarios.
+73|What is the purpose of `Background`?|It defines common steps for all scenarios in a feature file.
+74|What is the purpose of the `strict` option?|When enabled, it fails tests if any step definition is missing.
+75|What is a cucumber expression?|It matches Gherkin steps with step definitions using custom syntax or regular expressions.
+76|How do you test APIs with Cucumber?|Use libraries like RestAssured in step definitions to send API requests and validate responses.
+77|What is the `gherkin` parser in Cucumber?|It parses feature files written in Gherkin language.
+78|What is the difference between `JUnit` and `TestNG` in Cucumber?|JUnit is used by default, but TestNG can be integrated for advanced test management.
+79|How do you skip scenarios in Cucumber?|Use the `@Ignore` or `@Disabled` tags above the scenario.
+80|What is the `Scenario Outline` keyword?|It allows running the same scenario with different data sets.
+81|What is a tag hierarchy in Cucumber?|A logical structure to group related tags for filtering tests.
+82|How do you retry failed tests in Cucumber?|Use retry mechanisms in your test runner or plugins like `cucumber-retry`.
+83|What is the `random` tag in Cucumber?|It runs scenarios in random order to detect flaky tests.
+84|What is a flaky test in Cucumber?|A test that produces inconsistent results due to external factors.
+85|How do you use data-driven testing in Cucumber?|Use `Scenario Outline` and `Examples` or `DataTable` for passing data.
+86|What is the `path` option in Cucumber?|It specifies the location of feature files.
+87|What is the difference between `@ParameterType` and `@DataTableType`?|`@ParameterType` converts strings into custom types, while `@DataTableType` maps tables to custom objects.
+88|How do you use assertions in Cucumber?|Integrate libraries like JUnit or AssertJ for validating test conditions.
+89|What is the `strict` flag in Cucumber?|It fails tests if undefined steps are found.
+90|What is a feature mapping in Cucumber?|It aligns feature files with business requirements for traceability.
+91|What is the `@Deprecated` annotation in Cucumber?|It marks step definitions or hooks as outdated and discourages their use.
+92|How do you run parallel tests in Cucumber?|Use plugins like `cucumber-parallel` or frameworks like TestNG or JUnit 5.
+93|What is a Cucumber tag filter?|It selects which scenarios or features to run based on tags.
+94|What is the `Examples` keyword?|It provides data sets for parameterized scenarios in a `Scenario Outline`.
+95|What is the purpose of the `plugin` option?|It generates reports in different formats like HTML, JSON, or JUnit.
+96|What is a nested step in Cucumber?|A step that calls another step definition for code reuse.
+97|What is the difference between `Outline` and `DataTable`?|`Outline` uses examples for entire scenarios, while `DataTable` passes data to individual steps.
+98|What is `dryRun` in Cucumber?|It checks for missing step definitions without executing tests.
+99|What are best practices for Cucumber tests?|Use clear scenarios, modular step definitions, avoid over-automation, and maintain readable Gherkin files.
+100|How do you integrate Cucumber with Allure Reporting?|Add the Allure Cucumber plugin and configure it in the `@CucumberOptions` annotation.

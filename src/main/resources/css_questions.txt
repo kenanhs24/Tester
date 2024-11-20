@@ -1,0 +1,100 @@
+1|What is CSS?|CSS (Cascading Style Sheets) is a style sheet language used to describe the presentation of a document written in HTML or XML.
+2|What are the different types of CSS?|The three types are Inline CSS, Internal CSS, and External CSS.
+3|What is the difference between Inline, Internal, and External CSS?|Inline CSS is applied directly to elements using the `style` attribute. Internal CSS is written within a `<style>` tag inside the `<head>`. External CSS is stored in separate files and linked to the HTML.
+4|What is the purpose of the `id` and `class` selectors in CSS?|`id` selects unique elements, and `class` can be used for multiple elements.
+5|What are pseudo-classes in CSS?|Pseudo-classes define the special state of an element, such as `:hover` or `:first-child`.
+6|What is the difference between relative, absolute, and fixed positioning in CSS?|Relative positions an element relative to its normal position, absolute positions relative to the nearest positioned ancestor, and fixed positions relative to the viewport.
+7|What are media queries?|Media queries enable responsive design by applying styles based on the screen size, resolution, or device type.
+8|What is the difference between `em`, `rem`, and `px` in CSS?|`px` is an absolute unit. `em` is relative to the parent element's font size, and `rem` is relative to the root element's font size.
+9|What is the CSS Box Model?|The Box Model includes margins, borders, padding, and the content of an element.
+10|What is the difference between `border-box` and `content-box` in CSS?|In `border-box`, padding and border are included in the element's total width/height. In `content-box`, they are excluded.
+11|What is the z-index in CSS?|The `z-index` property determines the stack order of elements. Higher values are displayed in front of lower values.
+12|What is a CSS preprocessor?|A preprocessor like SASS or LESS extends CSS with variables, nested rules, and mixins.
+13|What is the difference between `inline`, `block`, and `inline-block` elements?|`inline` does not start on a new line; `block` starts on a new line; `inline-block` combines properties of both.
+14|How can you implement a sticky header in CSS?|Using `position: sticky;` with a top offset value.
+15|What is a CSS grid?|CSS Grid is a layout system for creating two-dimensional grid-based layouts.
+16|What is Flexbox in CSS?|Flexbox is a layout model for designing flexible and responsive layouts.
+17|What is the difference between Flexbox and Grid?|Flexbox is one-dimensional (row or column), while Grid is two-dimensional (rows and columns).
+18|What is the difference between `visibility: hidden` and `display: none`?|`visibility: hidden` hides the element but it occupies space. `display: none` removes the element and its space.
+19|What is the difference between `absolute` and `fixed` positioning?|`absolute` is relative to the nearest positioned ancestor; `fixed` is relative to the viewport.
+20|What is the purpose of the `transition` property in CSS?|`transition` provides smooth animation effects between states of an element.
+21|What is the `transform` property in CSS?|`transform` applies 2D or 3D transformations like rotate, scale, skew, or translate.
+22|What is the difference between `relative` and `static` positioning?|`static` is the default position without offset, while `relative` can be offset from its normal position.
+23|What is the difference between `min-width`, `max-width`, and `width`?|`width` defines the fixed size, `min-width` defines the minimum size, and `max-width` defines the maximum size of an element.
+24|What are keyframes in CSS?|Keyframes define the intermediate steps in CSS animations.
+25|What is the `float` property in CSS?|`float` is used to position elements to the left or right with text wrapping around them.
+26|What is a CSS variable?|CSS variables, declared with `--`, store reusable values across the stylesheet.
+27|What is the difference between `nth-child` and `nth-of-type`?|`nth-child` selects the nth child regardless of type; `nth-of-type` selects the nth element of the specified type.
+28|What is the difference between `hover` and `active` states?|`hover` applies when the user hovers over an element, `active` applies when the element is being clicked.
+29|What is the purpose of the `clip-path` property?|`clip-path` creates a clipping region to show only a portion of an element.
+30|What is the `opacity` property in CSS?|`opacity` controls the transparency of an element, ranging from 0 (fully transparent) to 1 (fully opaque).
+31|What is the `overflow` property?|`overflow` specifies how content should behave if it overflows the element's box (e.g., `hidden`, `scroll`, or `auto`).
+32|What are pseudo-elements in CSS?|Pseudo-elements style specific parts of elements, such as `::before` and `::after`.
+33|What is the difference between `inline-style` and `external stylesheet`?|`inline-style` applies directly to the element using the `style` attribute, while an external stylesheet links to a CSS file.
+34|What is the difference between `relative` and `fixed` units?|Relative units (`em`, `%`) are relative to other elements, while fixed units (`px`, `cm`) are absolute.
+35|What is the `animation` property?|`animation` combines all animation properties like duration, timing, and keyframes into one shorthand.
+36|What is `@keyframes`?|`@keyframes` define animation rules at specific points (percentages) in an animation cycle.
+37|What is the difference between `:first-child` and `:nth-child(1)`?|Both target the first child, but `:first-child` is more specific and doesn't allow dynamic selections.
+38|How do you create a responsive design using CSS?|By using media queries, percentage-based widths, and flexible grid layouts.
+39|What is a CSS framework?|CSS frameworks like Bootstrap provide pre-designed CSS styles and components.
+40|What are sibling selectors?|Sibling selectors (e.g., `+` for adjacent and `~` for general) target elements based on sibling relationships.
+41|What is the difference between `transform` and `transition`?|`transform` applies transformations like scaling or rotating; `transition` animates changes between states.
+42|What is the `content` property in CSS?|`content` generates content dynamically for pseudo-elements like `::before` and `::after`.
+43|What is a responsive breakpoint?|Breakpoints are defined screen sizes where CSS styles change to accommodate different devices.
+44|What is the difference between `rem` and `%`?|`rem` is relative to the root font size, while `%` is relative to its parent element.
+45|What is the `position` property?|The `position` property specifies how an element is positioned in a document.
+46|What is the `cursor` property?|The `cursor` property defines the type of mouse pointer when it hovers over an element.
+47|What is a gradient in CSS?|Gradients are smooth transitions between colors, created using linear or radial gradients.
+48|What is the `outline` property in CSS?|`outline` draws a line outside an element's border without affecting layout.
+49|What is the difference between `inline` and `inline-block`?|`inline-block` allows setting width/height while still being inline.
+50|What is `object-fit` in CSS?|`object-fit` specifies how an image or video should fit inside its container.
+51|What is the difference between `margin` and `padding`?|`Margin` creates space outside the element, while `padding` creates space inside the element between the content and the border.
+52|What are CSS sprites?|CSS sprites combine multiple images into one to reduce HTTP requests and improve performance.
+53|What is the purpose of `box-shadow` in CSS?|`box-shadow` adds shadow effects to elements.
+54|What is the difference between `overflow: auto` and `overflow: scroll`?|`auto` adds a scrollbar only when needed, while `scroll` always adds a scrollbar.
+55|What is the `white-space` property in CSS?|`white-space` controls how white spaces inside an element are handled.
+56|What is the `float` property used for?|The `float` property is used to position elements to the left or right within a container.
+57|What is a CSS pseudo-element?|Pseudo-elements allow styling specific parts of an element, such as `::before` or `::after`.
+58|What is the purpose of the `clear` property in CSS?|The `clear` property is used to prevent elements from wrapping around floated elements.
+59|What are web-safe fonts?|Web-safe fonts are fonts that are likely to be available on all devices, such as Arial or Times New Roman.
+60|What is the `line-height` property?|`line-height` sets the space between lines of text.
+61|What is the difference between `inline-block` and `block` elements?|`block` elements occupy the full width, while `inline-block` respects the content width.
+62|What is the difference between `max-height` and `min-height`?|`max-height` limits the maximum height, while `min-height` sets the minimum height of an element.
+63|What is the `background-size` property in CSS?|`background-size` specifies the size of background images (e.g., `cover`, `contain`).
+64|What is the difference between `relative` and `absolute` paths in CSS?|`relative` paths are relative to the current document location, while `absolute` paths specify a complete URL or file path.
+65|What are CSS counters?|CSS counters are variables used to track and manipulate the numbering of elements.
+66|What is the `clip` property?|The `clip` property defines a visible portion of an element.
+67|What is the difference between `hover` and `focus` pseudo-classes?|`hover` applies when the mouse is over an element, while `focus` applies when an element is active, like in a form field.
+68|What is the difference between `nth-child` and `nth-of-type`?|`nth-child` targets the child regardless of type, while `nth-of-type` targets children of a specific type.
+69|What is the `transition-delay` property?|`transition-delay` specifies the time to wait before starting the transition effect.
+70|What is the difference between `background-color` and `color`?|`background-color` sets the background color of an element, while `color` sets the text color.
+71|What is the difference between `fixed` and `sticky` positioning?|`fixed` is relative to the viewport, while `sticky` toggles between relative and fixed based on scroll position.
+72|What is the `filter` property?|`filter` applies visual effects like blur or brightness to an element.
+73|What is the difference between `visibility` and `opacity`?|`visibility: hidden` hides the element but keeps it in the layout, while `opacity: 0` makes it transparent but clickable.
+74|What is the difference between `max-width` and `width`?|`width` is a fixed size, while `max-width` restricts the element's width but allows it to shrink dynamically.
+75|What are `media queries`?|Media queries apply CSS rules based on device properties like screen size or orientation.
+76|What is the `@import` rule in CSS?|`@import` is used to import external CSS files into a stylesheet.
+77|What is the difference between `absolute` and `sticky` positioning?|`absolute` positions an element relative to its nearest ancestor, while `sticky` toggles between relative and fixed based on scroll.
+78|What is the difference between `border` and `outline`?|`border` is part of the box model and affects layout, while `outline` does not.
+79|What is the purpose of the `cursor` property?|The `cursor` property specifies the type of mouse pointer, like `pointer` or `default`.
+80|What is the difference between `background-image` and `img` tags?|`background-image` sets the image as a background, while `<img>` embeds the image in the HTML document.
+81|What is the `list-style` property?|`list-style` is used to style list item markers, such as bullets or numbers.
+82|What is the difference between `:before` and `:after` pseudo-elements?|`:before` adds content before an element, and `:after` adds content after an element.
+83|What is the difference between `inline` and `inline-block`?|`inline-block` allows setting width/height while maintaining inline positioning.
+84|What is the `background-attachment` property?|`background-attachment` specifies whether a background image is fixed or scrolls with the page.
+85|What is the difference between `@media` and `@import`?|`@media` is used for conditional styles, while `@import` imports stylesheets.
+86|What is the `position` property in CSS?|`position` specifies how an element is positioned in the document (e.g., `static`, `relative`, `absolute`, `fixed`, `sticky`).
+87|What is the difference between `padding` and `margin`?|`padding` is space inside the element; `margin` is space outside the element.
+88|What is the `float` property?|`float` positions elements to the left or right, with content flowing around it.
+89|What is the `clear` property?|`clear` stops elements from wrapping around floated elements.
+90|What is the difference between `block` and `inline` elements?|`block` elements take the full width; `inline` elements do not.
+91|What is the purpose of the `z-index` property?|`z-index` determines the stack order of overlapping elements.
+92|What is the `opacity` property?|`opacity` controls the transparency level of an element.
+93|What is a CSS framework?|A CSS framework, like Bootstrap, provides pre-designed CSS classes and components.
+94|What is the difference between `relative` and `absolute` positioning?|`relative` moves the element relative to its normal position, while `absolute` positions it relative to the nearest positioned ancestor.
+95|What is a CSS preprocessor?|A preprocessor like SASS or LESS extends CSS functionality with variables and mixins.
+96|What is the difference between `hover` and `active`?|`hover` applies when the mouse is over an element, and `active` applies when it is clicked.
+97|What are keyframes in CSS?|Keyframes define animation steps in a cycle.
+98|What is `visibility` in CSS?|`visibility` controls whether an element is visible or hidden without affecting layout.
+99|What is a CSS pseudo-class?|A pseudo-class styles elements based on their state, like `:hover` or `:focus`.
+100|What is the `transition` property?|`transition` defines the effect of a state change on an element over time.

@@ -1,4 +1,4 @@
-package SelCucumber;
+package SelCumcumber;
 
 import javax.swing.*;
 import java.awt.*;
@@ -15,27 +15,18 @@ public class CombinedApp {
     private List<String> questions;
     private List<String> answers;
     private int currentQuestionIndex = 0;
+    private int fontSize = 14; // Default font size
+    private JTextArea textArea; // Question display area
+    private final String[] options = {
+            "JAVA", "SOFTWARE TESTING", "SELENIUM", "TESTNG", "CSS", "XPATH", "UI TESTING", "GITHUB",
+            "CUCUMBER", "MAVEN", "POSTMAN", "API TESTING", "SQL", "JENKINS", "JDBC",
+            "AWS", "JUNIT", "FREQUENCY JAVA QUESTIONS"
+    };
 
     public CombinedApp() {
         questions = new ArrayList<>();
         answers = new ArrayList<>();
-        showInitialSelection(); // Show the first selection for Java, Software Testing, Selenium, or TestNG
-    }
-
-    private void showInitialSelection() {
-        String[] options = {"JAVA", "SOFTWARE TESTING", "SELENIUM", "TESTNG"};
-        String selection = (String) JOptionPane.showInputDialog(null, "Select Category", "Choose",
-                JOptionPane.PLAIN_MESSAGE, null, options, options[0]);
-
-        if (selection != null) {
-            switch (selection) {
-                case "JAVA" -> loadQuestionsFromFile("questions.txt");
-                case "SOFTWARE TESTING" -> loadQuestionsFromFile("new qu.txt");
-                case "SELENIUM" -> loadQuestionsFromFile("selenium_questions.txt");
-                case "TESTNG" -> loadQuestionsFromFile("testng_questions.txt");
-            }
-            createAndShowGUI();
-        }
+        createAndShowGUI();
     }
 
     private void loadQuestionsFromFile(String fileName) {
@@ -56,46 +47,111 @@ public class CombinedApp {
                 if (parts.length == 3) {
                     questions.add(parts[1].trim());
                     answers.add(parts[2].trim());
+                } else {
+                    System.err.println("Skipped line (invalid format): " + line);
                 }
             }
+
+            if (questions.isEmpty() || answers.isEmpty()) {
+                JOptionPane.showMessageDialog(null, "No valid questions or answers found in the file.", "Error", JOptionPane.ERROR_MESSAGE);
+            }
+
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Error reading file: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 
     private void createAndShowGUI() {
-        JFrame frame = new JFrame("TESTER");
+        JFrame frame = new JFrame("Tester Application");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(600, 400);
+        frame.setSize(1000, 600);
+        frame.setLayout(new BorderLayout());
 
-        JPanel panel = new JPanel();
-        JTextArea textArea = new JTextArea(10, 50);
+        // Left side options (JList)
+        JList<String> topicList = new JList<>(options);
+        topicList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        JScrollPane topicScrollPane = new JScrollPane(topicList);
+        topicScrollPane.setPreferredSize(new Dimension(200, 600));
+
+        // Right side panel
+        JPanel rightPanel = new JPanel(new BorderLayout());
+
+        // Question display area
+        textArea = new JTextArea(12, 60);
+        textArea.setFont(new Font("Arial", Font.PLAIN, fontSize));
         textArea.setEditable(false);
-        JScrollPane scrollPane = new JScrollPane(textArea);
-        panel.add(scrollPane);
+        JScrollPane questionScrollPane = new JScrollPane(textArea);
 
+        // Buttons Panel
+        JPanel buttonPanel = new JPanel();
         JButton previousButton = new JButton("Previous Question");
         JButton nextButton = new JButton("Next Question");
         JButton showAnswerButton = new JButton("Show Answer");
         JButton googleButton = new JButton("Ask Google");
-        JButton selectQuestionButton = new JButton("Select Question");
-        JButton exitButton = new JButton("Exit");
+        JButton zoomInButton = new JButton("Zoom In");
+        JButton zoomOutButton = new JButton("Zoom Out");
 
-        panel.add(previousButton);
-        panel.add(nextButton);
-        panel.add(showAnswerButton);
-        panel.add(googleButton);
-        panel.add(selectQuestionButton);
-        panel.add(exitButton);
+        buttonPanel.add(previousButton);
+        buttonPanel.add(nextButton);
+        buttonPanel.add(showAnswerButton);
+        buttonPanel.add(googleButton);
+        buttonPanel.add(zoomInButton);
+        buttonPanel.add(zoomOutButton);
 
-        frame.add(panel);
+        rightPanel.add(questionScrollPane, BorderLayout.CENTER);
+        rightPanel.add(buttonPanel, BorderLayout.SOUTH);
+
+        frame.add(topicScrollPane, BorderLayout.WEST);
+        frame.add(rightPanel, BorderLayout.CENTER);
+
         frame.setVisible(true);
 
+        // Load default content for the first topic
+        loadQuestionsFromFile("Java_questions.txt");
         if (!questions.isEmpty()) {
             textArea.setText("Q: " + questions.get(currentQuestionIndex));
+        } else {
+            textArea.setText("No questions available.");
         }
 
-        // Show previous question
+        // Add listener for topic selection
+        topicList.addListSelectionListener(e -> {
+            if (!e.getValueIsAdjusting()) {
+                String selectedTopic = topicList.getSelectedValue();
+                if (selectedTopic != null) {
+                    switch (selectedTopic) {
+                        case "JAVA" -> loadQuestionsFromFile("Java_questions.txt");
+                        case "SOFTWARE TESTING" -> loadQuestionsFromFile("SDLC.txt");
+                        case "SELENIUM" -> loadQuestionsFromFile("selenium_questions.txt");
+                        case "TESTNG" -> loadQuestionsFromFile("testng_questions.txt");
+                        case "CSS" -> loadQuestionsFromFile("css_questions.txt");
+                        case "XPATH" -> loadQuestionsFromFile("xpath_questions.txt");
+                        case "UI TESTING" -> loadQuestionsFromFile("ui_testing_questions.txt");
+                        case "GITHUB" -> loadQuestionsFromFile("github_questions.txt");
+                        case "CUCUMBER" -> loadQuestionsFromFile("cucumber_questions.txt");
+                        case "MAVEN" -> loadQuestionsFromFile("maven_questions.txt");
+                        case "POSTMAN" -> loadQuestionsFromFile("postman_questions.txt");
+                        case "API TESTING" -> loadQuestionsFromFile("api_testing_questions.txt");
+                        case "SQL" -> loadQuestionsFromFile("sql_questions.txt");
+                        case "JENKINS" -> loadQuestionsFromFile("jenkins_questions.txt");
+                        case "JDBC" -> loadQuestionsFromFile("jdbc_questions.txt");
+                        case "MANUAL TESTING" -> loadQuestionsFromFile("manual_testing_questions.txt");
+                        case "AWS" -> loadQuestionsFromFile("aws_questions.txt");
+                        case "JUNIT" -> loadQuestionsFromFile("junit_questions.txt");
+                        case "FREQUENCY JAVA QUESTIONS" -> loadQuestionsFromFile("frequency_java_Code_questions.txt");
+                        default -> JOptionPane.showMessageDialog(frame, "Invalid Selection!", "Error", JOptionPane.ERROR_MESSAGE);
+                    }
+                    currentQuestionIndex = 0; // Reset to the first question
+                    if (!questions.isEmpty()) {
+                        textArea.setText("Q: " + questions.get(currentQuestionIndex));
+                    } else {
+                        textArea.setText("No questions available.");
+                    }
+                }
+            }
+        });
+
+        // Navigation button actions
         previousButton.addActionListener(e -> {
             if (currentQuestionIndex > 0) {
                 currentQuestionIndex--;
@@ -105,7 +161,6 @@ public class CombinedApp {
             }
         });
 
-        // Show next question
         nextButton.addActionListener(e -> {
             if (currentQuestionIndex < questions.size() - 1) {
                 currentQuestionIndex++;
@@ -115,17 +170,22 @@ public class CombinedApp {
             }
         });
 
-        // Show answer
         showAnswerButton.addActionListener(e -> {
             if (currentQuestionIndex < answers.size()) {
-                String formattedAnswer = formatAnswerForDisplay(answers.get(currentQuestionIndex));
-                JOptionPane.showMessageDialog(frame, formattedAnswer, "Answer", JOptionPane.INFORMATION_MESSAGE);
+                String answer = answers.get(currentQuestionIndex);
+                JTextArea answerTextArea = new JTextArea(answer);
+                answerTextArea.setFont(new Font("Arial", Font.PLAIN, fontSize));
+                answerTextArea.setLineWrap(true);
+                answerTextArea.setWrapStyleWord(true);
+                answerTextArea.setEditable(false);
+                JScrollPane scrollPaneAnswer = new JScrollPane(answerTextArea);
+                scrollPaneAnswer.setPreferredSize(new Dimension(600, 400));
+                JOptionPane.showMessageDialog(frame, scrollPaneAnswer, "Answer", JOptionPane.INFORMATION_MESSAGE);
             } else {
                 JOptionPane.showMessageDialog(frame, "No answer available for this question.", "Info", JOptionPane.INFORMATION_MESSAGE);
             }
         });
 
-        // Google search
         googleButton.addActionListener(e -> {
             String question = questions.get(currentQuestionIndex);
             try {
@@ -139,39 +199,17 @@ public class CombinedApp {
             }
         });
 
-        // Select a specific question
-        selectQuestionButton.addActionListener(e -> {
-            String[] questionArray = questions.toArray(new String[0]);
-            String selectedQuestion = (String) JOptionPane.showInputDialog(frame, "Select a Question:", "Select Question",
-                    JOptionPane.PLAIN_MESSAGE, null, questionArray, questionArray[currentQuestionIndex]);
-
-            if (selectedQuestion != null) {
-                currentQuestionIndex = questions.indexOf(selectedQuestion);
-                textArea.setText("Q: " + selectedQuestion);
-            }
+        zoomInButton.addActionListener(e -> {
+            fontSize += 2;
+            textArea.setFont(new Font("Arial", Font.PLAIN, fontSize));
         });
 
-        // Exit the application
-        exitButton.addActionListener(e -> frame.dispose());
-    }
-
-    // Helper method to format long answer for display
-    private static String formatAnswerForDisplay(String answer) {
-        int maxLineLength = 80;
-        StringBuilder formattedAnswer = new StringBuilder();
-        String[] words = answer.split(" ");
-        int currentLineLength = 0;
-
-        for (String word : words) {
-            if (currentLineLength + word.length() + 1 > maxLineLength) {
-                formattedAnswer.append("\n");
-                currentLineLength = 0;
+        zoomOutButton.addActionListener(e -> {
+            if (fontSize > 6) {
+                fontSize -= 2;
+                textArea.setFont(new Font("Arial", Font.PLAIN, fontSize));
             }
-            formattedAnswer.append(word).append(" ");
-            currentLineLength += word.length() + 1;
-        }
-
-        return formattedAnswer.toString().trim();
+        });
     }
 
     public static void main(String[] args) {

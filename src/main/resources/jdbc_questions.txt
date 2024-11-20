@@ -1,0 +1,100 @@
+1|What is JDBC?|JDBC (Java Database Connectivity) is an API for connecting and interacting with relational databases in Java.
+2|What are the main components of JDBC?|The main components are DriverManager, Connection, Statement, PreparedStatement, CallableStatement, and ResultSet.
+3|What are JDBC drivers?|JDBC drivers are Java classes that enable communication between a Java application and a database.
+4|What are the types of JDBC drivers?|Types include Type-1 (JDBC-ODBC bridge), Type-2 (Native API), Type-3 (Network Protocol), and Type-4 (Thin Driver).
+5|What is the most commonly used JDBC driver?|The Type-4 driver (Thin Driver) is commonly used due to its platform independence.
+6|What is the purpose of the `DriverManager` class?|`DriverManager` manages a list of database drivers and establishes a connection to a database.
+7|How do you load a JDBC driver?|Use `Class.forName("driver-class-name")` to load a JDBC driver dynamically.
+8|What is a `Connection` in JDBC?|`Connection` represents a session between a Java application and the database.
+9|How do you establish a database connection in JDBC?|Use `DriverManager.getConnection(url, username, password)`.
+10|What is the purpose of the `Statement` interface?|`Statement` executes static SQL queries and returns results.
+11|What is a `PreparedStatement`?|A `PreparedStatement` is a precompiled SQL statement used for dynamic queries.
+12|What is the difference between `Statement` and `PreparedStatement`?|`Statement` executes static queries, while `PreparedStatement` executes precompiled and parameterized queries.
+13|What is a `CallableStatement`?|A `CallableStatement` is used to execute stored procedures in the database.
+14|How do you execute a query in JDBC?|Use methods like `executeQuery`, `executeUpdate`, or `execute` on a `Statement` or `PreparedStatement`.
+15|What is the difference between `executeQuery` and `executeUpdate`?|`executeQuery` retrieves data (SELECT), while `executeUpdate` modifies data (INSERT, UPDATE, DELETE).
+16|What is the purpose of the `ResultSet` interface?|`ResultSet` holds the data retrieved from a database query.
+17|How do you iterate through a `ResultSet`?|Use `while(rs.next())` to iterate through rows in the `ResultSet`.
+18|What is the difference between `ResultSet.next()` and `ResultSet.previous()`?|`next()` moves the cursor forward, while `previous()` moves it backward.
+19|What are the types of `ResultSet` in JDBC?|Types include `TYPE_FORWARD_ONLY`, `TYPE_SCROLL_INSENSITIVE`, and `TYPE_SCROLL_SENSITIVE`.
+20|What is the purpose of `ResultSetMetaData`?|It provides information about the columns in a `ResultSet`, such as column name and type.
+21|What is batch processing in JDBC?|Batch processing allows executing multiple SQL statements in a single batch for improved performance.
+22|How do you enable batch processing in JDBC?|Use `addBatch()` to add queries and `executeBatch()` to execute them.
+23|What are savepoints in JDBC?|Savepoints mark intermediate points in a transaction, allowing partial rollbacks.
+24|How do you set a savepoint in JDBC?|Use `connection.setSavepoint("SavepointName")`.
+25|What is a transaction in JDBC?|A transaction is a sequence of operations executed as a single unit of work.
+26|What are the ACID properties of transactions?|ACID stands for Atomicity, Consistency, Isolation, and Durability.
+27|How do you manage transactions in JDBC?|Use `connection.setAutoCommit(false)` to start a transaction and `commit()` or `rollback()` to manage it.
+28|What is the difference between `commit` and `rollback`?|`commit` saves changes, while `rollback` undoes them.
+29|What is the purpose of the `close` method in JDBC?|It closes database resources like `Connection`, `Statement`, and `ResultSet`.
+30|Why is it important to close JDBC resources?|Closing resources prevents memory leaks and locks in the database.
+31|What is a connection pool in JDBC?|A connection pool is a pool of reusable database connections to improve performance.
+32|What are the benefits of using connection pooling?|It reduces connection creation time and improves application scalability.
+33|What is the difference between `RowSet` and `ResultSet`?|`RowSet` is scrollable and serializable, while `ResultSet` is not.
+34|What is a `CachedRowSet`?|`CachedRowSet` is a disconnected `RowSet` that holds data in memory and can be serialized.
+35|What is the `execute` method in JDBC?|`execute` executes any SQL statement and returns a boolean indicating the result type.
+36|What is the JDBC URL?|The JDBC URL specifies the database connection string, including protocol, host, port, and database name.
+37|What is the format of a JDBC URL?|`jdbc:subprotocol://host:port/database`.
+38|What are some common JDBC exceptions?|Examples include `SQLException`, `SQLIntegrityConstraintViolationException`, and `SQLSyntaxErrorException`.
+39|What is the `SQLException` class?|It provides information about database access errors and SQL exceptions.
+40|How do you handle exceptions in JDBC?|Use `try-catch` blocks and log the exception details for debugging.
+41|What is a metadata in JDBC?|Metadata provides information about the database, tables, and columns.
+42|What is `DatabaseMetaData`?|`DatabaseMetaData` provides information about the database, such as supported features and table schemas.
+43|What is `ParameterMetaData`?|`ParameterMetaData` provides information about the parameters in a `PreparedStatement`.
+44|What is the difference between `executeQuery` and `execute`?|`executeQuery` returns a `ResultSet`, while `execute` can return a `ResultSet` or an update count.
+45|What is the purpose of the `getGeneratedKeys` method?|It retrieves the auto-generated keys after executing an INSERT statement.
+46|What is a scrollable `ResultSet`?|A scrollable `ResultSet` allows navigation in both forward and backward directions.
+47|What is the difference between `TYPE_SCROLL_INSENSITIVE` and `TYPE_SCROLL_SENSITIVE`?|`TYPE_SCROLL_INSENSITIVE` does not reflect database changes, while `TYPE_SCROLL_SENSITIVE` does.
+48|What are holdable `ResultSet`s?|Holdable `ResultSet`s can remain open after committing a transaction.
+49|What is the `isClosed` method in JDBC?|It checks whether a `Connection`, `Statement`, or `ResultSet` is closed.
+50|What are the concurrency modes in JDBC?|Modes include `CONCUR_READ_ONLY` and `CONCUR_UPDATABLE`.
+51|What is the `setFetchSize` method?|It sets the number of rows fetched from the database at a time.
+52|What is the `setMaxRows` method?|It limits the number of rows in a `ResultSet`.
+53|What is the `executeBatch` method?|It executes a batch of SQL statements.
+54|How do you update a `ResultSet` in JDBC?|Use an updatable `ResultSet` and methods like `updateRow`.
+55|What is the purpose of the `addBatch` method?|It adds SQL statements to a batch for execution.
+56|What is the difference between `Statement` and `Batch Statement`?|`Statement` executes one query at a time, while a batch executes multiple queries together.
+57|What are JDBC drivers provided by vendors?|Examples include Oracle (ojdbc), MySQL (Connector/J), and PostgreSQL (pgjdbc).
+58|What is the role of `Class.forName` in JDBC?|It loads the JDBC driver class at runtime.
+59|What is the `DataSource` interface?|`DataSource` provides an alternative to `DriverManager` for establishing connections.
+60|What is the difference between `DataSource` and `DriverManager`?|`DataSource` is preferred for connection pooling, while `DriverManager` is simpler but less efficient.
+61|How do you use connection pooling in JDBC?|Use libraries like Apache DBCP, HikariCP, or C3P0 for managing connection pools.
+62|What is the difference between JDBC and ODBC?|JDBC is Java-specific, while ODBC is platform-independent but requires native libraries.
+63|What is the `setAutoCommit` method?|It enables or disables auto-commit mode for transactions.
+64|What is the purpose of the `rollback` method?|It undoes changes made in the current transaction.
+65|What is the `commit` method?|It saves changes made in the current transaction.
+66|What is an isolation level in JDBC?|Isolation levels control the visibility of transactions to other transactions.
+67|What are the types of isolation levels?|Types include `READ_UNCOMMITTED`, `READ_COMMITTED`, `REPEATABLE_READ`, and `SERIALIZABLE`.
+68|What is the default isolation level in JDBC?|The default isolation level depends on the database, commonly `READ_COMMITTED`.
+69|How do you set the isolation level in JDBC?|Use `connection.setTransactionIsolation(level)`.
+70|What is the `setQueryTimeout` method?|It sets the timeout for executing a query.
+71|What is the `getMetaData` method?|It retrieves metadata about the database or `ResultSet`.
+72|What is the `clearBatch` method?|It clears all SQL statements from the batch.
+73|What is the `closeOnCompletion` method?|It closes a `Statement` automatically when the associated `ResultSet` is closed.
+74|How do you retrieve the database product name in JDBC?|Use `DatabaseMetaData.getDatabaseProductName()`.
+75|What is the `setMaxFieldSize` method?|It limits the maximum size of a column's data in bytes.
+76|How do you handle large objects (LOBs) in JDBC?|Use `Blob` for binary data and `Clob` for character data.
+77|What is the difference between `Blob` and `Clob`?|`Blob` stores binary data, while `Clob` stores character data.
+78|How do you retrieve a `Blob` in JDBC?|Use `ResultSet.getBlob(columnName)`.
+79|What is the `setFetchDirection` method?|It hints the direction in which the `ResultSet` will be processed.
+80|What is the `getWarnings` method in JDBC?|It retrieves warnings generated by the database.
+81|What is the difference between `DriverManager` and `DataSource`?|`DriverManager` is static and simple, while `DataSource` supports pooling and JNDI lookup.
+82|What is a `CallableStatement` used for?|It executes stored procedures.
+83|What is the difference between `PreparedStatement` and `CallableStatement`?|`PreparedStatement` is for parameterized queries, while `CallableStatement` is for stored procedures.
+84|How do you register an OUT parameter in JDBC?|Use `CallableStatement.registerOutParameter(index, type)`.
+85|What is the `executeUpdate` method?|It executes SQL statements that modify the database and returns the number of affected rows.
+86|What is the `executeLargeUpdate` method?|It performs the same function as `executeUpdate` but supports large update counts.
+87|What is the `setNull` method in JDBC?|It sets a parameter value to `NULL` in a `PreparedStatement`.
+88|What is the `setString` method?|It sets a `String` value for a parameter in a `PreparedStatement`.
+89|What is the `setInt` method?|It sets an `int` value for a parameter in a `PreparedStatement`.
+90|What is the purpose of `Statement.closeOnCompletion()`?|It ensures the statement is closed automatically when its `ResultSet` is closed.
+91|What is the difference between `SQLWarning` and `SQLException`?|`SQLWarning` indicates non-critical warnings, while `SQLException` indicates serious errors.
+92|How do you retrieve metadata about tables in a database?|Use `DatabaseMetaData.getTables()`.
+93|What is the `getColumnType` method in `ResultSetMetaData`?|It retrieves the SQL type of a column.
+94|What is the `getColumnCount` method?|It retrieves the number of columns in a `ResultSet`.
+95|What is the difference between `TYPE_FORWARD_ONLY` and `TYPE_SCROLLABLE`?|`TYPE_FORWARD_ONLY` only moves forward, while `TYPE_SCROLLABLE` allows bidirectional movement.
+96|How do you call a stored procedure with no parameters?|Use `CallableStatement cs = connection.prepareCall("{call procedure_name()}");`.
+97|What is the `clearParameters` method?|It clears all parameter values in a `PreparedStatement` or `CallableStatement`.
+98|What is the `getHoldability` method?|It retrieves the holdability of a `ResultSet`.
+99|What is a `RowId` in JDBC?|`RowId` represents the unique identifier of a row in a database.
+100|What are the best practices for using JDBC?|Use connection pooling, close resources, use `PreparedStatement`, handle exceptions properly, and use batch processing for multiple queries.

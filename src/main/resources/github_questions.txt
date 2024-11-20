@@ -1,0 +1,100 @@
+1|What is GitHub?|GitHub is a web-based platform for version control and collaboration using Git.
+2|What is Git?|Git is a distributed version control system for tracking changes in source code.
+3|What is the difference between Git and GitHub?|Git is a version control tool, while GitHub is a hosting platform for Git repositories.
+4|What are the benefits of using GitHub?|Benefits include collaboration, code review, issue tracking, and continuous integration support.
+5|What is a repository in GitHub?|A repository (repo) is a storage location for project files and their version history.
+6|How do you create a repository in GitHub?|Click "New" in GitHub, name the repository, and initialize it with a README if needed.
+7|What is the purpose of a README file?|The README file provides information about the project, such as usage instructions and features.
+8|What is a branch in GitHub?|A branch is an independent line of development in a repository.
+9|What is the default branch in GitHub?|The default branch is usually `main` or `master`.
+10|What is a pull request?|A pull request is a proposal to merge changes from one branch into another.
+11|What is the purpose of a fork in GitHub?|A fork is a copy of another user's repository for independent changes.
+12|What is the difference between a fork and a clone?|A fork is a copy of a repo on GitHub, while a clone is a local copy on your computer.
+13|What is a commit in Git?|A commit is a snapshot of changes made to the code.
+14|What is the purpose of the `git add` command?|It stages changes for the next commit.
+15|What is the purpose of the `git commit` command?|It saves staged changes to the repository with a message.
+16|What is the `git push` command?|It uploads local commits to the remote repository.
+17|What is the `git pull` command?|It fetches changes from the remote repository and merges them into the local branch.
+18|What is the difference between `git fetch` and `git pull`?|`git fetch` retrieves changes but doesn’t merge them, while `git pull` fetches and merges changes.
+19|What is the `.gitignore` file?|It specifies files and directories to be ignored by Git.
+20|What is a conflict in Git?|A conflict occurs when changes from different branches cannot be automatically merged.
+21|How do you resolve merge conflicts in Git?|Manually edit conflicting files, stage them, and commit the changes.
+22|What is the purpose of a GitHub Action?|GitHub Actions automate workflows like building, testing, and deploying code.
+23|What is the difference between a private and public repository?|A public repository is visible to everyone, while a private repository is restricted to specific users.
+24|How do you create a branch in Git?|Use the command `git branch branch_name`.
+25|How do you switch branches in Git?|Use the command `git checkout branch_name` or `git switch branch_name`.
+26|What is the purpose of the `git merge` command?|It combines changes from one branch into another.
+27|What is the `git rebase` command?|It reapplies commits on top of another base tip, creating a linear history.
+28|What is the difference between `git merge` and `git rebase`?|`merge` creates a merge commit, while `rebase` rewrites commit history.
+29|How do you delete a branch in Git?|Use `git branch -d branch_name` for local branches and `git push origin --delete branch_name` for remote branches.
+30|What is a tag in Git?|A tag marks a specific commit as important, often for release versions.
+31|What is the difference between lightweight and annotated tags?|Lightweight tags are pointers to a commit, while annotated tags store metadata.
+32|What is a GitHub issue?|An issue is a way to track tasks, bugs, or feature requests in a repository.
+33|What is the purpose of GitHub Projects?|Projects organize issues, pull requests, and tasks into kanban boards.
+34|How do you revert a commit in Git?|Use the command `git revert commit_hash`.
+35|How do you reset a branch to a previous commit?|Use `git reset commit_hash`.
+36|What is the difference between `git revert` and `git reset`?|`revert` creates a new commit to undo changes, while `reset` moves the branch pointer.
+37|What is the purpose of `git stash`?|It temporarily saves changes that are not ready to be committed.
+38|How do you apply stashed changes in Git?|Use `git stash apply` or `git stash pop`.
+39|What is a webhook in GitHub?|A webhook triggers events (e.g., push, pull request) to external services.
+40|What is GitHub Pages?|GitHub Pages hosts static websites directly from a repository.
+41|What is a GitHub Gist?|A Gist is a way to share snippets of code or notes.
+42|What is the `git log` command?|It shows the commit history for a repository.
+43|What is the `git status` command?|It displays the current state of the working directory and staging area.
+44|What is the `git diff` command?|It shows changes between commits, branches, or the working directory.
+45|What is the `git blame` command?|It shows who made changes to each line of a file.
+46|What is the `git cherry-pick` command?|It applies changes from a specific commit to the current branch.
+47|What is a submodule in Git?|A submodule is a repository embedded within another repository.
+48|How do you add a submodule in Git?|Use `git submodule add repository_url`.
+49|What is the purpose of the `git clean` command?|It removes untracked files and directories from the working directory.
+50|What is the `git remote` command?|It manages connections to remote repositories.
+51|How do you add a remote repository in Git?|Use `git remote add origin repository_url`.
+52|What is the `git show` command?|It displays detailed information about a commit.
+53|What is the `git config` command?|It configures Git settings like username, email, and aliases.
+54|What is the `git tag` command?|It creates, lists, or deletes tags in a repository.
+55|What is the difference between `git clone` and `git init`?|`git clone` copies an existing repo, while `git init` creates a new one.
+56|What is the `git archive` command?|It creates an archive (e.g., ZIP, TAR) of a repository.
+57|What is the `git describe` command?|It shows the most recent tag reachable from a commit.
+58|How do you undo the last commit in Git?|Use `git reset --soft HEAD~1` to keep changes or `git reset --hard HEAD~1` to discard them.
+59|What is the difference between `HEAD` and `origin/HEAD`?|`HEAD` points to the current branch, while `origin/HEAD` points to the default branch on the remote.
+60|What is the `git bisect` command?|It performs a binary search to find the commit that introduced a bug.
+61|How do you ignore tracked files in Git?|Use `git rm --cached file_name` and add the file to `.gitignore`.
+62|What is the `git rm` command?|It removes files from the working directory and the index.
+63|What is the `git mv` command?|It renames or moves a file in a repository.
+64|What is the difference between `git pull` and `git fetch`?|`git pull` fetches and merges changes, while `git fetch` only retrieves changes.
+65|What is a bare repository in Git?|A bare repository contains only the version history, not a working directory.
+66|What is a detached HEAD state in Git?|It occurs when HEAD points to a specific commit instead of a branch.
+67|How do you fix a detached HEAD in Git?|Use `git checkout branch_name` to return to a branch.
+68|What is `fast-forward` in Git?|It updates a branch pointer to match the latest commit without creating a merge commit.
+69|What is the difference between `origin` and `upstream` in Git?|`origin` refers to your forked repo, while `upstream` refers to the original repo.
+70|What is the purpose of a squash commit?|It combines multiple commits into one for a cleaner history.
+71|How do you squash commits in Git?|Use `git rebase -i` and mark commits as `squash` or `s`.
+72|What is the `git reflog` command?|It tracks changes to the branch tips and HEAD in the local repository.
+73|What is the `git filter-branch` command?|It rewrites commit history, such as removing sensitive data.
+74|What is the `git gc` command?|It optimizes the repository by cleaning up unnecessary files and packing objects.
+75|What is the difference between `git sparse-checkout` and `git clone`?|`sparse-checkout` fetches only specific files or directories, while `clone` fetches the entire repository.
+76|What is GitHub Actions?|GitHub Actions automate CI/CD workflows for building, testing, and deploying applications.
+77|How do you set up GitHub Actions?|Create a `.github/workflows` directory and add YAML files to define workflows.
+78|What is the purpose of GitHub Codespaces?|It provides a cloud-based development environment directly on GitHub.
+79|How do you protect branches in GitHub?|Use branch protection rules to enforce restrictions like code reviews and status checks.
+80|What is the difference between rebase and merge?|Rebase rewrites history for a linear path, while merge preserves all commits with a merge commit.
+81|What is GitHub Insights?|It provides analytics and reports for repository activities and contributions.
+82|What is the difference between SSH and HTTPS in Git?|SSH uses public-private key pairs, while HTTPS requires a username and password or token.
+83|What is a GitHub webhook?|A webhook sends real-time data to external services based on events in the repository.
+84|What is GitHub API?|GitHub API provides programmatic access to GitHub features like repos, issues, and pull requests.
+85|How do you revert a pull request in GitHub?|Use the "Revert" button on the merged pull request or `git revert` locally.
+86|What is the purpose of a draft pull request?|It indicates that the pull request is still in progress and not ready for review.
+87|What are GitHub templates?|Templates standardize issues, pull requests, and community files across repositories.
+88|What is the difference between GitHub Actions and Jenkins?|GitHub Actions is integrated into GitHub for CI/CD, while Jenkins is a standalone automation server.
+89|How do you manage access control in GitHub?|Use repository permissions (e.g., read, write, admin) and team-based access control.
+90|What is a commit hash?|A commit hash is a unique identifier for a commit in Git.
+91|How do you check the history of a file in GitHub?|Use the "History" option in the file view or `git log file_name` locally.
+92|What is the purpose of GitHub Desktop?|It is a GUI tool for managing repositories locally with GitHub integration.
+93|What is the `git ls-files` command?|It lists all files tracked by Git in the repository.
+94|How do you sync a forked repository with the original repository?|Add the upstream remote and use `git fetch upstream` followed by `git merge` or `git rebase`.
+95|What is the difference between GitHub CLI and Git?|GitHub CLI is a tool for interacting with GitHub, while Git is for version control.
+96|What is the `git sparse-checkout` feature?|It allows partial cloning of repositories by fetching only specified files or folders.
+97|What is the purpose of `git worktree`?|It enables working on multiple branches simultaneously in separate directories.
+98|How do you revert changes in a specific file?|Use `git checkout file_name` or `git restore file_name`.
+99|What is the purpose of the GitHub Marketplace?|It provides integrations and tools for CI/CD, code review, and more.
+100|What are GitHub secrets?|Secrets store sensitive information like API keys or tokens securely for workflows.

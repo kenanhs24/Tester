@@ -1,0 +1,100 @@
+1|What is Postman?|Postman is a collaboration platform for API development, testing, and documentation.
+2|What are the main features of Postman?|Features include API testing, automation, debugging, monitoring, and documentation.
+3|What is the use of Postman in API testing?|Postman helps test API endpoints for functionality, performance, and security.
+4|What are collections in Postman?|Collections are groups of saved API requests organized for testing and reuse.
+5|What are environments in Postman?|Environments store key-value pairs (variables) for testing APIs in different setups (e.g., dev, staging, production).
+6|What are global variables in Postman?|Global variables are accessible across all collections and environments.
+7|What is the difference between global and environment variables?|Global variables apply to all environments, while environment variables are specific to a selected environment.
+8|What is a pre-request script in Postman?|A pre-request script is JavaScript code that runs before a request is sent.
+9|What is a test script in Postman?|A test script is JavaScript code that runs after a request is sent to validate the response.
+10|What is the purpose of the `pm` object in Postman?|The `pm` object provides functions and properties for scripting in Postman (e.g., assertions, variables).
+11|What is a collection runner in Postman?|The collection runner executes all or specific requests in a collection, often for automated testing.
+12|How do you set a variable in Postman?|Use `pm.variables.set("key", "value")` or in the variable editor.
+13|How do you get a variable in Postman?|Use `pm.variables.get("key")` to retrieve a variable's value.
+14|How do you delete a variable in Postman?|Use `pm.variables.unset("key")` to remove a variable.
+15|What is a request payload in Postman?|The payload is the data sent in a request body, often for POST, PUT, or PATCH requests.
+16|What is the difference between form-data and raw in Postman?|`form-data` sends data as key-value pairs (for file uploads), while `raw` sends plain text, JSON, or other formats.
+17|What are the different types of authorization in Postman?|Types include Basic Auth, Bearer Token, OAuth 1.0, OAuth 2.0, and API Key.
+18|What is the purpose of the Authorization tab in Postman?|It allows you to set authentication details for API requests.
+19|How do you validate a response status code in Postman?|Use `pm.test("Status code is 200", () => { pm.response.to.have.status(200); });`.
+20|How do you validate a response body in Postman?|Use `pm.test()` with assertions, e.g., `pm.expect(responseBody).to.include("success");`.
+21|What is the difference between Params and Headers in Postman?|Params are query string values in the URL, while Headers send metadata with the request.
+22|How do you handle dynamic values in Postman?|Use variables or scripting to manage dynamic values in requests or responses.
+23|What is the Postman console?|The Postman console logs details of API requests and scripts for debugging.
+24|What is a mock server in Postman?|A mock server simulates API responses for testing without relying on the actual API.
+25|What is Postman Monitor?|Postman Monitor schedules collection runs at specified intervals to monitor API performance.
+26|What is Postman API?|Postman API allows automation of tasks like creating collections, environments, and running tests programmatically.
+27|How do you import/export collections in Postman?|Use the "Import" and "Export" options in the Postman interface for JSON files.
+28|What is Newman in Postman?|Newman is Postman's command-line tool for running collections and automating tests.
+29|How do you run a Postman collection using Newman?|Use the command `newman run collection.json`.
+30|What are the benefits of using Newman?|It enables integration with CI/CD pipelines and supports running tests programmatically.
+31|How do you validate response headers in Postman?|Use `pm.test("Content-Type is JSON", () => { pm.response.to.have.header("Content-Type", "application/json"); });`.
+32|How do you test file uploads in Postman?|Select `form-data` in the body tab and use the "File" type to upload files.
+33|What is the purpose of the Postman workspace?|Workspaces organize collections, environments, and members for collaboration.
+34|How do you set default headers for all requests in Postman?|Use the "Settings" tab in the collection or global header settings.
+35|What is the difference between Postman and SoapUI?|Postman is more user-friendly for API testing, while SoapUI supports SOAP and advanced features for API testing.
+36|How do you handle authentication tokens in Postman?|Use environment or global variables to store and pass tokens dynamically.
+37|What is chaining in Postman?|Chaining is using the output of one request as the input for subsequent requests.
+38|How do you extract values from a response in Postman?|Use `pm.response.json()` to parse JSON and extract values.
+39|How do you handle pagination in API testing using Postman?|Iteratively make requests using variables to handle `page` or `offset` parameters.
+40|What is the difference between GET and POST requests in Postman?|GET retrieves data, while POST sends data to the server.
+41|How do you handle SSL certificates in Postman?|Enable or disable SSL certificate verification in the settings.
+42|What are Postman collections used for?|Collections organize API requests for testing, sharing, and reuse.
+43|What is Postman Echo?|Postman Echo is a public API used for testing and experimenting with Postman.
+44|How do you debug errors in Postman?|Use the Postman console and logs to debug errors in requests or scripts.
+45|How do you handle environment switching in Postman?|Use environments to store variable values for different environments (e.g., dev, QA, prod).
+46|What is the purpose of the `pm.expect` function?|`pm.expect` performs assertions on response data in Postman scripts.
+47|How do you validate response time in Postman?|Use `pm.test("Response time is acceptable", () => { pm.expect(pm.response.responseTime).to.be.below(200); });`.
+48|What is a dynamic variable in Postman?|Dynamic variables are predefined variables like `{{$timestamp}}` for generating dynamic values.
+49|How do you schedule collection runs in Postman?|Use Postman Monitors to schedule runs at specified intervals.
+50|What is the difference between response code 200 and 201?|200 means success, while 201 indicates a resource was successfully created.
+51|What are path variables in Postman?|Path variables are placeholders in the endpoint URL replaced with actual values at runtime.
+52|How do you export API test results from Postman?|Use the collection runner or Newman to export test results as a report.
+53|What is the purpose of the `pm.environment` object?|`pm.environment` provides functions to get, set, and manage environment variables.
+54|How do you test negative scenarios in Postman?|Send invalid inputs or payloads to test error handling.
+55|How do you set custom timeouts in Postman?|Go to Settings > General > Request timeout (ms).
+56|What is the purpose of the `pm.globals` object?|`pm.globals` manages global variables accessible across all collections.
+57|What is a schema validation in Postman?|It ensures the response structure matches a predefined schema.
+58|How do you perform data-driven testing in Postman?|Use the collection runner with a CSV or JSON data file.
+59|What is the difference between PUT and PATCH in Postman?|PUT updates the entire resource, while PATCH updates specific fields.
+60|How do you use Postman for API documentation?|Postman automatically generates documentation from collections and environments.
+61|What is the purpose of the `pm.cookies` object?|It provides functions to access and manipulate cookies.
+62|How do you simulate different HTTP methods in Postman?|Select the desired HTTP method (GET, POST, PUT, etc.) from the dropdown.
+63|How do you handle API rate limits in Postman?|Use delays or implement retries in your scripts.
+64|How do you validate JSON schema in Postman?|Use `pm.response.to.have.jsonSchema(schema)` to validate a response schema.
+65|What is a fork in Postman?|A fork creates a copy of a collection for independent testing or editing.
+66|How do you test APIs that require API keys?|Pass the API key in headers, params, or body, as required by the API.
+67|How do you handle dynamic tokens in Postman?|Use pre-request scripts to fetch tokens dynamically.
+68|What is the use of the Tests tab in Postman?|The Tests tab defines scripts to validate responses after requests.
+69|What is the use of Postman snippets?|Snippets are pre-written code blocks for common operations, such as checking status codes.
+70|What is Postman Interceptor?|Interceptor captures network requests from browsers to import them into Postman.
+71|How do you reset an environment in Postman?|Manually reset variables or use a script to clear them.
+72|What are the HTTP response status code ranges?|1xx: Informational, 2xx: Success, 3xx: Redirection, 4xx: Client Error, 5xx: Server Error.
+73|How do you test SOAP APIs in Postman?|Use the raw body option and XML format to send SOAP requests.
+74|How do you validate XML responses in Postman?|Use the `xml2Json()` method to parse XML and validate its structure.
+75|What are Postman workspaces?|Workspaces are shared spaces for organizing collections, environments, and members.
+76|What is the purpose of the `postman.setNextRequest` function?|It controls the flow of requests in a collection run.
+77|How do you import Swagger/OpenAPI specs into Postman?|Use the Import feature and upload the Swagger file.
+78|What is chaining in Postman?|Using the output of one request as input for subsequent requests.
+79|How do you handle bearer tokens in Postman?|Set the token in the Authorization tab or headers dynamically.
+80|What is the use of Postman mocks?|Mocks simulate API responses for testing without relying on the actual server.
+81|What is the use of `pm.sendRequest`?|It sends a request from pre-request or test scripts.
+82|How do you validate content-type headers in Postman?|Use `pm.response.to.have.header("Content-Type", "application/json");`.
+83|What are pre-defined dynamic variables in Postman?|Examples include `{{$randomInt}}` and `{{$timestamp}}` for generating dynamic values.
+84|What is a response cookie in Postman?|Cookies returned by the server during a response.
+85|How do you test APIs with multiple query parameters?|Add key-value pairs in the Params tab to construct the query string.
+86|How do you debug Postman scripts?|Use the Postman console to log values and errors.
+87|What are the benefits of using Postman for API testing?|Postman provides an easy-to-use interface, automation, and integration capabilities.
+88|What is the difference between APIs and microservices?|APIs are communication interfaces, while microservices are architecture styles for building applications.
+89|What is the purpose of the `pm.request` object?|`pm.request` accesses request details during pre-request scripts or test scripts.
+90|How do you test retry mechanisms in APIs?|Simulate failures and verify retry behavior using test scripts.
+91|How do you test API performance using Postman?|Use the response time metric and automate tests with Postman monitors.
+92|How do you validate array responses in Postman?|Use JavaScript to iterate and validate array elements, e.g., `pm.expect(jsonData.array.length).to.be.above(0);`.
+93|How do you handle 401 Unauthorized errors in Postman?|Check authorization settings or token validity.
+94|How do you perform a health check of an API in Postman?|Send basic requests to ensure endpoints are reachable and respond correctly.
+95|What is the purpose of the History tab in Postman?|It stores previously executed requests for reference and reuse.
+96|How do you test APIs behind firewalls using Postman?|Use VPNs or configure Postman proxies to access APIs.
+97|How do you manage large test suites in Postman?|Organize tests into collections and subfolders for better manageability.
+98|What is Postman Flow?|Postman Flow allows creating workflows by chaining API requests visually.
+99|What is the importance of Postman for SDET roles?|Postman simplifies API testing, validation, and automation for backend testing in SDET workflows.
+100|How do you generate API usage reports in Postman?|Use Newman with collection runs to generate detailed test reports.

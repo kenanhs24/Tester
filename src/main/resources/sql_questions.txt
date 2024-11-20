@@ -1,0 +1,100 @@
+1|What is SQL?|SQL (Structured Query Language) is used to communicate with and manage data in relational databases.
+2|What are the different types of SQL commands?|SQL commands are categorized into DDL, DML, DCL, TCL, and DQL.
+3|What is DDL in SQL?|DDL (Data Definition Language) commands define the database structure (e.g., CREATE, ALTER, DROP).
+4|What is DML in SQL?|DML (Data Manipulation Language) commands manipulate data (e.g., INSERT, UPDATE, DELETE).
+5|What is DCL in SQL?|DCL (Data Control Language) commands control access to data (e.g., GRANT, REVOKE).
+6|What is TCL in SQL?|TCL (Transaction Control Language) commands manage transactions (e.g., COMMIT, ROLLBACK).
+7|What is the difference between DELETE and TRUNCATE?|DELETE removes specific rows, while TRUNCATE removes all rows but keeps the table structure.
+8|What is a primary key?|A primary key uniquely identifies each record in a table and cannot have null values.
+9|What is a foreign key?|A foreign key establishes a relationship between two tables by referencing a primary key in another table.
+10|What is a unique key?|A unique key ensures all values in a column are unique but allows one null value.
+11|What is the difference between WHERE and HAVING?|WHERE filters rows before grouping, while HAVING filters after grouping.
+12|What is the difference between INNER JOIN and OUTER JOIN?|INNER JOIN returns matching rows from both tables, while OUTER JOIN includes unmatched rows.
+13|What is the purpose of GROUP BY in SQL?|GROUP BY groups rows with the same values into summary rows.
+14|What is the difference between UNION and UNION ALL?|UNION removes duplicates, while UNION ALL includes all rows.
+15|What is the difference between an INDEX and a PRIMARY KEY?|An INDEX is used for faster querying, while a PRIMARY KEY ensures uniqueness.
+16|What is a self-join?|A self-join joins a table to itself using aliases.
+17|What is a subquery?|A subquery is a query nested inside another query.
+18|What are aggregate functions in SQL?|Functions like COUNT, SUM, AVG, MAX, and MIN that perform calculations on multiple rows.
+19|What is the difference between CHAR and VARCHAR?|CHAR has a fixed length, while VARCHAR has a variable length.
+20|What is normalization?|Normalization is organizing data to reduce redundancy and improve data integrity.
+21|What are the normal forms in database design?|1NF, 2NF, 3NF, BCNF, and higher normal forms.
+22|What is denormalization?|Denormalization adds redundancy to optimize database performance.
+23|What is a stored procedure?|A stored procedure is a set of precompiled SQL statements stored in the database.
+24|What is a view in SQL?|A view is a virtual table based on the result of a SELECT query.
+25|What is the difference between a view and a table?|A table stores data, while a view displays data from one or more tables.
+26|What is a cursor in SQL?|A cursor is used to fetch rows one by one from a result set.
+27|What is an index in SQL?|An index speeds up data retrieval by creating a structure for faster querying.
+28|What is the difference between clustered and non-clustered indexes?|A clustered index sorts data rows, while a non-clustered index creates a separate structure.
+29|What is the difference between RANK and DENSE_RANK?|RANK skips ranks after ties, while DENSE_RANK doesn’t skip ranks.
+30|What is the purpose of the CASE statement?|CASE is used to implement conditional logic in SQL queries.
+31|What is the difference between IN and EXISTS?|IN checks for values in a list, while EXISTS checks for row existence in a subquery.
+32|What is a transaction in SQL?|A transaction is a unit of work that is performed as a single operation.
+33|What are ACID properties?|Atomicity, Consistency, Isolation, and Durability ensure reliable database transactions.
+34|What is the difference between COMMIT and ROLLBACK?|COMMIT saves changes, while ROLLBACK undoes changes.
+35|What is a trigger in SQL?|A trigger is a procedural code executed automatically in response to database events.
+36|What is the difference between DELETE and DROP?|DELETE removes rows, while DROP removes the table structure itself.
+37|What is a foreign key constraint?|It enforces referential integrity by linking a column to a primary key in another table.
+38|What is the purpose of the DISTINCT keyword?|DISTINCT eliminates duplicate rows in the result set.
+39|What is the difference between COUNT(*) and COUNT(column_name)?|COUNT(*) counts all rows, while COUNT(column_name) counts non-null values in a column.
+40|What is a composite key?|A composite key is a combination of two or more columns to uniquely identify rows.
+41|What is the purpose of the LIMIT clause?|LIMIT restricts the number of rows returned in a query.
+42|What is the difference between NOW() and CURRENT_DATE?|NOW() returns the current date and time, while CURRENT_DATE returns only the current date.
+43|What is the difference between CROSS JOIN and INNER JOIN?|CROSS JOIN returns the Cartesian product, while INNER JOIN returns matching rows.
+44|What is the LIKE operator in SQL?|LIKE is used to search for patterns in text, e.g., `WHERE name LIKE 'A%'`.
+45|What are wildcards in SQL?|Wildcards are placeholders like `%` and `_` used with the LIKE operator for pattern matching.
+46|What is the purpose of the COALESCE function?|COALESCE returns the first non-null value from a list of expressions.
+47|What is a materialized view?|A materialized view stores the query result physically for faster access.
+48|What is a sequence in SQL?|A sequence generates unique numeric values, often used for primary keys.
+49|What is a window function in SQL?|A window function performs calculations across a set of rows related to the current row.
+50|What is a surrogate key?|A surrogate key is a system-generated unique identifier for a record, independent of real-world data.
+51|What is a schema in SQL?|A schema is a logical structure that organizes database objects like tables and views.
+52|How do you find duplicate rows in a table?|Use GROUP BY and HAVING, e.g., `SELECT column, COUNT(*) FROM table GROUP BY column HAVING COUNT(*) > 1`.
+53|What is the purpose of the CONCAT function?|CONCAT joins two or more strings into a single string.
+54|What is the difference between UNION and INTERSECT?|UNION combines rows from multiple queries, while INTERSECT returns only common rows.
+55|What is the ROW_NUMBER() function?|ROW_NUMBER() assigns a unique number to each row based on the specified order.
+56|What is the difference between ISNULL() and COALESCE()?|ISNULL() checks a single value, while COALESCE() works with multiple values.
+57|What is a pivot table in SQL?|A pivot table summarizes data by transforming rows into columns.
+58|What is the difference between SET and SELECT in SQL?|SET assigns a single value, while SELECT can assign multiple values.
+59|What is the BETWEEN operator in SQL?|BETWEEN filters rows within a specified range, e.g., `WHERE age BETWEEN 18 AND 30`.
+60|What is the difference between NVL() and COALESCE()?|NVL() is Oracle-specific, while COALESCE() is standard SQL and supports multiple arguments.
+61|What is the difference between TIMESTAMP and DATETIME?|TIMESTAMP includes time zone information, while DATETIME does not.
+62|What is the difference between ROWID and ROWNUM?|ROWID is a unique identifier for a row, while ROWNUM is a temporary sequence number.
+63|How do you delete duplicate rows in SQL?|Use a CTE with ROW_NUMBER(), e.g., `DELETE FROM table WHERE id NOT IN (SELECT MIN(id) FROM table GROUP BY column)`.
+64|What is JSON in SQL?|JSON (JavaScript Object Notation) stores and retrieves structured data as key-value pairs.
+65|What is the WITH clause in SQL?|WITH defines a CTE (Common Table Expression) for temporary result sets.
+66|What is a correlated subquery?|A subquery that uses values from the outer query.
+67|What is the purpose of the NVL function?|NVL replaces null values with a specified value.
+68|What is the purpose of the EXCEPT operator?|EXCEPT returns rows from the first query that are not in the second query.
+69|What is the difference between stored procedures and functions?|Procedures can perform actions, while functions must return a value.
+70|What is a bitmap index?|A bitmap index is a special type of index used for columns with a low cardinality of unique values.
+71|What is the difference between a LEFT JOIN and RIGHT JOIN?|LEFT JOIN includes all rows from the left table, while RIGHT JOIN includes all rows from the right table.
+72|What is a surrogate key in a database?|A surrogate key is a unique identifier generated by the system, unrelated to real-world data.
+73|How do you count distinct values in a column?|Use `COUNT(DISTINCT column_name)`, e.g., `SELECT COUNT(DISTINCT name) FROM table`.
+74|What is the purpose of indexing in SQL?|Indexing speeds up data retrieval but can slow down write operations.
+75|What is the HAVING clause in SQL?|HAVING filters groups of data after aggregation.
+76|What is the TRUNCATE function in SQL?|TRUNCATE removes decimal places from a numeric value.
+77|What is the purpose of the NVL2 function?|NVL2 returns different values based on whether a column is null or not.
+78|What is the difference between LTRIM and RTRIM?|LTRIM removes leading spaces, while RTRIM removes trailing spaces.
+79|What is the difference between IN and BETWEEN?|IN checks for specific values, while BETWEEN checks for a range of values.
+80|How do you calculate the total number of rows in a table?|Use `SELECT COUNT(*) FROM table_name`.
+81|What is a database constraint?|A constraint enforces rules on data in a table, such as UNIQUE, NOT NULL, or FOREIGN KEY.
+82|What is the difference between a candidate key and a primary key?|A candidate key can be a primary key, but only one candidate key is chosen as the primary key.
+83|What is the difference between DROP and DELETE?|DROP removes the table, while DELETE removes rows within the table.
+84|What is the difference between scalar and aggregate functions?|Scalar functions operate on individual values, while aggregate functions operate on groups of values.
+85|How do you calculate the average of a column?|Use `SELECT AVG(column_name) FROM table`.
+86|What is the difference between a view and a materialized view?|A view is a virtual table, while a materialized view stores the result physically.
+87|What is the difference between ROW_NUMBER() and RANK()?|ROW_NUMBER() assigns a unique number to rows, while RANK() skips numbers for tied rows.
+88|What is a foreign key constraint?|It enforces a link between two tables to maintain referential integrity.
+89|What is a sequence in SQL?|A sequence generates unique numeric values for primary keys.
+90|What is the purpose of the DROP command?|DROP removes database objects like tables, views, or indexes.
+91|What is the difference between TEXT and BLOB in SQL?|TEXT stores string data, while BLOB stores binary data like images or files.
+92|What is the difference between SUM() and COUNT()?|SUM() adds numeric values, while COUNT() counts rows.
+93|What is the purpose of the DATEADD function?|DATEADD adds or subtracts a specified time interval to a date.
+94|What is a partition in SQL?|Partitioning divides a table into smaller, more manageable pieces for performance optimization.
+95|What is the purpose of the CAST function?|CAST converts one data type into another.
+96|What is an upsert in SQL?|Upsert inserts a row if it does not exist or updates it if it does.
+97|What is a clustered index?|A clustered index determines the physical order of rows in a table.
+98|What is an alias in SQL?|An alias assigns a temporary name to a table or column for readability.
+99|What is referential integrity?|Referential integrity ensures that foreign keys match primary keys in related tables.
+100|What is the difference between CURRENT_TIMESTAMP and SYSDATE?|CURRENT_TIMESTAMP includes time zone information, while SYSDATE does not.

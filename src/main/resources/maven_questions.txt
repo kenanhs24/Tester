@@ -1,0 +1,100 @@
+1|What is Maven?|Maven is a build automation and dependency management tool primarily used in Java projects.
+2|What are the key features of Maven?|Dependency management, build automation, project structure standardization, and plugin support.
+3|What is the Maven repository?|A repository is a directory where Maven stores project dependencies and plugins.
+4|What are the types of Maven repositories?|Local, Central, and Remote repositories.
+5|What is the Maven Central Repository?|The Central Repository is a public repository that provides commonly used dependencies.
+6|What is the `pom.xml` file in Maven?|`pom.xml` is the Project Object Model file that contains project and configuration details.
+7|What is the structure of a typical Maven project?|It includes `src/main/java`, `src/main/resources`, `src/test/java`, `src/test/resources`, and `pom.xml`.
+8|What are Maven plugins?|Plugins are used to extend Maven's capabilities, such as compiling code or running tests.
+9|What is the role of dependencies in Maven?|Dependencies are external libraries required for the project.
+10|What is the scope of a dependency in Maven?|Dependency scopes include `compile`, `provided`, `runtime`, `test`, and `system`.
+11|What is the default dependency scope in Maven?|The default scope is `compile`.
+12|What is the purpose of the `<dependency>` tag in Maven?|It defines a library dependency with attributes like `groupId`, `artifactId`, and `version`.
+13|What are transitive dependencies in Maven?|Dependencies of dependencies that Maven automatically downloads and includes.
+14|How do you exclude transitive dependencies in Maven?|Use the `<exclusion>` tag inside the `<dependency>` element.
+15|What is a Maven lifecycle?|Maven has three lifecycles: `clean`, `default`, and `site`.
+16|What are Maven phases?|Phases are steps in a lifecycle, such as `validate`, `compile`, `test`, `package`, `install`, and `deploy`.
+17|What is the `clean` lifecycle in Maven?|It handles project cleanup by removing files generated in previous builds.
+18|What is the `default` lifecycle in Maven?|It handles the core build tasks such as compiling, testing, packaging, and deployment.
+19|What is the `site` lifecycle in Maven?|It generates project documentation and a project site.
+20|What is the `validate` phase in Maven?|It checks if the project is correctly configured.
+21|What is the `compile` phase in Maven?|It compiles the source code of the project.
+22|What is the `test` phase in Maven?|It runs the unit tests using a testing framework like JUnit or TestNG.
+23|What is the `package` phase in Maven?|It packages the compiled code into a distributable format like a JAR or WAR file.
+24|What is the `install` phase in Maven?|It installs the package into the local repository for reuse.
+25|What is the `deploy` phase in Maven?|It copies the final package to a remote repository for sharing.
+26|What is the difference between a local and remote repository in Maven?|Local is on the developer's machine, while remote is hosted on a server.
+27|What is a SNAPSHOT in Maven?|A SNAPSHOT version is a development version that can change frequently.
+28|What is the difference between a SNAPSHOT and a release version?|SNAPSHOT versions are mutable, while release versions are immutable and final.
+29|What is the Maven Archetype?|An archetype is a template for creating new projects.
+30|What is the `dependencyManagement` section in Maven?|It manages versions of dependencies in multi-module projects.
+31|What is the `parent` POM in Maven?|A parent POM centralizes shared configurations for child projects.
+32|What is the difference between `dependencyManagement` and `dependencies`?|`dependencyManagement` declares versions, while `dependencies` adds dependencies to the project.
+33|What is a multi-module project in Maven?|It is a project with multiple sub-modules, each with its own `pom.xml`.
+34|What is the difference between `pluginManagement` and `plugins`?|`pluginManagement` defines default plugin configurations, while `plugins` actually use the plugins.
+35|How do you run a specific Maven phase?|Use `mvn <phase>`, e.g., `mvn compile`.
+36|How do you add a dependency in Maven?|Add a `<dependency>` tag in the `pom.xml` under the `<dependencies>` section.
+37|What is the use of the `mvn clean` command?|It removes the `target` directory and other generated files.
+38|What is the `mvn install` command used for?|It compiles, packages, and installs the project into the local repository.
+39|What is the `mvn package` command used for?|It compiles the code and packages it into a JAR or WAR file.
+40|How do you skip tests in Maven?|Use the `-DskipTests=true` flag, e.g., `mvn install -DskipTests=true`.
+41|What is the purpose of the `repositories` tag in Maven?|It specifies remote repositories for downloading dependencies.
+42|What is the `.m2` directory in Maven?|It is the local repository where Maven stores downloaded dependencies.
+43|How do you run tests with Maven?|Use the `mvn test` command.
+44|What is the difference between JAR and WAR packaging in Maven?|JAR is for Java applications, while WAR is for web applications.
+45|How do you use a custom Maven repository?|Specify the repository URL in the `<repositories>` section of `pom.xml`.
+46|What is a Maven goal?|A goal is a specific task executed as part of a phase, e.g., `compile`, `test`.
+47|What is the `mvn site` command used for?|It generates project reports and a project site.
+48|What is the `mvn dependency:tree` command?|It displays the project's dependency hierarchy.
+49|What is the `mvn dependency:resolve` command?|It resolves and displays all dependencies.
+50|What is the `mvn archetype:generate` command?|It generates a new Maven project from an archetype.
+51|What is a Maven profile?|A profile customizes build configurations for different environments.
+52|How do you activate a Maven profile?|Use the `-P` flag, e.g., `mvn install -PprofileName`.
+53|What is the use of the `exclusions` tag in Maven?|It excludes specific transitive dependencies.
+54|How do you update dependencies in Maven?|Use the `mvn dependency:purge-local-repository` or manually delete them from `.m2`.
+55|What is the purpose of the `mvn clean install` command?|It cleans, compiles, tests, packages, and installs the project into the local repository.
+56|How do you build a specific module in a multi-module Maven project?|Use `-pl` to specify the module, e.g., `mvn install -pl moduleName`.
+57|What is a build plugin in Maven?|A build plugin is used during the build lifecycle to perform tasks like compilation and packaging.
+58|How do you skip a specific plugin in Maven?|Use the `-D` flag, e.g., `-Dmaven.test.skip=true`.
+59|What is the `maven-compiler-plugin`?|It is used to compile Java source code.
+60|How do you specify the Java version in Maven?|Use the `maven-compiler-plugin` and set the `source` and `target` attributes.
+61|What is the `maven-surefire-plugin`?|It is used to run unit tests in Maven.
+62|What is the `maven-failsafe-plugin`?|It is used to run integration tests in Maven.
+63|What is the `maven-assembly-plugin`?|It is used to create distributable archives like ZIPs or TARs.
+64|What is the `maven-dependency-plugin`?|It manages project dependencies, including resolving and copying them.
+65|What is the `maven-war-plugin`?|It is used to package web applications into WAR files.
+66|What is the purpose of the `<build>` section in `pom.xml`?|It configures the build process, including plugins and directories.
+67|What is the use of the `<properties>` tag in Maven?|It defines custom properties or configurations for the project.
+68|What is a SNAPSHOT dependency?|It is a development version of a dependency that is still in progress.
+69|What is the `mvn versions:display-dependency-updates` command?|It shows outdated dependencies in the project.
+70|How do you set the proxy in Maven?|Configure the `settings.xml` file in the `.m2` directory.
+71|What is the purpose of the `<scope>` tag in Maven dependencies?|It defines when the dependency is available (e.g., compile, test).
+72|What is the Maven Surefire Report?|It generates test reports in HTML and XML formats.
+73|What is the `mvn verify` command used for?|It runs tests and checks integration test results.
+74|How do you deploy a project to a remote repository?|Use the `mvn deploy` command.
+75|What is the `mvn dependency:analyze` command?|It analyzes and reports unused or undeclared dependencies.
+76|What is the purpose of the `mvn compile` command?|It compiles the source code in the `src/main/java` directory.
+77|How do you create a Maven project without an archetype?|Use `mvn archetype:generate -DinteractiveMode=false`.
+78|What is the default packaging type in Maven?|The default packaging type is `jar`.
+79|What is the purpose of the `mvn exec:java` command?|It runs a Java program from the compiled classes.
+80|How do you skip a specific phase in Maven?|Use flags like `-DskipTests` or profile-specific settings.
+81|What is the purpose of the `mvn eclipse:eclipse` command?|It generates Eclipse project files for Maven projects.
+82|What is the difference between `install` and `deploy` in Maven?|`install` saves the package locally, while `deploy` uploads it to a remote repository.
+83|What is the `mvn site:deploy` command?|It deploys the generated site to a remote server.
+84|What is the purpose of the `mvn validate` command?|It checks if the `pom.xml` is valid and dependencies are available.
+85|What is the difference between `dependencyManagement` and `pluginManagement`?|Both manage versions, but one is for dependencies and the other for plugins.
+86|What is the use of the `<inherited>` tag in Maven?|It specifies whether child projects inherit a parent configuration.
+87|How do you configure multiple repositories in Maven?|List them under the `<repositories>` tag in the `pom.xml`.
+88|What is the difference between Maven and Gradle?|Maven uses XML for configuration, while Gradle uses Groovy or Kotlin.
+89|How do you integrate Maven with Jenkins?|Use Jenkins' Maven plugin to automate builds.
+90|What is the difference between `pom.xml` and `settings.xml`?|`pom.xml` is project-specific, while `settings.xml` is user-specific for global settings.
+91|What is the purpose of the `<url>` tag in `pom.xml`?|It specifies the project's URL or repository location.
+92|What is the `mvn clean dependency:copy-dependencies` command?|It cleans the project and copies all dependencies to a target directory.
+93|How do you include system dependencies in Maven?|Use the `system` scope and specify the `<systemPath>`.
+94|What is the `maven-jar-plugin`?|It is used to configure and customize JAR file generation.
+95|What is the purpose of the `mvn archetype:crawl` command?|It lists available archetypes in the remote repository.
+96|What is the purpose of the `pom` packaging type?|It is used for parent projects in multi-module setups.
+97|What is the difference between `pom.xml` and `build.gradle`?|`pom.xml` is for Maven, while `build.gradle` is for Gradle builds.
+98|What is a Maven wrapper?|It ensures the same Maven version is used across all developers by providing a wrapper script.
+99|What is the difference between `effective-pom` and `pom.xml`?|`effective-pom` is the result of merging `pom.xml` with inherited configurations.
+100|What is the `mvn help:effective-pom` command?|It displays the effective POM of the project.
