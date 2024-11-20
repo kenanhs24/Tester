@@ -140,7 +140,7 @@ case "NEW TOPIC" -> loadQuestionsFromFile("new_topic_questions.txt");
 ---
 
 ## License
-This project is licensed under the MIT License. Feel free to modify and use it for personal or educational purposes.
+This project is licensed under the SEN License. Feel free to modify and use it for personal or educational purposes.
 
 ---
 
