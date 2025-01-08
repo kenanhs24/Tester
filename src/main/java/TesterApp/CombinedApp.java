@@ -20,7 +20,7 @@ public class CombinedApp {
     private final String[] options = {
             "JAVA", "SOFTWARE TESTING", "SELENIUM", "TESTNG", "CSS", "XPATH", "UI TESTING", "GITHUB",
             "CUCUMBER", "MAVEN", "POSTMAN", "API TESTING", "SQL", "JENKINS", "JDBC",
-            "AWS", "JUNIT", "FREQUENCY JAVA QUESTIONS"
+            "AWS", "JUNIT"
     };
 
     public CombinedApp() {
@@ -138,7 +138,6 @@ public class CombinedApp {
                         case "MANUAL TESTING" -> loadQuestionsFromFile("manual_testing_questions.txt");
                         case "AWS" -> loadQuestionsFromFile("aws_questions.txt");
                         case "JUNIT" -> loadQuestionsFromFile("junit_questions.txt");
-                        case "FREQUENCY JAVA QUESTIONS" -> loadQuestionsFromFile("frequency_java_Code_questions.txt");
                         default -> JOptionPane.showMessageDialog(frame, "Invalid Selection!", "Error", JOptionPane.ERROR_MESSAGE);
                     }
                     currentQuestionIndex = 0; // Reset to the first question
