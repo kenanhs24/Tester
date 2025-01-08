@@ -1,5 +1,100 @@
-1|Write a program to check if a number is an Armstrong number.|public class Armstrong { public static boolean isArmstrong(int number) { int original = number, sum = 0; int digits = String.valueOf(number).length(); while (number > 0) { int digit = number % 10; sum += Math.pow(digit, digits); number /= 10; } return sum == original; } public static void main(String[] args) { System.out.println(isArmstrong(153)); // true System.out.println(isArmstrong(9474)); // true System.out.println(isArmstrong(123)); // false } }
-2|Write a program to find the binary representation of a number.|public class BinaryRepresentation { public static String toBinary(int number) { return Integer.toBinaryString(number); } public static void main(String[] args) { System.out.println(toBinary(10)); // 1010 System.out.println(toBinary(255)); // 11111111 } }
-3|Write a program to find all consecutive numbers adding up to a given sum.|public class ConsecutiveSum { public static void findConsecutiveSums(int target) { for (int start = 1; start < target; start++) { int sum = 0; for (int num = start; sum < target; num++) { sum += num; if (sum == target) { for (int i = start; i <= num; i++) { System.out.print(i + " "); } System.out.println(); } } } } public static void main(String[] args) { findConsecutiveSums(15); } }
-4|Write a program to perform division without using the division operator.|public class Division { public static int divide(int dividend, int divisor) { int quotient = 0; int sign = (dividend < 0) ^ (divisor < 0) ? -1 : 1; dividend = Math.abs(dividend); divisor = Math.abs(divisor); while (dividend >= divisor) { dividend -= divisor; quotient++; } return quotient * sign; } public static void main(String[] args) { System.out.println(divide(10, 2)); // 5 System.out.println(divide(7, -3)); // -2 } }
-...
+1|Write a program to check if a number is an Armstrong number.
+2|Write a program to find the binary representation of a number.
+3|Write a program to find all consecutive numbers adding up to a given sum.
+4|Write a program to perform division without using the division operator.
+5|Write a program to find numbers divisible by 3, 5, and 15.
+6|Write a program to simulate FINRA logic (FizzBuzz-like behavior).
+7|Write a program to calculate the factorial of a number.
+8|Write a program to generate Fibonacci numbers up to a given limit.
+9|Write a program to check if a number is a Happy Number.
+10|Write a program to find the maximum possible value by rearranging digits.
+11|Write a program to check if a number is prime.
+12|Write a program to reverse an integer without using built-in methods.
+13|Write a program to sum the digits of a number until a single digit is obtained.
+14|Write a program to find the sum of the digits of a number.
+15|Write a program to swap two numbers without using a temporary variable.
+16|Write a program to check if a number is a Lovely Number.
+17|Write a program to find combinations of numbers that add up to a given sum.
+18|Write a program to find the maximum number in an array.
+19|Write a program to find the minimum number in an array.
+20|Write a program to find the first duplicate element in an array.
+21|Write a program to count the frequency of each element in an array.
+22|Write a program to count the frequency of words in a given string or array.
+23|Write a program to calculate the maximum profit from an array of stock prices.
+24|Write a program to concatenate two arrays.
+25|Write a program to move all zeros in an array to the end while maintaining the order of other elements.
+26|Write a program to remove duplicate elements from an array.
+27|Write a program to reverse an array in place.
+28|Write a program to find the second-largest number in an array.
+29|Write a program to sort an array in ascending order without using built-in methods.
+30|Write a program to sort an array in descending order without using built-in methods.
+31|Write a program to find if the sum of elements on the left equals the sum on the right at any index.
+32|Write a program to check if a triple of numbers exists in an array that satisfies a given condition.
+33|Write a program to count the frequency of characters in a string.
+34|Write a program to count the frequency of each word in a sentence.
+35|Write a program to check if two strings are anagrams of each other.
+36|Write a program to reverse a string without using built-in methods.
+37|Write a program to find the first non-repeating character in a string.
+38|Write a program to count the number of vowels and consonants in a string.
+39|Write a program to determine if a string is a palindrome.
+40|Write a program to find duplicate characters in a string.
+41|Write a program to count the occurrences of a specific character in a string.
+42|Write a program to validate an email address using regex.
+43|Write a program to count the frequency of elements in a 2D array.
+44|Write a program to find the smallest missing positive integer in an array.
+45|Write a program to rotate an array to the left by a given number of positions.
+46|Write a program to rotate an array to the right by a given number of positions.
+47|Write a program to merge two sorted arrays into a single sorted array.
+48|Write a program to find the intersection of two arrays.
+49|Write a program to find the union of two arrays.
+50|Write a program to find the kth largest element in an array.
+51|Write a program to find the kth smallest element in an array.
+52|Write a program to check if an array contains a duplicate element.
+53|Write a program to find the maximum product of two integers in an array.
+54|Write a program to find the subarray with the maximum sum (Kadane’s algorithm).
+55|Write a program to calculate the sum of all elements in an array.
+56|Write a program to test a login functionality by validating credentials.
+57|Write a program to simulate API response validation using JSON objects.
+58|Write a program to find all pairs of integers in an array that sum up to a given value.
+59|Write a program to test file handling by reading data from a file and writing to another file.
+60|Write a program to validate a phone number using regex.
+61|Write a program to find all permutations of a given string.
+62|Write a program to generate all subsets of an array.
+63|Write a program to validate if a string contains only digits.
+64|Write a program to find the longest common prefix among an array of strings.
+65|Write a program to count the occurrences of each word in a text file.
+66|Write a program to find the length of the longest substring without repeating characters.
+67|Write a program to group anagrams from a list of strings.
+68|Write a program to validate the nesting of parentheses in a string.
+69|Write a program to check if a number is a perfect number.
+70|Write a program to validate if a string follows a given pattern.
+71|Write a program to count the frequency of even and odd digits in a number.
+72|Write a program to simulate and test a stack implementation using an array.
+73|Write a program to test the functionality of a queue implementation using linked lists.
+74|Write a program to simulate producer-consumer behavior using multithreading.
+75|Write a program to calculate the frequency of each digit in a number.
+76|Write a program to find all palindrome substrings in a given string.
+77|Write a program to reverse the words in a sentence without reversing the individual words.
+78|Write a program to remove all white spaces from a string and count the remaining characters.
+79|Write a program to find the second most frequent character in a string.
+80|Write a program to find all unique triplets in an array that sum up to a given value.
+81|Write a program to check if a number is a power of two.
+82|Write a program to implement a basic cache mechanism using a HashMap.
+83|Write a program to compare two JSON objects for equality.
+84|Write a program to validate an IPv4 address using regex.
+85|Write a program to test database integration by fetching and validating records.
+86|Write a program to read data from a properties file and validate its content.
+87|Write a program to find the longest palindrome substring in a given string.
+88|Write a program to simulate and test an e-commerce shopping cart functionality.
+89|Write a program to validate date formats (e.g., MM/DD/YYYY) using regex.
+90|Write a program to test pagination logic by splitting a large dataset into pages.
+91|Write a program to find the missing number in an array of integers from 1 to n.
+92|Write a program to calculate the frequency of elements in a PriorityQueue.
+93|Write a program to count the frequency of prime numbers in an array.
+94|Write a program to count the frequency of each unique word in a large dataset.
+95|Write a program to validate and test file upload functionality by checking file type and size.
+96|Write a program to test API response time and validate performance.
+97|Write a program to check if a string contains balanced brackets using a stack.
+98|Write a program to find all repeating elements in an array.
+99|Write a program to implement binary search and validate its correctness.
+100|Write a program to calculate the frequency of palindrome numbers in an array.

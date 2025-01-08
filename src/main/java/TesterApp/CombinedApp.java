@@ -1,4 +1,4 @@
-package SelCumcumber;
+package TesterApp;
 
 import javax.swing.*;
 import java.awt.*;
