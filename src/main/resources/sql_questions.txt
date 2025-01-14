@@ -13,7 +13,7 @@
 13|What is the purpose of GROUP BY in SQL?|GROUP BY groups rows with the same values into summary rows.
 14|What is the difference between UNION and UNION ALL?|UNION removes duplicates, while UNION ALL includes all rows.
 15|What is the difference between an INDEX and a PRIMARY KEY?|An INDEX is used for faster querying, while a PRIMARY KEY ensures uniqueness.
-16|What is a self-join?|A self-join joins a table to itself using aliases.
+16|What is a self-join?|AA self-join is a type of join in SQL that allows a table to join itself, comparing rows within the same table.
 17|What is a subquery?|A subquery is a query nested inside another query.
 18|What are aggregate functions in SQL?|Functions like COUNT, SUM, AVG, MAX, and MIN that perform calculations on multiple rows.
 19|What is the difference between CHAR and VARCHAR?|CHAR has a fixed length, while VARCHAR has a variable length.
@@ -34,7 +34,7 @@
 34|What is the difference between COMMIT and ROLLBACK?|COMMIT saves changes, while ROLLBACK undoes changes.
 35|What is a trigger in SQL?|A trigger is a procedural code executed automatically in response to database events.
 36|What is the difference between DELETE and DROP?|DELETE removes rows, while DROP removes the table structure itself.
-37|What is a foreign key constraint?|It enforces referential integrity by linking a column to a primary key in another table.
+37|What is a foreign key constraint?|A foreign key constraint is a database rule that enforces a relationship between two tables by ensuring that values in a column (or set of columns) in one table (called the "child" table) must match existing values in the primary key of another table (called the "parent" table).
 38|What is the purpose of the DISTINCT keyword?|DISTINCT eliminates duplicate rows in the result set.
 39|What is the difference between COUNT(*) and COUNT(column_name)?|COUNT(*) counts all rows, while COUNT(column_name) counts non-null values in a column.
 40|What is a composite key?|A composite key is a combination of two or more columns to uniquely identify rows.
